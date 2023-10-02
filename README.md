@@ -11,7 +11,7 @@ Notebooks are extremely powerful tools, you may find useful to discover some of 
 
 ## Git instructions
 
-To begin with, you need to have a GitHub account. If you don't already have one, go to [github](github.com) and sign up. Follow instructions on the screen. Tip: use a reasonable username that resembles your actual name.  
+To begin with, you need to have a GitHub account. If you don't already have one, go to [github](github.com) and sign up. Follow instructions on the screen. Tip: use a reasonable username that resembles your actual name.
 
 Once you have your github account, fork this repository clicking on the top-right button *Fork*.
 
@@ -23,11 +23,11 @@ The following instructions need to be followed any time a new local repository i
 
    * Clone your (forked) repository (i.e. create a local repository cloned from your remote repository)
 
-   `git clone https://<YourToken>@github.com/<YourUsername>/ScientificComputingWithPython2022.git`
+   `git clone https://<YourToken>@github.com/<YourUsername>/ScientificComputingWithPython2023.git`
 
    where <YourUsername> it your GitHub username and <YourToken> is the token as copied from the GitHub webpage. A new directory will appear in your current directory. Get into it:
 
-   `cd ScientificComputingWithPython2022/`
+   `cd ScientificComputingWithPython2023/`
 
    * Configure your username and email:
 
@@ -39,7 +39,7 @@ The following instructions need to be followed any time a new local repository i
 
    * Define the central ScientificComputingWithPython repo as the upstream repository:
 
-   `git remote add upstream https://github.com/zucchett/ScientificComputingWithPython2022.git`
+   `git remote add upstream https://github.com/zucchett/ScientificComputingWithPython2023.git`
 
    * Check that the previous commands succeeded:
 
