@@ -202,7 +202,6 @@ n1 = 1
 i = 0
 while i < 20:
   print(n0)
-
   # Calculate the next Fibonacci number
   n2 = n0 + n1
   # Update n0 and n1
