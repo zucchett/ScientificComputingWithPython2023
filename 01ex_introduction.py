@@ -167,7 +167,7 @@ input("\npress ENTER to proceed to the next exercise...")
 ################## exercise 9 ##################
 print("\n--- --- EXERCISE 9 --- ---")
 print("--- nested list comprehensions ---\n")
-print("implementation choice: I considered the triplets (a,b,c) and (b,c,a) equal (example: (3,4,5) and (4,3,5)), so they will be printed only once.")
+print("implementation choice: I considered the triplets (a,b,c) and (b,a,c) equal (example: (3,4,5) and (4,3,5)), so they will be printed only once.")
 print("the list with the unique pythagorean triplets (a, b, c) whose c<100 is: ")
 
 triplets = [(a, b, int(math.sqrt(a**2+b**2))) for a in range(1,100) for b in range(a,100) if(math.sqrt(a**2+b**2)<100 and math.sqrt(a**2+b**2)%1 == 0)]
