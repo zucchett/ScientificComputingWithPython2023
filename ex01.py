@@ -9,7 +9,7 @@ for num in range(1, 101):
     else:
         print(num)
 
-# Esercizio 2
+## Exercise 2
 import sys
 
 x = sys.argv[1]
@@ -21,7 +21,7 @@ x, y = y, x
 
 print("After swapping: x =", x, "and y =", y)
 
-# Esercizio 3
+## Exercise 3
 import math
 
 def calculate_distance(u, v):
@@ -37,7 +37,7 @@ euclidean_distance = calculate_distance(u, v)
 
 print("The Euclidean distance between", u, "and", v, "is:", euclidean_distance)
 
-# Esercizio 4
+## Exercise 4
 def count_characters(string):
     string = string.lower()
     character_count = {}
@@ -65,7 +65,7 @@ print("Character counts in s2:")
 for character, count in count_characters(s2).items():
     print(character, ":", count)
 
-# Esercizio 5
+## Exercise 5
 from collections import Counter
 
 l = [36, 45, 58, 3, 74, 96, 64, 45, 31, 10, 24, 19, 33, 86, 99, 18, 63, 70, 85,
@@ -80,7 +80,7 @@ print("Unique numbers in the list:")
 for number in unique_numbers:
     print(number)
 
-# Esercizio 6
+## Exercise 6
 import sys
 
 def perform_addition(a, b):
@@ -109,5 +109,52 @@ if result is not None:
 else:
     print("Oops! Addition is not possible with the given input types.")
 
-# Esercizio 7
+## Exercise 7 for loop
+for x in range(11):
+    cube = x ** 3
+    cubes.append(cube)
 
+print("List of cubes from 0 to 10:")
+print(cubes)
+
+## Exercise 7 list comprehension
+cubes = [x ** 3 for x in range(11)]
+
+print("List of cubes from 0 to 10:")
+print(cubes)
+
+## Exercise 8
+a = [(i, j) for i in range(3) for j in range(4)]
+print(a) 
+
+## Exercise 9
+triples = [(a, b, c) for a in range(1, 100) for b in range(a, 100) for c in range(b, 100) if (a ** 2 + b ** 2) == c ** 2]
+print(triples)
+
+## Exercise 10
+def normalize_vector(vector):
+    squared_sum = sum(x ** 2 for x in vector)
+    normalized = tuple(x / squared_sum ** 0.5 for x in vector)
+    return normalized
+
+my_vector = (3, 4, 5)
+normalized_vector = normalize_vector(my_vector)
+print(normalized_vector)
+
+## Exercise 11
+# Initializing variables
+num1 = 0
+num2 = 1
+count = 0
+
+# Printing the first two numbers
+print(num1)
+print(num2)
+
+# Calculating the rest of the sequence
+while count < 18:
+    fib = num1 + num2
+    print(fib)
+    num1 = num2
+    num2 = fib
+    count += 1
