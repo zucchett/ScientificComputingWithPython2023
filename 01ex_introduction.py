@@ -134,22 +134,29 @@ print("Esercizio 8")
 
 list = [(i,j) for i in range(3) for j in range(4)]
 print(list)
+print('')
 
 #esercizio 9
 print("Esercizio 9")
-
+        
+'''
+list = []
 limit = 100
-triples = []
 for x in range(1, limit):
     for y in range(1, x):
         if (x-y) % 2 == 1 and math.gcd(x, y) == 1:
             a = x**2 - y**2
             b = 2*x*y
             c = x**2 + y**2
-        if c < limit and (a, b, c) not in triples:
-            triples.append((a, b, c))
-print('Triple con c<100')
+        if c < limit and (a, b, c) not in list:
+            list.append((a, b, c))
+'''
+
+triples = [(a,b,c) for c in range(100) for a in range(c) for b in range(a) if a**2 + b**2 == c**2 and (a-b) % 2 == 1 and math.gcd(a,b) == 1]
+
+print('Terne pitagoriche con c < 100')
 print(triples)
+
 print('')
 
 #esercizio 10
