@@ -30,4 +30,12 @@ for x in short:
     print(x)
 
 #esercizio 4
+lang = {"Python" : 3, "Java" : '', "Cplusplus" : 'test', "Php" : 0.7}
+def lenkey(chiave):
+    return len(chiave)
+lunghezze=map(lenkey, lang.keys())
+for x in lunghezze:
+    print(x)
+
+#esercizio 5
 
