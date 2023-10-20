@@ -1,4 +1,4 @@
-import math
+from math import sqrt
 
 ################## exercise 1 ##################
 print("\n--- --- EXERCISE 1 --- ---")
@@ -58,7 +58,7 @@ try:
     P = (x1, y1)
     Q = (x2, y2)
 
-    print("the euclidean distance is ", math.sqrt((Q[0]-P[0])**2 + (Q[1]-P[1])**2))
+    print("the euclidean distance is ", sqrt((Q[0]-P[0])**2 + (Q[1]-P[1])**2))
 except:
     print("this is not a valid number format")
 
@@ -170,7 +170,7 @@ print("--- nested list comprehensions ---\n")
 print("implementation choice: I considered the triplets (a,b,c) and (b,a,c) equal (example: (3,4,5) and (4,3,5)), so they will be printed only once.")
 print("the list with the unique pythagorean triplets (a, b, c) whose c<100 is: ")
 
-triplets = [(a, b, int(math.sqrt(a**2+b**2))) for a in range(1,100) for b in range(a,100) if(math.sqrt(a**2+b**2)<100 and math.sqrt(a**2+b**2)%1 == 0)]
+triplets = [(a, b, int(sqrt(a**2+b**2))) for a in range(1,100) for b in range(a,100) if(sqrt(a**2+b**2)<100 and sqrt(a**2+b**2)%1 == 0)]
 
 print(triplets)
 print("\nthe count of triplets is ", len(triplets))
@@ -187,13 +187,13 @@ try:
     int_vector = [int(x) for x in str_vector.split(",")]
     abs = 0
     for elem in int_vector : abs = abs+elem**2
-    abs = math.sqrt(abs)
+    abs = sqrt(abs)
     print("the modulus of the input vector is ", abs)
     normalized = [x/abs for x in int_vector]
     print("the normalized vector is ", normalized)
     abs = 0
     for elem in normalized : abs = abs+elem**2
-    abs = math.sqrt(abs)
+    abs = sqrt(abs)
     print("the modulus of the normalized vector is ", abs)
 except:
     print("there are some non numerical characters in the input vector")
