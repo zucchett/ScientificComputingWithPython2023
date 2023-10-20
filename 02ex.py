@@ -38,4 +38,12 @@ for x in lunghezze:
     print(x)
 
 #esercizio 5
+scores = [('Python', 97), ('Cplusplus', 81), ('Php', 45), ('Java', 32)]
+x = lambda a : a[0]
+chiavi=[]
+for y in scores:
+    chiavi.append(x(y))
+chiavi.sort()
+print(chiavi)
 
+#esercizio 6
