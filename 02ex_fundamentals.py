@@ -1,4 +1,5 @@
 import copy
+import timeit
 
 #Exercise 1
 def exercise1():
@@ -17,33 +18,189 @@ def exercise1():
     print(ans)
     print(alist)
 
-#exercise1()
-
 
 #Exercise 2
 def exercise2():
     ans = [x*x for x in range(10) if x % 2 == 1]
-    print(ans)
 
-#exercise2()
+    print(ans)
 
 
 #Exercise 3
-def exercise3(words,n):
+def wordsFilter(words,n):
     ans = list(filter(lambda w: len(w) < n, words))
+
     return ans
 
-#ex3_words = ["My", "name", "is", "Giovanni", "Giorgio"]
-#ex3_n = 3
-#ex3_ans = exercise3(ex3_words,ex3_n)
-#print(ex3_ans)
+def exercise3():
+    words = ["My", "name", "is", "Giovanni", "Giorgio"]
+    n = 3
+    ans = wordsFilter(words,n)
+    print(ans)
 
 
 #Exercise 4
-def exercise4(lang):
+def lenDict(lang):
     ans = list(map(len,lang.keys()))
+
     return ans
 
-#ex4_lang = {"Python" : 3, "Java" : '', "Cplusplus" : 'test', "Php" : 0.7}
-#ex4_ans = exercise4(ex4_lang)
-#print(ex4_ans)
+def exercise4():
+    lang = {"Python" : 3, "Java" : '', "Cplusplus" : 'test', "Php" : 0.7}
+    ans = lenDict(lang)
+    print(ans)
+
+
+#Exercise 5
+def exercise5():
+    language_scores = [('Python', 97), ('Cplusplus', 81), 
+                       ('Php', 45), ('Java', 32)]
+
+    language_scores.sort(key=lambda score: score[0])
+
+    print(language_scores)
+
+
+#Exercise 6
+def nestedFunc(x):
+    def square(x):
+        return x**2
+
+    def cube(x):
+        return x**3
+
+    return square(cube(x))
+
+def exercise6():
+    x = 2
+    ans = nestedFunc(x)
+
+    print(ans)
+
+
+#Exercise 7
+def hello(func):
+    def wrapper(x):
+        print("Hello World!")
+        func(x)
+
+    return wrapper
+
+@hello
+def exercise7(x):
+    return x**x
+
+
+#Exercise 8
+def recursiveFibonacci(n):
+    if n <= 2:
+        if n == 0:
+            return []
+        elif n == 1:
+            return [0] 
+
+        return [0,1]
+
+    fibo = recursiveFibonacci(n-1)
+    fibo.append(fibo[-1] + fibo[-2])
+
+    return fibo
+
+def exercise8():
+    n = 20
+    print(recursiveFibonacci(n))
+
+
+#Exercise 9
+def loopFibonacci(n):
+    fibo = [0,1]
+
+    for i in range(2,n):
+        fibo.append(fibo[-1] + fibo[i-2])
+
+def exercise9():
+    time_loop = timeit.timeit(
+            'loopFibonacci(20)','from __main__ import loopFibonacci',number=1)
+    time_recursive = timeit.timeit(
+            'recursiveFibonacci(20)','from __main__ import recursiveFibonacci',
+            number=1)
+
+    print("Loop fibonacci: ",time_loop)
+    print("Recursive fibonacci: ",time_recursive)
+
+
+#Exercise 10
+class Polygon:
+
+    sides = ()
+
+    def __init__(self, sides):
+        if len(sides) >= 3:
+            if any(side <= 0 for side in sides):
+                print("Error: All sides must be greater than zero")
+            else:
+                self.sides = sides
+        else:
+            print("Error: at least 3 sides required")
+
+    def getSide(self,n):
+        return self.sides[n]
+
+    def setSide(self,n,side):
+        if n < len(self.sides):
+            if side <= 0:
+                print("Error: All sides must be greater than zero")
+            else:
+                list_sides = list(self.sides)
+                list_sides[n] = side
+
+                self.sides = list_sides
+
+    def perimeter(self):
+        return sum(self.sides)
+
+    def getOrderedSides(self, increasing = True):
+        list_sides = list(self.sides)
+
+        if not increasing:
+            list_sides.sort(reverse=True)
+        else:
+            list_sides.sort()
+
+        return tuple(list_sides)
+
+
+def exercise10():
+    poly = Polygon((35,5,10))
+
+    print(poly.perimeter())
+    print(poly.getOrderedSides(increasing=True))
+
+
+#Exercise 11
+class Rectangle(Polygon):
+
+    def __init__(self, length, width):
+        super().__init__((length, width, length, width))
+
+    def area(self):
+        return super().getSide(0)*super().getSide(1)
+
+def exercise11():
+    rectangle = Rectangle(5,4)
+
+    print(rectangle.perimeter())
+    print(rectangle.area())
+
+
+exercise1()
+exercise2()
+exercise3()
+exercise4()
+exercise5()
+exercise6()
+exercise7(5)
+exercise8()
+exercise9()
+exercise10()
+exercise11()
