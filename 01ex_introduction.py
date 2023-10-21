@@ -101,28 +101,31 @@ def ex10(vector):
 
 def ex11(nlimit):
     fibo=[0,1]
-    while(len(fibo)<nlimit):
+    while(len(fibo)<=nlimit):
         fibo.append(fibo[-1]+fibo[-2])
     return(fibo)
 
 if __name__ == '__main__':
+    l = [36, 45, 58, 3, 74, 96, 64, 45, 31, 10, 24, 19, 33, 86, 99, 18, 63, 70, 85,
+    85, 63, 47, 56, 42, 70, 84, 88, 55, 20, 54, 8, 56, 51, 79, 81, 57, 37, 91,
+    1, 84, 84, 36, 66, 9, 89, 50, 42, 91, 50, 95, 90, 98, 39, 16, 82, 31, 92, 41,
+    45, 30, 66, 70, 34, 85, 94, 5, 3, 36, 72, 91, 84, 34, 87, 75, 53, 51, 20, 89, 51, 20]
+
+    s1 = "Write a program that prints the numbers from 1 to 100. \
+    But for multiples of three print Hello instead of the number and for the multiples of five print World. \
+    For numbers which are multiples of both three and five print HelloWorld."
+
+    s2 = "The quick brown fox jumps over the lazy dog"
+
     ex1a()
     ex1b()
     ex2(11,"pouet")
     print()
     ex2(10,11)
     print(ex3((3,0),(0,4)))
-    s1 = "Write a program that prints the numbers from 1 to 100. \
-    But for multiples of three print Hello instead of the number and for the multiples of five print World. \
-    For numbers which are multiples of both three and five print HelloWorld."
-    s2 = "The quick brown fox jumps over the lazy dog"
     print(ex4(s1))
     print()
     print(ex4(s2))
-    l = [36, 45, 58, 3, 74, 96, 64, 45, 31, 10, 24, 19, 33, 86, 99, 18, 63, 70, 85,
-    85, 63, 47, 56, 42, 70, 84, 88, 55, 20, 54, 8, 56, 51, 79, 81, 57, 37, 91,
-    1, 84, 84, 36, 66, 9, 89, 50, 42, 91, 50, 95, 90, 98, 39, 16, 82, 31, 92, 41,
-    45, 30, 66, 70, 34, 85, 94, 5, 3, 36, 72, 91, 84, 34, 87, 75, 53, 51, 20, 89, 51, 20]
     print(ex5(l))
     ex6(1,2)
     print()
