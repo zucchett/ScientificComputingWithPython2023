@@ -47,3 +47,37 @@ chiavi.sort()
 print(chiavi)
 
 #esercizio 6
+def square(x):
+    return x**2
+def cube(y):
+    return y**3
+def atsix(z):
+    return cube(square(z))
+k=2
+print(k)
+print(square(k))
+print(cube(k))
+print(atsix(k))
+
+#esercizio 7
+def hello(func):
+    def say_hello():
+        print("Hello World!")
+        func()
+    return say_hello
+@hello    
+def test():
+    print("Decorators work!")
+test()
+
+#esercizio 8
+def ric_fib(x):
+    if x==0 or x==1:
+        return 1
+    else:
+        return (ric_fib(x-1)+ric_fib(x-2))
+for i in range(21):
+    print(ric_fib(i))
+
+#esercizio 9
+
