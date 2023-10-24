@@ -101,10 +101,7 @@ normalized = tuple(x/math.sqrt(somma_quad) for x in vettore)
 print(normalized)
 
 #esercizio 11
-fib=[None]*20
-fib[0]=1
-fib[1]=1
-somma=0
-for i in range(2, 20):
-    fib[i]=fib[i-1]+fib[i-2]
+fib=[1, 1]
+for i in range(2, 21):
+    fib.append(fib[i-1]+fib[i-2])
 print(fib)
