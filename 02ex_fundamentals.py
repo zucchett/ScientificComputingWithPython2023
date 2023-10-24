@@ -2,16 +2,16 @@ import timeit
 
 #esercizio 1
 print('Esericizio 1')
-def f(alist):
-    x = 5
-    for i in range(x):
-        alist.append(i)
-    return alist
+
+def f(alist, n):
+    temp = alist.copy()
+    for i in range(n):
+        temp.append(i)
+    return temp
 
 alist = [1, 2, 3]
-ans = f(alist)
-print(ans)
-print(alist)
+print('Lista modificata: ', f(alist, 5))
+print('Lista originale: ', alist)
 print('')
 
 #esercizio 2
@@ -56,69 +56,103 @@ def cube(x):
 def power6(x):
     return x*square(x)*cube(x)
 
-print(power6(2))
+print('2 power to 6: ', power6(2))
 print('')
 
 #esercizio 7
 print('Esericizio 7')
 
+def hello(func):
+    def wrapper(x):
+        print("Hello World")
+        print(func(x))
+    return wrapper
+
+@hello
+def square(el):
+     return el*el
+
+square(5)
+print('')
+
 #esercizio 8
 print('Esericizio 8')
+def rec_fib(n):
+    if n <= 1:
+        return n
+    return rec_fib(n-1) + rec_fib(n-2)
 
-def rec_fibonacci(n):
-    if n > 1:
-        return rec_fibonacci(n-1) + rec_fibonacci(n-2)
-    return n
-print(rec_fibonacci(20))
+fibo = [1,1]
+for i in range(3, 21):
+    fibo.append(rec_fib(i))
+print(fibo)
 print('')
 
 #esercizio 9
 print('Esericizio 9')
-def iter_fibonacci(n):
+
+def iter_fib(n):
     fibo = [1, 1]
     for i in range(2, n):
         fibo.append(fibo[i-1] + fibo[i-2])
     return fibo
+
 #imposto numero di esecuzioni a 10000 perché con il valore di default
 #rec_fibonacci(n) impegnava il computer per troppo tempo
 loop = 10000
 
-result = timeit.timeit(lambda: iter_fibonacci(20), number=loop)
-result2 = timeit.timeit(lambda: rec_fibonacci(20), number=loop)
-print('Tempo esecuzione fibonacci iterativo: ', result)
-print('Tempo esecuzione fibonacci ricorsivo: ', result2)
+result = timeit.timeit(lambda: iter_fib(20), number=loop)
+result2 = timeit.timeit(lambda: rec_fib(20), number=loop)
+print('Tempo per ', loop, ' esecuzioni di fibonacci iterativo: ', result)
+print('Tempo per ', loop, ' esecuzioni di fibonacci ricorsivo: ', result2)
+print("L'algoritmo iterativo è decsamente il più efficiente! ->", int(result2/result), ' volte più veloce')
 print('')
+
 
 #esercizio 10
 print('Esericizio 10')
 
 class Polygon:
-    dimension = ()
-
-    def __int__(self, components):
-        self.dimension = components
+    lati = ()
+    def __init__(self, iLati):
+        if len(iLati) >= 3:
+            self.lati = iLati
+        else:
+            print('Il poligono deve avere almeno 3 lati')
 
     def getDimension(self):
-        return len(self.dimension)
+        return len(self.lati)
 
     def getLength(self, pos):
-        return self.dimension[pos]
+        return self.lati[pos]
 
     def setLength(self, pos, length):
-        self.dimension[pos] = length
+        newLati = []
+        for i in range(len(self.lati)):
+            newLati.append(self.lati[i])
+            if i == pos:
+                newLati[i] = length
+
+        self.lati = tuple(newLati)
 
     def perimeter(self):
-        return sum(self.dimension)
+        return sum(self.lati)
 
-    def getOrderedLength(self):
-        return sorted(self.dimension)
+    def getOrderedLength(self, increasing):
+        if increasing:
+            return sorted(self.lati)
+        else:
+            return sorted(self.lati, reverse = True)
 
 print('Test classe Polygon')
-tupla = (1, 2, 3, 4, 5)
-poly = Polygon(tupla)
+
+poly = Polygon((9, 3, 4, 5, 10))
 
 print('Perimetro: ', poly.perimeter())
-print('lati ordinati: ', poly.getOrderedLength())
+print('Lati ordinati: ', poly.getOrderedLength(False))
+poly.setLength(2, 7)
+print('Modifico un lato: ', poly.lati)
+print('Nuovo perimetro: ', poly.perimeter())
 print('')
 
 #esercizio 11
@@ -126,17 +160,18 @@ print('Esericizio 11')
 
 class Rectangle(Polygon):
 
-    def __int__(self, components):
-        if len(components) == 2:
-            self.dimension = components
+    def __int__(self, iLati):
+        if len(iLati) == 4:
+            self.lati = iLati
         else:
-            print('Bisogna inserire una base e una altezza')
+            print('Bisogna inserire i lati nel seguente formato: a b a b')
 
 
     def area(self):
-        return self.dimension[0]*self.dimension[1]
+        return self.lati[0]*self.lati[1]
 
 
-print('Test classe Rectangle')
-rect = Rectangle((5,10))
+rect = Rectangle((5,10, 5, 10))
+print('Test classe Rectangle: base: ', rect.lati[0], ' altezza: ', rect.lati[1])
 print('Area: ', rect.area())
+print('Perimetro: ', rect.perimeter())

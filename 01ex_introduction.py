@@ -161,9 +161,8 @@ print('')
 
 #esercizio 10
 print("Esercizio 10")
-#l'algoritmo riceve da riga di comando i valori del vettore
 
-vector = []
+vector = [1, 23, 4, 5, 12]
 for i in range(5, len(sys.argv)):
     vector.append(int(sys.argv[i]))
 
@@ -182,5 +181,7 @@ for i in range(2, 20):
 
 print('Sequenza Fibonacci dei primi 20 numeri')
 print(fibo)
+
+
 
 
