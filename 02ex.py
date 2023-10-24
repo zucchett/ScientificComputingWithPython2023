@@ -76,11 +76,36 @@ def ric_fib(x):
         return 1
     else:
         return (ric_fib(x-1)+ric_fib(x-2))
-for i in range(21):
-    print(ric_fib(i))
+def fib20_ric():
+    for i in range(21):
+        print(ric_fib(i))
+fib20_ric()
 
 #esercizio 9
+import timeit
+def measure_time(function):
+    def wrapper(*args, **kwargs):
+        start_time = timeit.default_timer()
+        result = function(*args, **kwargs)
+        end_time = timeit.default_timer()
+        execution_time = end_time - start_time
+        print("This function took {:.6f} seconds to run.".format(execution_time))
+        return result
+    return wrapper
 
+@measure_time
+def fib20_ric():
+    for i in range(21):
+        print(ric_fib(i))
+@measure_time
+def fib20_it():
+    fib=[1, 1]
+    for i in range(2, 21):
+        fib.append(fib[i-1]+fib[i-2])
+    print(fib)
+
+fib20_ric()
+fib20_it()
 
 #esercizio 10
 class polygon:
