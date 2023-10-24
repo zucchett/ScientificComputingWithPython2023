@@ -81,3 +81,45 @@ for i in range(21):
 
 #esercizio 9
 
+
+#esercizio 10
+class polygon:
+    lati=()
+
+    def __init__(self, parti):
+        if len(parti)>2:
+            self.lati = tuple(parti)
+        else:
+            print("Error! I need at least 3 sides for a polygon.")
+    
+    def perimeter(self):
+        p=0
+        for i in range(len(self.lati)):
+            p=p+self.lati[i]
+        return p
+
+    def getOrderedSides(self, order):
+        return sorted(self.lati, reverse=not(order))
+
+prova=(6, 4, 8)
+tri = polygon(prova)
+print(tri.perimeter())
+print(tri.getOrderedSides(False))
+
+#esercizio 11
+class rectangle(polygon):
+
+    def __init__(self, sides):
+        if len(sides)==2:
+            self.lati = (sides[0], sides[1], sides[0], sides[1])
+        else:
+            print("Error! I need height and width to make a rectangle.")
+
+    def area(self):
+        return (self.lati[0]*self.lati[1])
+
+test = (2, 5)
+rett = rectangle(test)
+print(rett.perimeter())
+print(rett.getOrderedSides(False))
+print(rett.area())
