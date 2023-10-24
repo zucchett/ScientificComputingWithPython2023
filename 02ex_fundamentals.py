@@ -133,6 +133,7 @@ class Rectangle (Polygon):
         super().__init__([length, width, length, width])
     def area(self):
         return self.t[0]*self.t[1] 
+    
 #testing the class
 rectangle = Rectangle(4, 5) 
 print("Side lengths of the Rectangle:", rectangle.getSideLengths())
