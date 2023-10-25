@@ -4,7 +4,7 @@ import sys
 import math
 
 #esercizio 1
-print("Esercizio 1")
+print("Excercise 1")
 
 i = 1
 lista = []
@@ -27,14 +27,14 @@ print(tupla)
 print("")
 
 #esercizio 2
-print("Esercizio 2")
+print("Exercise 2")
 
 print("x = ", sys.argv[2], "y = ", sys.argv[1])
 print("")
 
 
 #esercizio 3
-print("Esercizio 3")
+print("Exercise 3")
 
 u = (3, 0)
 v = (0, 4)
@@ -46,12 +46,12 @@ dist = math.sqrt(diff1**2 + diff2**2)
 #oppure si può usare direttamente la funzione dist() della librearia math
 #dist2 = math.dist(u,v)
 
-print("Distanza euclidiana tra i punti : ", u, 'e ', v, '= ', dist)
+print("Euclidean distance between the two point : ", u, 'and ', v, '= ', dist)
 print("")
 
 
 #esercizio 4
-print("Esercizio 4")
+print("Exercise 4")
 
 s1 = "Write a program that prints the numbers from 1 to 100. \
 But for multiples of three print Hello instead of the number and for the multiples of five print World. \
@@ -67,7 +67,7 @@ for i in s1:
         freq[i] += 1
     else:
         freq[i] = 1
-print("Occorrenze lettere prima stringa: ", freq)
+print("Letters frequency of the first string: ", freq)
 print("")
 
 freq = {}
@@ -77,11 +77,11 @@ for i in s2:
     else:
         freq[i] = 1
         
-print("Occorrenze lettere seconda stringa: ", freq)
+print("Letters frequency of the secondo string: ", freq)
 print("")
 
 #esercizio 5
-print("Esercizio 5")
+print("Exercise 5")
 
 l = [36, 45, 58, 3, 74, 96, 64, 45, 31, 10, 24, 19, 33, 86, 99, 18, 63, 70, 85,
  85, 63, 47, 56, 42, 70, 84, 88, 55, 20, 54, 8, 56, 51, 79, 81, 57, 37, 91,
@@ -100,11 +100,11 @@ for i in l:
 for i in freq:
     if freq[i] == 1:
         listaUnici.append(i)
-print('Lista con i valori da una sola occorrenza\n', listaUnici)
+print('List of item with frequence = 1\n', listaUnici)
 print('')
 
 #esercizio 6
-print("Esercizio 6")
+print("Exercise 6")
 
 a = sys.argv[3]
 b = sys.argv[4]
@@ -112,74 +112,61 @@ try:
     a = float(a)
     b = float(b)
 
-    print('La somma  di ', a, ' e ', b, ' è: ', a + b)
+    print('The sum of ', a, ' and ', b, ' is: ', a + b)
 except:
-    print('Impossibile eseguire la somma di ', a, ' e ', b)
+    print('Impossible to do the sum of these items ', a, ' and ', b)
 print('')
 
 #esercizio 7
-print("Esercizio 7")
+print("Exercise 7")
 
 cubes = []
 for i in range(11):
     cubes.append(pow(i, 3))
-print('cubi dei numeri con for loop: ', cubes)
+print('Cubes done with for cycle: ', cubes)
 
 cubes = [x**3 for x in range(11)]
-print('cubi dei numeri con list comprehensions: ', cubes)
+print('Cubes done with list comprehensions: ', cubes)
 print('')
 
 #esercizio 8
-print("Esercizio 8")
+print("Exercise 8")
 
 list = [(i,j) for i in range(3) for j in range(4)]
 print(list)
 print('')
 
 #esercizio 9
-print("Esercizio 9")
-        
-'''
-list = []
-limit = 100
-for x in range(1, limit):
-    for y in range(1, x):
-        if (x-y) % 2 == 1 and math.gcd(x, y) == 1:
-            a = x**2 - y**2
-            b = 2*x*y
-            c = x**2 + y**2
-        if c < limit and (a, b, c) not in list:
-            list.append((a, b, c))
-'''
+print("Exercise 9")
 
 triples = [(a,b,c) for c in range(100) for a in range(c) for b in range(a) if a**2 + b**2 == c**2 and (a-b) % 2 == 1 and math.gcd(a,b) == 1]
 
-print('Terne pitagoriche con c < 100')
+print('Pythagorean triple with c < 100')
 print(triples)
 
 print('')
 
 #esercizio 10
-print("Esercizio 10")
+print("Exercise 10")
 
 vector = [1, 23, 4, 5, 12]
 for i in range(5, len(sys.argv)):
     vector.append(int(sys.argv[i]))
 
-print('vettore: ', vector)
+print('Vector: ', vector)
 somma = sum([x**2 for x in vector])
 normalized = [x/somma for x in vector]
-print('Vettore normalizzato:\n', normalized)
+print('Normalized Vector:', normalized)
 print('')
 
 #esercizio 11
-print("Esercizio 11")
+print("Exercise 11")
 
 fibo = [1, 1]
 for i in range(2, 20):
      fibo.append(fibo[i-1] + fibo[i-2])
 
-print('Sequenza Fibonacci dei primi 20 numeri')
+print('Fibonacci sequence of the first 20 numbers')
 print(fibo)
 
 

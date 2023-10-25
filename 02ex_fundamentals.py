@@ -1,7 +1,7 @@
 import timeit
 
 #esercizio 1
-print('Esericizio 1')
+print('Exercise 1')
 
 def f(alist, n):
     temp = alist.copy()
@@ -10,44 +10,44 @@ def f(alist, n):
     return temp
 
 alist = [1, 2, 3]
-print('Lista modificata: ', f(alist, 5))
-print('Lista originale: ', alist)
+print('Modify list: ', f(alist, 5))
+print('Original list: ', alist)
 print('')
 
 #esercizio 2
-print('Esericizo 2')
+print('Exercise 2')
 ans = list(map(lambda x: x * x, filter(lambda x: x % 2 == 1, range(10))))
 lista = [x**2 for x in range(10) if x % 2 == 1]
-print('Lista data\n', ans)
-print('Lista con list comprehension\n', lista)
+print('Given list\n', ans)
+print('List with list comprehension\n', lista)
 print('')
 
 #esercizio 3
-print('Esericizio 3')
+print('Exercise 3')
 n = 6
 words = ['pippo', 'pluto', 'paperino', 'caprino', 'cagnolino', 'lettino', 'fiumicino', 'tapettino', 'scovolino', 'camino']
 
-print('Risultato atteso')
+print('Attended result: ',words[0], ' ', words[1])
 
-print('Dopo aver chiamato filter: \n', list(filter(lambda words: len(words) < n, words)))
+print('After calling the HOF filter: ', list(filter(lambda words: len(words) < n, words)))
 print('')
 
 #esercizio 4
-print('Esericizio 4')
+print('Exercise 4')
 
 lang = {"Python" : 3, "Java" : '', "Cplusplus" : 'test', "Php" : 0.7}
 print(list(map(lambda lang: len(lang), lang)))
 print('')
 
 #esercizio 5
-print('Esericizio 5')
+print('Exercise 5')
 
 language_scores = [('Python', 97), ('Cplusplus', 81), ('Php', 45), ('Java', 32)]
-print('Lista ordinata\n', sorted(language_scores, key=lambda x: x[0]))
+print('Sorted list\n', sorted(language_scores, key=lambda x: x[0]))
 print('')
 
 #esercizio 6
-print('Esericizio 6')
+print('Exercise 6')
 
 def square(x):
     return x**2
@@ -60,7 +60,7 @@ print('2 power to 6: ', power6(2))
 print('')
 
 #esercizio 7
-print('Esericizio 7')
+print('Exercise 7')
 
 def hello(func):
     def wrapper(x):
@@ -76,7 +76,7 @@ square(5)
 print('')
 
 #esercizio 8
-print('Esericizio 8')
+print('Exercise 8')
 def rec_fib(n):
     if n <= 1:
         return n
@@ -89,7 +89,7 @@ print(fibo)
 print('')
 
 #esercizio 9
-print('Esericizio 9')
+print('Exercise 9')
 
 def iter_fib(n):
     fibo = [1, 1]
@@ -97,20 +97,20 @@ def iter_fib(n):
         fibo.append(fibo[i-1] + fibo[i-2])
     return fibo
 
-#imposto numero di esecuzioni a 10000 perché con il valore di default
-#rec_fibonacci(n) impegnava il computer per troppo tempo
+#I set the number of execution to 10000 because the default number (1 milion) requires
+#too much time to test rec_fib(n)
 loop = 10000
 
 result = timeit.timeit(lambda: iter_fib(20), number=loop)
 result2 = timeit.timeit(lambda: rec_fib(20), number=loop)
-print('Tempo per ', loop, ' esecuzioni di fibonacci iterativo: ', result)
-print('Tempo per ', loop, ' esecuzioni di fibonacci ricorsivo: ', result2)
-print("L'algoritmo iterativo è decsamente il più efficiente! ->", int(result2/result), ' volte più veloce')
+print('Time for ', loop, ' eecution of iterative fibonacci: ', result)
+print('Time for ', loop, ' execution of recursive fibonacci: ', result2)
+print("The iterative algorithm is much more efficient then the recursive one! ->", int(result2/result), ' times faster')
 print('')
 
 
 #esercizio 10
-print('Esericizio 10')
+print('Exercise 10')
 
 class Polygon:
     lati = ()
@@ -118,7 +118,7 @@ class Polygon:
         if len(iLati) >= 3:
             self.lati = iLati
         else:
-            print('Il poligono deve avere almeno 3 lati')
+            print('The polygon must has at least 3 items')
 
     def getDimension(self):
         return len(self.lati)
@@ -144,19 +144,19 @@ class Polygon:
         else:
             return sorted(self.lati, reverse = True)
 
-print('Test classe Polygon')
+print('Test class Polygon')
 
 poly = Polygon((9, 3, 4, 5, 10))
 
-print('Perimetro: ', poly.perimeter())
-print('Lati ordinati: ', poly.getOrderedLength(False))
+print('Perimeter: ', poly.perimeter())
+print('Sorted items: ', poly.getOrderedLength(False))
 poly.setLength(2, 7)
-print('Modifico un lato: ', poly.lati)
-print('Nuovo perimetro: ', poly.perimeter())
+print('We modified one item: ', poly.lati)
+print('New perimeter: ', poly.perimeter())
 print('')
 
 #esercizio 11
-print('Esericizio 11')
+print('Exercise 11')
 
 class Rectangle(Polygon):
 
@@ -164,7 +164,7 @@ class Rectangle(Polygon):
         if len(iLati) == 4:
             self.lati = iLati
         else:
-            print('Bisogna inserire i lati nel seguente formato: a b a b')
+            print('You must follow the following format: a b a b')
 
 
     def area(self):
@@ -172,6 +172,6 @@ class Rectangle(Polygon):
 
 
 rect = Rectangle((5,10, 5, 10))
-print('Test classe Rectangle: base: ', rect.lati[0], ' altezza: ', rect.lati[1])
+print('Test classe Rectangle: base: ', rect.lati[0], ' high: ', rect.lati[1])
 print('Area: ', rect.area())
-print('Perimetro: ', rect.perimeter())
+print('Perimeter: ', rect.perimeter())
