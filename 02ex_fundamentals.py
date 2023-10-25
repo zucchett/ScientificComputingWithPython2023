@@ -14,8 +14,8 @@ def f(alist):
 
 alist = [1, 2, 3]
 ans = f(alist)
-print("the modified list is:", ans)
-print("the original string remains unchanged:", alist)
+print("the modified list is:", ans, "with id", id(ans))
+print("the original string remains unchanged:", alist, "with id", id(alist))
 
 input("\npress ENTER to proceed to the next exercise...")
 
