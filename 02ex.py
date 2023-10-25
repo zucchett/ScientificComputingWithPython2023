@@ -1,4 +1,5 @@
 #esercizio 1
+print("Esercizio 1\n")
 x = 5
 
 def f(alist, other=[]):
@@ -13,10 +14,12 @@ print(ans)
 print(alist) # alist has NOT been changed
 
 #esercizio 2
+print("\nEsercizio 2\n")
 ans = [x * x for x in range(10) if x % 2 == 1]
 print(ans)
 
 #esercizio 3
+print("\nEsercizio 3\n")
 words=["dog", "sidewalk", "universe", "summer", "peloponneso"]
 print(words)
 def countif(aword, n=7):
@@ -30,6 +33,7 @@ for x in short:
     print(x)
 
 #esercizio 4
+print("\nEsercizio 4\n")
 lang = {"Python" : 3, "Java" : '', "Cplusplus" : 'test', "Php" : 0.7}
 def lenkey(chiave):
     return len(chiave)
@@ -38,6 +42,7 @@ for x in lunghezze:
     print(x)
 
 #esercizio 5
+print("\nEsercizio 5\n")
 scores = [('Python', 97), ('Cplusplus', 81), ('Php', 45), ('Java', 32)]
 x = lambda a : a[0]
 chiavi=[]
@@ -47,6 +52,7 @@ chiavi.sort()
 print(chiavi)
 
 #esercizio 6
+print("\nEsercizio 6\n")
 def square(x):
     return x**2
 def cube(y):
@@ -60,6 +66,7 @@ print(cube(k))
 print(atsix(k))
 
 #esercizio 7
+print("\nEsercizio 7\n")
 def hello(func):
     def say_hello():
         print("Hello World!")
@@ -71,6 +78,7 @@ def test():
 test()
 
 #esercizio 8
+print("\nEsercizio 8\n")
 def ric_fib(x):
     if x==0 or x==1:
         return 1
@@ -82,14 +90,15 @@ def fib20_ric():
 fib20_ric()
 
 #esercizio 9
+print("\nEsercizio 9\n")
 import timeit
-def measure_time(function):
+def measure_time(func):
     def wrapper(*args, **kwargs):
-        start_time = timeit.default_timer()
-        result = function(*args, **kwargs)
-        end_time = timeit.default_timer()
-        execution_time = end_time - start_time
-        print("This function took {:.6f} seconds to run.".format(execution_time))
+        Tstart = timeit.default_timer()
+        result = func(*args, **kwargs)
+        Tend = timeit.default_timer()
+        Texec = Tend - Tstart
+        print("This function took {:.6f} seconds to run.".format(Texec))
         return result
     return wrapper
 
@@ -108,6 +117,7 @@ fib20_ric()
 fib20_it()
 
 #esercizio 10
+print("\nEsercizio 10\n")
 class polygon:
     lati=()
 
@@ -132,6 +142,7 @@ print(tri.perimeter())
 print(tri.getOrderedSides(False))
 
 #esercizio 11
+print("\nEsercizio 11\n")
 class rectangle(polygon):
 
     def __init__(self, sides):
