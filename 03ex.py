@@ -56,3 +56,16 @@ print("Highest number:", upper,"\nSmallest fraction:", lower)
 
 #esercizio 4
 print("\nEsercizio 4\n")
+test=1.0
+while 1.0+test!=1.0:
+    test=test/2
+print("Smallest precision:", test)
+
+#esercizio 5
+print("\nEsercizio 5\n")
+
+#esercizio 6
+print("\nEsercizio 6\n")
+
+#esercizio 7
+print("\nEsercizio 7\n")
