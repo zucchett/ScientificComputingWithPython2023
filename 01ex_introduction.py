@@ -1,5 +1,5 @@
 #1)HelloWorld Replacement program
-
+print("Program 1 begins")
 result_list=[]
 for number in range(1,101):
 	if number%3==0 and number%5==0:
@@ -20,8 +20,10 @@ result_tuple=tuple(item.replace("Hello","Python").replace("World","Works") for i
 #print the final tuple
 print(result_tuple)
 
-#2)The Swap
+print("Program 1 ends\n")
 
+#2)The Swap
+print("Program 2 begins")
 # Input values from the command line
 x = input("Enter the value for x: ")
 y = input("Enter the value for y: ")
@@ -35,8 +37,9 @@ x, y = y, x
 # Print the swapped values
 print(f"Swapped values: x = {x}, y = {y}")
 
+print("Program 2 ends\n")
 #3)Computing the distance
-
+print("Program 3 begins")
 #point1 = (2, 3)
 #point2 = (4, 5)
 
@@ -59,9 +62,9 @@ distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 # Print the result
 print(f"The Euclidean distance between ({x1}, {y1}) and ({x2}, {y2}) is {distance:.2f}")
 
-
+print("Program 3 ends\n")
 #4)Counting letters
-
+print("Program 4 begins")
 # Define the input strings
 s1 = "Write a program that prints the numbers from 1 to 100. \
 But for multiples of three print Hello instead of the number and for the multiples of five print World. \
@@ -88,8 +91,9 @@ for char in s2:
 for char, count in char_count.items():
     print(f"'{char}' occurs {count} time(s) in the input strings.")
 
-
+print("Program 4 ends\n")
 #5)Isolating the unique
+print("Program 5 begins")
 # Define the list
 l = [36, 45, 58, 3, 74, 96, 64, 45, 31, 10, 24, 19, 33, 86, 99, 18, 63, 70, 85,
      85, 63, 47, 56, 42, 70, 84, 88, 55, 20, 54, 8, 56, 51, 79, 81, 57, 37, 91,
@@ -113,28 +117,109 @@ for number in l:
 # Count and print the number of unique numbers
 count_of_unique_numbers = len(unique_numbers)
 print(f"Unique numbers: {count_of_unique_numbers}")
-
-#6)
+print("Program 5 ends\n")
+#6) casting
+print("Program 6 begins")
 import sys
+
 
 def add_variables(var1, var2):
     try:
         result = var1 + var2
-        print(f"Result: {result}")
-    except TypeError:
-        print("Cannot perform addition. Make sure the inputs are int or float.")
+        return result
+    except (TypeError, ValueError):
+        return None
 
-if len(sys.argv) != 3:
-    print("Usage: python program.py <var1> <var2>")
-    sys.exit(1)
 
-var1 = sys.argv[1]
-var2 = sys.argv[2]
+if __name__ == "__main__":
+    var1 = input("Enter the first variable: ")
+    var2 = input("Enter the second variable: ")
 
-try:
-    var1 = int(var1) if var1.isdigit() else float(var1)
-    var2 = int(var2) if var2.isdigit() else float(var2)
-except ValueError:
-    pass
+    try:
+        var1 = float(var1)
+    except ValueError:
+        pass
 
-add_variables(var1, var2)
+    try:
+        var2 = float(var2)
+    except ValueError:
+        pass
+
+    result = add_variables(var1, var2)
+
+    if result is not None:
+        print("Result:", result)
+    else:
+        print("Error: Unable to perform addition with the given input variables.")
+print("Program 6 ends\n")
+#7)Cubes
+print("Program 7 begins")
+#a) Using a for loop
+cubes = []
+for x in range(11):
+    cubes.append(x**3)
+print("Using a for loop:",cubes)
+#b) Using a list comprehension:
+cubes = [x**3 for x in range(11)]
+print("Using a list comprehension:",cubes)
+print("Program 7 ends\n")
+#8)List Comprehension
+print("Program 8 begins")
+a = [(i, j) for i in range(3) for j in range(4)]
+print(a)
+print("Program 8 ends\n")
+#9)Nested list comprehension
+print("Program 9 begins")
+triples = [(a, b, c) for c in range(1, 101) for b in range(1, c) for a in range(1, b) if a**2 + b**2 == c**2]
+unique_triples = list(set(triples))
+
+# Filter out Pythagorean triples with a, b, and c that have a greatest common divisor (gcd) greater than 1
+filtered_triples = [(a, b, c) for a, b, c in unique_triples if a % 3 != 0 or b % 4 != 0 or c % 5 != 0]
+
+# Print the unique Pythagorean triples
+for triple in filtered_triples:
+    print(triple)
+print("Program 9 ends\n")
+#10)Normalization of a N-dimensional vector
+print("Program 10 begins")
+import math
+
+def normalize_vector(vector):
+    # Calculate the L2 norm (Euclidean norm) of the vector
+    norm = math.sqrt(sum(x**2 for x in vector))
+
+    # Check for a zero vector to avoid division by zero
+    if norm == 0:
+        return tuple(0 for x in vector)
+
+    # Normalize the vector by dividing each component by the norm
+    normalized_vector = tuple(x / norm for x in vector)
+
+    return normalized_vector
+
+# Example usage
+input_vector = (3, 4)  # A 2-dimensional vector
+normalized_vector = normalize_vector(input_vector)
+print("Original vector:", input_vector)
+print("Normalized vector:", normalized_vector)
+print("L2 Norm of the normalized vector:", math.sqrt(sum(x**2 for x in normalized_vector)))
+print("Program 10 ends\n")
+#11)The Fibonacci sequence
+print("Program 11 begins")
+# Initialize the first two Fibonacci numbers
+fibonacci_sequence = [0, 1]
+
+# Calculate the next 18 Fibonacci numbers using a for loop
+for i in range(2, 20):
+    next_fibonacci = fibonacci_sequence[i - 1] + fibonacci_sequence[i - 2]
+    fibonacci_sequence.append(next_fibonacci)
+
+# Print the first 20 Fibonacci numbers
+print(fibonacci_sequence)
+print("Program 11 ends\n")
+
+
+
+
+
+
