@@ -196,7 +196,11 @@ import math
 print("\n--- --- EXERCISE 7 --- ---")
 print("--- integral ---\n")
 
+def circle(x):
+    return math.sqrt(1-x**2)
 
+def riemann(fun, x, n):
+    return 42
 
 input("\npress ENTER to proceed to the next exercise...")
 
