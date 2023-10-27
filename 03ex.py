@@ -116,6 +116,19 @@ else:
 
 #esercizio 6
 print("\nEsercizio 6\n")
+def f(x):
+    return x*(x-1)
+def der_f(x, delta):
+    return (f(x+delta)-f(x))/(delta)
+n=8
+delta=0.01
+print(f(n))
+for i in range(5):
+    delta=delta/100
+    print(der_f(n, delta))
+'''
+The solution does not match the analitical one both because of the approximation done in the function der_f and because of the limit in the granular precision of the rappresentation of numbers; this is clearly visible by the fact the accuracy is not linear in the delta factor.
+'''
 
 #esercizio 7
 print("\nEsercizio 7\n")
