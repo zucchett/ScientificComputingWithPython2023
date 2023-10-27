@@ -1,14 +1,27 @@
 #esercizio 1
 print("Esercizio 1\n")
+tot=()
 for i in range(1,101):
     if i%3==0 and i%5==0:
         print("HelloWorld")
+        tot=tot+("HelloWorld",)
     elif i%3==0:
         print("Hello")
+        tot=tot+("Hello",)
     elif i%5==0:
         print("World")
+        tot=tot+("World",)
     else:
         print(i)
+        tot=tot+(i,)
+temp=list(tot)
+for j in range(len(temp)):
+    if temp[j]=="Hello":
+        temp[j]="Python"
+    elif temp[j]=="World":
+        temp[j]="Works"
+tot=tuple(temp)
+print("\n", tot)
 
 #esercizio 2
 print("\nEsercizio 2\n")
@@ -76,6 +89,10 @@ try:
 except:
     print("Almeno uno dei due non e' un int...")
 try:
+    if not(isinstance(x, str)):
+        x=str(x)
+    if not(isinstance(y, str)):
+        y=str(y)
     print("Somma:", x+y)
 except:
     print("Sembra che la somma non sia possibile!")
