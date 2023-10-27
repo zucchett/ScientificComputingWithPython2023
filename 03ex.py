@@ -62,7 +62,57 @@ while 1.0+test!=1.0:
 print("Smallest precision:", test)
 
 #esercizio 5
+import math as m
+a, b, c = 4, 16, 1
 print("\nEsercizio 5\n")
+def AsolveEq(a, b, c):
+    deter=b**2 - 4*a*c
+    sol=[]
+    if deter>=0:
+        x1=((-b)+m.sqrt(deter))/(2*a)
+        x2=((-b)-m.sqrt(deter))/(2*a)
+        sol.append(x1)
+        sol.append(x2)
+    return sol
+x=AsolveEq(a, b, c)
+if len(x)==0:
+    print("a)\nThis equation doesn't have real solutions!")
+else:
+    print("a)\nRoots 1:", x[0], "\nRoots 2:", x[1])
+
+def BsolveEq(a, b, c):
+    deter=b**2 - 4*a*c
+    sol=[]
+    if deter>=0:
+        x1=((-b)+m.sqrt(deter))*((-b)-m.sqrt(deter))/(2*a)*((-b)-m.sqrt(deter))
+        x2=((-b)-m.sqrt(deter))*((-b)+m.sqrt(deter))/(2*a)*((-b)+m.sqrt(deter))
+        sol.append(x1)
+        sol.append(x2)
+    return sol
+x=BsolveEq(a, b, c)
+if len(x)==0:
+    print("b)\nThis equation doesn't have real solutions!")
+else:
+    print("b)\nRoots 1:", x[0], "\nRoots 2:", x[1])
+
+'''
+The method in the B section is less accurate i think because by multiplying by the numerator we are increasing the value of the number used to find the roots, which means we are less precise since we are limited by the discrete precision of the computer.
+'''
+
+def CsolveEq(a, b, c):
+    deter=b**2 - 4*a*c
+    sol=[]
+    if deter>=0:
+        x1=((-b)+m.sqrt(deter))/(2*a)
+        x2=((-b)-m.sqrt(deter))/(2*a)
+        sol.append(x1)
+        sol.append(x2)
+    return sol
+x=CsolveEq(a, b, c)
+if len(x)==0:
+    print("a)\nThis equation doesn't have real solutions!")
+else:
+    print("a)\nRoots 1:", x[0], "\nRoots 2:", x[1])
 
 #esercizio 6
 print("\nEsercizio 6\n")
