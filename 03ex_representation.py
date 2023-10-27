@@ -1,4 +1,4 @@
-
+import math
 
 # ################## exercise 1 ##################
 # print("\n--- --- EXERCISE 1 --- ---")
@@ -100,230 +100,103 @@
 
 # input("\npress ENTER to proceed to the next exercise...")
 
-################## exercise 5 ##################
-import math
+# ################## exercise 5 ##################
 
-def solve(a, b, c):
-    delta = math.sqrt(b**2-(4*a*c))
-    s1 = (-b+delta)/(2*a)
-    s2 = (-b-delta)/(2*a)
-    return (s1, s2)
+# def solve(a, b, c):
+#     delta = math.sqrt(b**2-(4*a*c))
+#     s1 = (-b+delta)/(2*a)
+#     s2 = (-b-delta)/(2*a)
+#     return (s1, s2)
 
-def stupidSolve(a, b, c):
-    delta = math.sqrt(b**2-(4*a*c))
-    s1 = ((-b+delta)*(-b-delta))/((2*a)*(-b-delta))
-    s2 = ((-b-delta)*(-b+delta))/((2*a)*(-b+delta))
-    return (s1, s2)
+# def stupidSolve(a, b, c):
+#     delta = math.sqrt(b**2-(4*a*c))
+#     s1 = ((-b+delta)*(-b-delta))/((2*a)*(-b-delta))
+#     s2 = ((-b-delta)*(-b+delta))/((2*a)*(-b+delta))
+#     return (s1, s2)
 
-def betterStupidSolve(a, b, c):
-    delta = math.sqrt(b**2-(4*a*c))
-    s1 = ((-b+delta)/(2*a))*((-b-delta)/(-b-delta))
-    s2 = ((-b-delta)/(2*a))*((-b+delta)/(-b+delta))
-    return (s1, s2)
+# def betterStupidSolve(a, b, c):
+#     delta = math.sqrt(b**2-(4*a*c))
+#     s1 = ((-b+delta)/(2*a))*((-b-delta)/(-b-delta))
+#     s2 = ((-b-delta)/(2*a))*((-b+delta)/(-b+delta))
+#     return (s1, s2)
 
-print("\n--- --- EXERCISE 5 --- ---")
-print("--- quadratic ---\n")
-print("solve quadratic ax^2+bx+c=0")
-try:
-    a = float(input("insert a: "))
-    b = float(input("insert b: "))
-    c = float(input("insert c: "))
+# print("\n--- --- EXERCISE 5 --- ---")
+# print("--- quadratic ---\n")
+# print("solve quadratic ax^2+bx+c=0")
+# try:
+#     a = float(input("insert a: "))
+#     b = float(input("insert b: "))
+#     c = float(input("insert c: "))
 
-    (s1, s2) = solve(a, b, c)
-    print("\nfirst correct solution x1 =", s1)
-    print("second correct soltion x2 =", s2)
+#     (s1, s2) = solve(a, b, c)
+#     print("\nfirst correct solution x1 =", s1)
+#     print("second correct soltion x2 =", s2)
 
-    (s1, s2) = stupidSolve(a, b, c)
-    print("\nfirst dumb solution x1 =", s1)
-    print("second dumb soltion x2 =", s2)
+#     (s1, s2) = stupidSolve(a, b, c)
+#     print("\nfirst dumb solution x1 =", s1)
+#     print("second dumb soltion x2 =", s2)
 
-    print("this is the solution multiplying and dividing by -b*delta")
-    print("the smaller root is accurate, but x2 is different.")
-    print("this is because the result of a large number times (-b*delta)")
-    print("when divided by a small number (2a) has a worse approximation")
-    print("so when the value is big we get a bigger error.")
-    print("we can counter-measure this undesired effect by forcing to")
-    print("evaluate the division separately from the actual result.")
-    print("in this way we get that the result of the division")
-    print("(-b*delta)/(-b*delta) is more precise.")
+#     print("this is the solution multiplying and dividing by -b*delta")
+#     print("the smaller root is accurate, but x2 is different.")
+#     print("this is because the result of a large number times (-b*delta)")
+#     print("when divided by a small number (2a) has a worse approximation")
+#     print("so when the value is big we get a bigger error.")
+#     print("we can counter-measure this undesired effect by forcing to")
+#     print("evaluate the division separately from the actual result.")
+#     print("in this way we get that the result of the division")
+#     print("(-b*delta)/(-b*delta) is more precise.")
 
-    print("\nthe result with the latter method is the following")
+#     print("\nthe result with the latter method is the following")
 
 
-    (s1, s2) = betterStupidSolve(a, b, c)
-    print("first better dumb solution x1 =", s1)
-    print("second better dumb soltion x2 =", s2)
-except:
-    print("please insert valid numbers")
+#     (s1, s2) = betterStupidSolve(a, b, c)
+#     print("first better dumb solution x1 =", s1)
+#     print("second better dumb soltion x2 =", s2)
+# except:
+#     print("please insert valid numbers")
 
-input("\npress ENTER to proceed to the next exercise...")
+# input("\npress ENTER to proceed to the next exercise...")
 
 # ################## exercise 6 ##################
 # print("\n--- --- EXERCISE 6 --- ---")
-# print("--- nested functions ---\n")
+# print("--- derivative ---\n")
 
-# def square(x): return x**2
-# def cube(x): return x**3
-# def sixth(x): return square(cube(x))
+# def fun(x):
+#     return x*(x-1)
 
-# n = input("please insert a number: ")
-# try:
-#     n = int(n)
-#     print(n,"^2=", square(n))
-#     print(n,"^3=", cube(n))
-#     print(n,"^6=", sixth(n))
-# except:
-#     print("this is not a valid number.")
+# def derivate(fun, x, delta):
+#     return (fun(x+delta) - fun(x))/delta
 
-# input("\npress ENTER to proceed to the next exercise...")
+# def analyticalDreivative(x):
+#     return 2*x-1
 
-# ################## exercise 7 ##################
-# print("\n--- --- EXERCISE 7 --- ---")
-# print("--- decorators ---\n")
+# deltas = [10**(-2*x) for x in range(1, 8)]
+# print("f(1)=", fun(1))
+# errors = []
+# for delta in deltas:
+#     print("delta=", delta, "\tf'(1)=", derivate(fun, 1, delta), "\tanalytical f'(1)=", analyticalDreivative(1))
+#     error = derivate(fun, 1, delta) - analyticalDreivative(1)
+#     print("\t\terror=", error)
+#     errors.append(error)
 
-# def hello(function):
-#     def wrapper(n):
-#         print("Hello World!")
-#         return function(n)
-#     return wrapper
-
-# @hello
-# def square(x):
-#     return x**2
-# @hello
-# def cube(x):
-#     return x**3
-# @hello
-# def sixth(x):
-#     return square(cube(x))
-
-# n = input("please insert a number: ")
-# try:
-#     n = int(n)
-#     print(n,"^2=", square(n))
-#     print(n,"^3=", cube(n))
-#     print(n,"^6=", sixth(n))
-# except:
-#     print("this is not a valid number")
+# print("""\nthe two values differ because of two things:
+# first of all, from a mathematical standpoint, the definition
+# of derivative has a limt for delta approaching zero. we are, 
+# however, using a small but finite and non infinitesimal value 
+# for delta, leading to an error. this is the dominant factor
+# for the first terations where the delta is not too small. 
+# then, as we decrease the value of delta, the error becomes 
+# dominated by the fact that we are dividing a small difference 
+# by a really small value, so the floating point representation 
+# starts to break down.""")
 
 # input("\npress ENTER to proceed to the next exercise...")
 
-# ################## exercise 8 ##################
-# print("\n--- --- EXERCISE 8 --- ---")
-# print("--- fibonacci recursive ---\n")
+################## exercise 7 ##################
+print("\n--- --- EXERCISE 7 --- ---")
+print("--- integral ---\n")
 
-# def recFib(n):
-#     if(n==0 or n==1):
-#         return 1
-#     return recFib(n-1) + recFib(n-2)
 
-# fibTo20 = [recFib(x) for x in range(21)]
-# print("the list of fibonacci form fib(0) to fib(20) is: ")
-# print(fibTo20)
-# input("\npress ENTER to proceed to the next exercise...")
 
-# ################## exercise 9 ##################
-# print("\n--- --- EXERCISE 9 --- ---")
-# print("--- fibonacci comparison ---\n")
+input("\npress ENTER to proceed to the next exercise...")
 
-# def recFib(n):
-#     if(n==0 or n==1):
-#         return 1
-#     return recFib(n-1) + recFib(n-2)
-# def iterFib(n):
-#     prev = 0
-#     curr = 1
-#     this = 1
-#     count = 1
-#     while count <= n:
-#         prev, curr = curr, this
-#         this = prev + curr
-#         count+=1
-#     return curr
-
-# if __name__ == '__main__':
-#     import timeit
-#     time_rec = 0
-#     time_iter = 0
-#     print("calculating fibonacci of first 20 integers 100 for times, using the iterative and recursive algorithm...")
-#     for x in range(21):
-#         s1 = "iterFib("+str(x)+")"
-#         s2 = "recFib("+str(x)+")"
-#         time_iter += timeit.timeit(s1, setup="from __main__ import iterFib", number = 100)
-#         time_rec += timeit.timeit(s2, setup="from __main__ import recFib", number = 100)
-#     print("time for recursive algorithm: %.6fs" % time_rec)
-#     print("time for iterative algorithm: %.6fs" % time_iter)
-
-# input("\npress ENTER to proceed to the next exercise...")
-
-# ################## exercise 10 ##################
-# print("\n--- --- EXERCISE 10 --- ---")
-# print("--- class definition ---\n")
-
-# class Polygon:
-#     sides = []
-#     def __init__(self, sides):
-#         if(type(sides) is tuple and len(sides)>=3):
-#             self.sides = list(sides)
-#         else:
-#             raise ValueError("the Polygon class constructor is expected to receive a tuple as input")
-#     def setSides(self, sides):
-#         if(type(sides) is list and len(sides)>=3):
-#             self.sides = sides
-#         else:
-#             raise ValueError("setSides is expected to receive a list")
-    
-#     def getSides(self):
-#         return tuple(self.sides)
-    
-#     def perimeter(self):
-#         return sum(self.sides)
-    
-#     def getOrderedSides(self, increasing = True):
-#         return tuple(sorted(self.sides, reverse = not(increasing)))
-    
-
-# dim_vector = input("please insert the dimensions, comma separated, at least 3: ")
-# dim_vector = dim_vector.replace(" ", "")
-# try:
-#     dim_list = tuple([float(x) for x in dim_vector.split(",")])
-#     p = Polygon(dim_list)
-#     print("output of getSides method:")
-#     print(p.getSides())
-#     print("output of getOrderedSides(True):")
-#     print(p.getOrderedSides(increasing = True))
-#     print("perimeter: ", p.perimeter())
-# except:
-#     print("the input format is not right.")
-
-# input("\npress ENTER to proceed to the next exercise...")
-
-# ################# exercise 11 ##################
-# print("\n--- --- EXERCISE 10 --- ---")
-# print("--- class inheritance ---\n")
-
-# class Rectangle(Polygon):
-#     def __init__(self, sides):
-#         if(len(sides)==2):
-#             sides = sides + sides
-#             super().__init__(sides)
-#         else: raise ValueError("the input is expected to have 2 values: base and height")
-    
-#     def area(self):
-#         return self.sides[0]*self.sides[1]
-    
-# dim_vector = input("please insert the base and height, comma separated: ")
-# dim_vector = dim_vector.replace(" ", "")
-# try:
-#     dim_list = tuple([float(x) for x in dim_vector.split(",")])
-#     p = Rectangle(dim_list)
-#     print("output of getSides method:")
-#     print(p.getSides())
-#     print("output of getOrderedSides(True):")
-#     print(p.getOrderedSides(increasing = True))
-#     print("perimeter:", p.perimeter())
-#     print("area: ", p.area())
-# except:
-#     print("the input format is not right.")
-
-# input("\npress ENTER to exit.")
