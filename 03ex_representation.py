@@ -69,49 +69,94 @@
 # print("the float representation is", out)
 # input("\npress ENTER to proceed to the next exercise...")
 
-################## exercise 3 ##################
-print("\n--- --- EXERCISE 3 --- ---")
-print("--- underflow and overflow ---\n")
+# ################## exercise 3 ##################
+# print("\n--- --- EXERCISE 3 --- ---")
+# print("--- underflow and overflow ---\n")
 
-overflow = float(1)
-half = float()
-underflow = float(1)
-while abs(overflow*2) != float('inf'):
-    overflow = overflow*2
-print("overflow:", overflow)
-print("if we further multiply by 2, we obtain", overflow*2)
+# overflow = float(1)
+# half = float()
+# underflow = float(1)
+# while abs(overflow*2) != float('inf'):
+#     overflow = overflow*2
+# print("overflow:", overflow)
+# print("if we further multiply by 2, we obtain", overflow*2)
 
-while abs(underflow/2) != float(0):
-    underflow = underflow/2
-print("underflow:", underflow)
-print("if we further divide by 2, we obtain", underflow/2)
-
-
-
-
-
-input("\npress ENTER to proceed to the next exercise...")
+# while abs(underflow/2) != float(0):
+#     underflow = underflow/2
+# print("underflow:", underflow)
+# print("if we further divide by 2, we obtain", underflow/2)
+# input("\npress ENTER to proceed to the next exercise...")
 
 # ################## exercise 4 ##################
 # print("\n--- --- EXERCISE 4 --- ---")
-# print("--- map dictionary ---\n")
-# lang = {"Python" : 3, "Java" : '', "Cplusplus" : 'test', "Php" : 0.7}
-# print("the input dictionary is:", lang)
-# keysLength = list(map(lambda x: len(x), lang.keys()))
-# print("the list with the length of the keys is:", keysLength)
+# print("--- float precision ---\n")
+
+# one = float(1)
+# small = float(1)
+# while one != one+small/2:
+#     small = small/2
+# print("the smallest I can add to 1 is", small)
+# print("after that, addition has no effect")
 
 # input("\npress ENTER to proceed to the next exercise...")
 
-# ################## exercise 5 ##################
-# print("\n--- --- EXERCISE 5 --- ---")
-# print("--- lambda functions ---\n")
+################## exercise 5 ##################
+import math
 
-# language_scores = [('Python', 97), ('Cplusplus', 81), ('Php', 45), ('Java', 32)]
-# print("the input list is:", language_scores)
-# language_scores.sort(key = lambda x : x[0])
-# print("the sorted one is:", language_scores)
+def solve(a, b, c):
+    delta = math.sqrt(b**2-(4*a*c))
+    s1 = (-b+delta)/(2*a)
+    s2 = (-b-delta)/(2*a)
+    return (s1, s2)
 
-# input("\npress ENTER to proceed to the next exercise...")
+def stupidSolve(a, b, c):
+    delta = math.sqrt(b**2-(4*a*c))
+    s1 = ((-b+delta)*(-b-delta))/((2*a)*(-b-delta))
+    s2 = ((-b-delta)*(-b+delta))/((2*a)*(-b+delta))
+    return (s1, s2)
+
+def betterStupidSolve(a, b, c):
+    delta = math.sqrt(b**2-(4*a*c))
+    s1 = ((-b+delta)/(2*a))*((-b-delta)/(-b-delta))
+    s2 = ((-b-delta)/(2*a))*((-b+delta)/(-b+delta))
+    return (s1, s2)
+
+print("\n--- --- EXERCISE 5 --- ---")
+print("--- quadratic ---\n")
+print("solve quadratic ax^2+bx+c=0")
+try:
+    a = float(input("insert a: "))
+    b = float(input("insert b: "))
+    c = float(input("insert c: "))
+
+    (s1, s2) = solve(a, b, c)
+    print("\nfirst correct solution x1 =", s1)
+    print("second correct soltion x2 =", s2)
+
+    (s1, s2) = stupidSolve(a, b, c)
+    print("\nfirst dumb solution x1 =", s1)
+    print("second dumb soltion x2 =", s2)
+
+    print("this is the solution multiplying and dividing by -b*delta")
+    print("the smaller root is accurate, but x2 is different.")
+    print("this is because the result of a large number times (-b*delta)")
+    print("when divided by a small number (2a) has a worse approximation")
+    print("so when the value is big we get a bigger error.")
+    print("we can counter-measure this undesired effect by forcing to")
+    print("evaluate the division separately from the actual result.")
+    print("in this way we get that the result of the division")
+    print("(-b*delta)/(-b*delta) is more precise.")
+
+    print("\nthe result with the latter method is the following")
+
+
+    (s1, s2) = betterStupidSolve(a, b, c)
+    print("first better dumb solution x1 =", s1)
+    print("second better dumb soltion x2 =", s2)
+except:
+    print("please insert valid numbers")
+
+input("\npress ENTER to proceed to the next exercise...")
 
 # ################## exercise 6 ##################
 # print("\n--- --- EXERCISE 6 --- ---")
