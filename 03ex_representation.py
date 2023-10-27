@@ -1,4 +1,5 @@
 import math
+import numpy
 
 # ################## exercise 1 ##################
 # print("\n--- --- EXERCISE 1 --- ---")
@@ -199,8 +200,49 @@ print("--- integral ---\n")
 def circle(x):
     return math.sqrt(1-x**2)
 
-def riemann(fun, x, n):
-    return 42
+def riemann(fun, steps, start, end):
+    integral = 0
+    for x in numpy.linspace(start, end, steps):
+        integral += ((end-start)/steps)*(fun(x))
+    return integral
 
-input("\npress ENTER to proceed to the next exercise...")
+print("calculating the integral of a unit radius semicircle")
+steps = 100
+area = riemann(circle, steps, -1, 1)
+print("using", steps, "iterations: ", area)
+print("approximate error:", math.pi/2-area)
+
+if __name__ == '__main__':
+    import timeit
+    time_exec = 0
+    print("\ngradually increasing number of steps to get to 1 second...")
+    print("this can be different based on the CPU and running tasks\n")
+    steps = 1000000
+    while time_exec < 1:
+        launchStr = "riemann(circle,"+str(steps)+", -1, 1)"
+        time_exec = timeit.timeit(launchStr, setup="from __main__ import riemann, circle", number = 1)
+        steps += 100000
+        print(steps, "steps: %.6fs" % time_exec)
+    print("\nwith", steps, "steps, we get:")
+    area = riemann(circle, steps, -1, 1)
+    error = math.pi/2 - area
+    print("calculated area:", area)
+    print("error:", error)
+
+    print("\ntrying to run the code for a minute, we get the following:")
+    print("the result is already calculated, if you want to repeat the")
+    print("calculations, please remove the comment in the code\n")
+
+    # area = riemann(circle, steps*60, -1, 1)
+    # error = math.pi/2 - area
+    # print("calculated area:", area)
+    # print("error:", error)
+
+    print("calculated area: 1.570796314893865")
+    print("error: 1.1901031493621872e-08")
+
+    print("\nthe increase in precision is only marginal.")
+
+input("\npress ENTER to exit...")
+
 
