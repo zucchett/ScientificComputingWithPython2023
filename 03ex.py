@@ -127,8 +127,36 @@ for i in range(5):
     delta=delta/100
     print(der_f(n, delta))
 '''
-The solution does not match the analitical one both because of the approximation done in the function der_f and because of the limit in the granular precision of the rappresentation of numbers; this is clearly visible by the fact the accuracy is not linear in the delta factor.
+The solution does not match the analitical one both because of the approximation done in the function der_f and because of the limit in the granular precision of the rappresentation of numbers; this is visible by the fact the accuracy is not linear in the delta factor.
 '''
 
 #esercizio 7
+import math as m
+import timeit
 print("\nEsercizio 7\n")
+def measure_time(func):
+    def wrapper(*args, **kwargs):
+        Tstart = timeit.default_timer()
+        result = func(*args, **kwargs)
+        Tend = timeit.default_timer()
+        Texec = Tend - Tstart
+        print("This function took {:.6f} seconds to run.".format(Texec))
+        return result
+    return wrapper
+
+@measure_time
+def riemann(N):
+    result=[]
+    for i in range(N):
+        result.append((2/N)*m.sqrt(1-(1-i*2/N)**2))
+    print(sum(result))
+
+N=100
+riemann(N)
+print((1.5707963267945069-1.5691342555492505)/100)
+'''
+With N=100 there is an error of 0.1% on the result (1.5691342555492505)
+To stay under 1 second of computation time I need to use N<=1300000 (i5 8350u)
+1.5707963267945069 is the result after a computation of 63 seconds (N=170000000)
+The difference is negliegeble, in the order of 10^-5, not worth the extra time of wait.
+'''
