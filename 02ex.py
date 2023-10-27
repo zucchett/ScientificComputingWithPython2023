@@ -115,6 +115,9 @@ def fib20_it():
 
 fib20_ric()
 fib20_it()
+'''
+The iterative one is way faster (around 500 times) due to the ricursive one wasting time calculating a lot of time the same istances.
+'''
 
 #esercizio 10
 print("\nEsercizio 10\n")
