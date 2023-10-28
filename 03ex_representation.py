@@ -65,7 +65,7 @@ def exercise2():
     else:
         dec_str = f"1.{int(m,2)}*2^{int(e,2)}"
 
-    print(dec_str)
+    print("Single precision decimal representation: ",dec_str)
 
 
 #Exercise 3
@@ -158,20 +158,21 @@ def exercise6():
     # (a)
     x, delta = 1, 0.01
     df = (f6(x+delta)-f6(x))/delta #f'(1) = 2*1 - 1 = 1
+    dist = (df-1)**2
 
-    print(f"delta: {delta}\t df/dx: {df}")
+    print(f"delta: {delta}\t df/dx: {df}\t accuracy: {dist}")
 
     # (b)
     deltas = [10**-4, 10**-6, 10**-8, 10**-10, 10**-12, 10**-14]
     for d in deltas:
         dfs = ((f6(x+d)-f6(x))/d)
-        print(f"delta: {d}\t df/dx: {dfs}")
+        dist = (dfs-1)**2
+        print(f"delta: {d}\t df/dx: {dfs}\t accuracy: {dist}")
 
     # From an analytical point of view delta has to be infinetisimally small
     # Given that the float representation is finite we can achieve
     # only an approximation of the real value which becomes more accurate
     # as delta gets smaller and smaller
-    # The accuracy increases linearly with delta
 
 
 #Exercise 7
@@ -195,18 +196,18 @@ def riemann_integral(N):
 
 def exercise7():
     I = riemann_integral(100)
-    print(I)
     I_approx = 1.570779632679
 
+    print(f"Using the Riemann definition of integral I' = {I}")
     print("The riemann result differ from I of : ", abs(I-I_approx))
 
-    timer = timeit.timeit("riemann_integral(2699997)",'from __main__ import riemann_integral',number=1)
-    print(f"With N = {2699997} the computation needs {timer} s < 1 s")
+    timer = timeit.timeit("riemann_integral(2500000)",'from __main__ import riemann_integral',number=1)
+    print(f"With N = {2500000} the computation needs {timer} s < 1 s")
 
     # Uncomment to run it for one minute
     #I1 = riemann_integral(60*3000000)
     #print("In running for 1 minute the result differ from I of : ", abs(I1-I_approx))
-    print("There is a gain of five orders of magnitude in running for 1 minute (~1.6685389012449647e-05 difference from I)")
+    print("There is a gain of five orders of magnitude in running it for 1 minute (the difference from I is ~1.6685389012449647e-05")
 
 
 exercise1()

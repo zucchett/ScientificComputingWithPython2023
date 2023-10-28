@@ -3,6 +3,8 @@ import timeit
 
 #Exercise 1
 def exercise1():
+    x = 5
+
     def f(alist,x):
         newlist = copy.copy(alist)
 
@@ -12,11 +14,10 @@ def exercise1():
         return newlist
     
     alist = [1, 2, 3]
-    x = 5
     ans = f(alist,x)
 
-    print(ans)
-    print(alist)
+    print("New list: ",ans)
+    print("Original list: ",alist)
 
 
 #Exercise 2
@@ -36,7 +37,9 @@ def exercise3():
     words = ["My", "name", "is", "Giovanni", "Giorgio"]
     n = 3
     ans = wordsFilter(words,n)
-    print(ans)
+    print("List of words", words)
+    print("Integer n:",n)
+    print("Words shoter than n: ",ans)
 
 
 #Exercise 4
@@ -48,7 +51,8 @@ def lenDict(lang):
 def exercise4():
     lang = {"Python" : 3, "Java" : '', "Cplusplus" : 'test', "Php" : 0.7}
     ans = lenDict(lang)
-    print(ans)
+    print("Dictionary: ",lang)
+    print("Length of the keys: ",ans)
 
 
 #Exercise 5
@@ -75,7 +79,7 @@ def exercise6():
     x = 2
     ans = nestedFunc(x)
 
-    print(ans)
+    print(f"{x}^6 = {ans}")
 
 
 #Exercise 7
@@ -87,8 +91,12 @@ def hello(func):
     return wrapper
 
 @hello
-def exercise7(x):
-    return x**x
+def square(x):
+    return x**2
+
+def exercise7():
+    x = 5
+    square(x)
 
 
 #Exercise 8
@@ -116,7 +124,7 @@ def loopFibonacci(n):
     fibo = [0,1]
 
     for i in range(2,n):
-        fibo.append(fibo[-1] + fibo[i-2])
+        fibo.append(fibo[i-1] + fibo[i-2])
 
 def exercise9():
     time_loop = timeit.timeit(
@@ -127,6 +135,7 @@ def exercise9():
 
     print("Loop fibonacci: ",time_loop)
     print("Recursive fibonacci: ",time_recursive)
+    # The execution time varies at every run but is very similar
 
 
 #Exercise 10
@@ -173,8 +182,8 @@ class Polygon:
 def exercise10():
     poly = Polygon((35,5,10))
 
-    print(poly.perimeter())
-    print(poly.getOrderedSides(increasing=True))
+    print("The perimeter of a polygon is: ",poly.perimeter())
+    print("The ordered sides of a polygon are: ",poly.getOrderedSides(increasing=True))
 
 
 #Exercise 11
@@ -189,8 +198,8 @@ class Rectangle(Polygon):
 def exercise11():
     rectangle = Rectangle(5,4)
 
-    print(rectangle.perimeter())
-    print(rectangle.area())
+    print("The perimeter of the rectangle is: ",rectangle.perimeter())
+    print("The area of the rectangle is: ", rectangle.area())
 
 
 exercise1()
@@ -199,7 +208,7 @@ exercise3()
 exercise4()
 exercise5()
 exercise6()
-exercise7(5)
+exercise7()
 exercise8()
 exercise9()
 exercise10()

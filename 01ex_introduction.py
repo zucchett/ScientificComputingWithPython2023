@@ -2,7 +2,7 @@ import math
 
 # Exercise 1
 def exercise1():
-    # a
+    # a)
     result = ["HelloWorld" if x % 3 == 0 and x % 5 == 0
               else "Hello" if x % 3 == 0
               else "World" if x % 5 == 0
@@ -10,7 +10,7 @@ def exercise1():
 
     print(result)
 
-    # b
+    # b)
     tuple_result = tuple(["Python" if str == 'Hello'
                      else "Works" if str == 'World'
                      else str for str in result])
@@ -36,7 +36,7 @@ def exercise3():
 
     dist = math.sqrt((u[0]-v[0])**2 + (u[1]-v[1])**2)
 
-    print(dist)
+    print(f"The Euclidean distance between {u} and {v} is {dist}")
 
 
 # Exercise 4
@@ -57,8 +57,8 @@ For numbers which are multiples of both three and five print HelloWorld."
     for char in s2:
         count2[char] = s2.count(char)
 
-    print(count1)
-    print(count2)
+    print("Counter for s1:\n",count1)
+    print("Counter for s2:\n",count2)
 
 
 # Exercise 5
@@ -70,25 +70,15 @@ def exercise5():
 
     unique_list = [x for x in l if l.count(x) == 1]
 
-    print(unique_list)
-    print(len(unique_list))
+    print("The unique numbers in the list are:\n",unique_list)
+    print(f"And there is {len(unique_list)} of them.")
 
-    # Exploiting only python sets
-    unique_set = set()
-    non_unique_set = set()
+    # Exploiting only python dictionaries
+    unique_dict = {num: l.count(num) for num in l if l.count(num) == 1}
 
-    for i in l:
-        if i in non_unique_set:
-            continue
-
-        if i in unique_set:
-            unique_set.remove(i)
-            non_unique_set.add(i)
-        else:
-            unique_set.add(i)
-
-    print(unique_set)
-    print(len(unique_set))
+    print("Exployting only Python dictionaries")
+    print("The unique numbers in the list are:\n",unique_dict.keys())
+    print(f"And there is {len(unique_dict)} of them.")
 
 
 # Exercise 6
@@ -109,14 +99,14 @@ def exercise6():
 
 # Exercise 7
 def exercise7():
-    # a
+    # a)
     for_cubes = []
     for i in range(0,11):
         for_cubes.append(i)
 
     print(for_cubes)
 
-    # b
+    # b)
     comp_cubes = [x for x in range(0,11)]
     print(comp_cubes)
 
@@ -155,6 +145,7 @@ def exercise11():
         fibo.append(fibo[i-1] + fibo[i-2])
 
     print(fibo)
+
 
 exercise1()
 exercise2()
