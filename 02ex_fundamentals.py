@@ -1,3 +1,5 @@
+#author Federico Pilotto 2107076
+
 import timeit
 
 #esercizio 1
