@@ -43,7 +43,7 @@ diff1 = v[0] - u[0]
 diff2 = v[1] - u[1]
 dist = math.sqrt(diff1**2 + diff2**2)
 
-#oppure si può usare direttamente la funzione dist() della librearia math
+#you can use directly the function dist() of the math library
 #dist2 = math.dist(u,v)
 
 print("Euclidean distance between the two point : ", u, 'and ', v, '= ', dist)
