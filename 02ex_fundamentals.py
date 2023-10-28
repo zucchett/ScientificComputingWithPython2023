@@ -25,7 +25,7 @@ print('')
 #esercizio 3
 print('Exercise 3')
 n = 6
-words = ['pippo', 'pluto', 'paperino', 'caprino', 'cagnolino', 'lettino', 'fiumicino', 'tapettino', 'scovolino', 'camino']
+words = ['pippo', 'pluto', 'paperino', 'caprino', 'cagnolino', 'lettino', 'fiumicino', 'tapettino', 'camino']
 
 print('Attended result: ',words[0], ' ', words[1])
 
