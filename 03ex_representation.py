@@ -45,6 +45,19 @@ input("\npress ENTER to proceed to the next exercise...")
 print("\n--- --- EXERCISE 2 --- ---")
 print("--- single precision float ---\n")
 
+def floatConverter(binString):
+    sign = 0
+    if(binString[0] == '0'):
+        sign = +1
+    else:
+        sign = -1
+    exp = int(binString[1:9], 2) - 127
+    mantissa = 1
+    for i in range(9, 32):
+        if(binString[i] == '1'):
+            mantissa += 1/(2**(i-8))
+    return sign*mantissa*(2**exp), sign, exp, mantissa
+
 print("please enter a 32-bit binary string")
 theString = input()
 if(len(theString) != 32):
@@ -53,21 +66,12 @@ if(len(theString) != 32):
     theString = theString.ljust(32, '0')
     print("the resulting string is")
     print(theString)
-sign = 0
-if(theString[0] == '0'):
-    sign = +1
-else:
-    sign = -1
-print("sign=", sign)
-exp = int(theString[1:9], 2) - 127
-print("exponent=", exp)
-mantissa = 1
-for i in range(9, 32):
-    if(theString[i] == '1'):
-        mantissa += 1/(2**(i-8))
-print("mantissa=", mantissa)
-out = sign*mantissa*(2**exp)
-print("the float representation is", out)
+
+converted, sign, exp, mantissa = floatConverter(theString)
+print("\nthe sign is:", sign)
+print("the exponent is:", exp)
+print("the mantissa is:", mantissa)
+print("the float representation is", converted)
 input("\npress ENTER to proceed to the next exercise...")
 
 ################## exercise 3 ##################
@@ -104,22 +108,28 @@ input("\npress ENTER to proceed to the next exercise...")
 ################## exercise 5 ##################
 
 def solve(a, b, c):
-    delta = math.sqrt(b**2-(4*a*c))
-    s1 = (-b+delta)/(2*a)
-    s2 = (-b-delta)/(2*a)
-    return (s1, s2)
+    try:
+        delta = math.sqrt(b**2-(4*a*c))
+        s1 = (-b+delta)/(2*a)
+        s2 = (-b-delta)/(2*a)
+        return (s1, s2)
+    except: print("complex solutions")
 
-def stupidSolve(a, b, c):
-    delta = math.sqrt(b**2-(4*a*c))
-    s1 = ((-b+delta)*(-b-delta))/((2*a)*(-b-delta))
-    s2 = ((-b-delta)*(-b+delta))/((2*a)*(-b+delta))
-    return (s1, s2)
+def dumbSolve(a, b, c):
+    try:
+        delta = math.sqrt(b**2-(4*a*c))
+        s1 = ((-b+delta)*(-b-delta))/((2*a)*(-b-delta))
+        s2 = ((-b-delta)*(-b+delta))/((2*a)*(-b+delta))
+        return (s1, s2)
+    except: print("complex solutions")
 
-def betterStupidSolve(a, b, c):
-    delta = math.sqrt(b**2-(4*a*c))
-    s1 = ((-b+delta)/(2*a))*((-b-delta)/(-b-delta))
-    s2 = ((-b-delta)/(2*a))*((-b+delta)/(-b+delta))
-    return (s1, s2)
+def betterDumbSolve(a, b, c):
+    try:
+        delta = math.sqrt(b**2-(4*a*c))
+        s1 = ((-b+delta)/(2*a))*((-b-delta)/(-b-delta))
+        s2 = ((-b-delta)/(2*a))*((-b+delta)/(-b+delta))
+        return (s1, s2)
+    except: print("complex solutions")
 
 print("\n--- --- EXERCISE 5 --- ---")
 print("--- quadratic ---\n")
@@ -133,7 +143,7 @@ try:
     print("\nfirst correct solution x1 =", s1)
     print("second correct soltion x2 =", s2)
 
-    (s1, s2) = stupidSolve(a, b, c)
+    (s1, s2) = dumbSolve(a, b, c)
     print("\nfirst dumb solution x1 =", s1)
     print("second dumb soltion x2 =", s2)
 
@@ -141,7 +151,8 @@ try:
     print("the smaller root is accurate, but x2 is different.")
     print("this is because the result of a large number times (-b*delta)")
     print("when divided by a small number (2a) has a worse approximation")
-    print("so when the value is big we get a bigger error.")
+    print("because of rounding errors, so when the value stored ")
+    print("is big we get a bigger error.")
     print("we can counter-measure this undesired effect by forcing to")
     print("evaluate the division separately from the actual result.")
     print("in this way we get that the result of the division")
@@ -150,7 +161,7 @@ try:
     print("\nthe result with the latter method is the following")
 
 
-    (s1, s2) = betterStupidSolve(a, b, c)
+    (s1, s2) = betterDumbSolve(a, b, c)
     print("first better dumb solution x1 =", s1)
     print("second better dumb soltion x2 =", s2)
 except:
@@ -241,7 +252,7 @@ if __name__ == '__main__':
     print("calculated area: 1.570796314893865")
     print("error: 1.1901031493621872e-08")
 
-    print("\nthe increase in precision is only marginal.")
+    print("\nthe increase in precision is only marginal wrt the required effort")
 
 input("\npress ENTER to exit...")
 
