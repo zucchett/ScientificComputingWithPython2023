@@ -131,12 +131,12 @@ print('')
 print('Exercise 6')
 
 def f(x):
-    return x*(x+1)
+    return x*(x-1)
 
 def derivate(f, x):
     result = []
-    #f'(x) = 2x + 1
-    analitic = 2*x + 1
+    #f'(x) = 2x - 1
+    analitic = 2*x - 1
 
     for i in range(2, 14, 2):
         delta = 10**-i
@@ -146,10 +146,10 @@ def derivate(f, x):
     return result
 result = derivate(f, 1)
 
-print("Derivate of the function f(x) = x(x + 1) in x = 1 with in analitic method -> x = ", result[len(result)-1], '\n')
+print("Derivate of the function f(x) = x(x - 1) in x = 1 with in analitic method -> x = ", result[len(result)-1], '\n')
 k=0
 for i in range(2, 14, 2):
-    print("Derivate of the function f(x) = x(x + 1) in x = 1 with delta = 10^-",i, " -> x = ", result[k])
+    print("Derivate of the function f(x) = x(x - 1) in x = 1 with delta = 10^-",i, " -> x = ", result[k])
     print("Gap with the analitic result: ", math.fabs(result[k] - result[len(result)-1]), '\n')
     k+=1
 
