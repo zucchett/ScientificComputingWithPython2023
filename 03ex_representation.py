@@ -1,4 +1,4 @@
-print("Exercise 1")
+print("\nExercise 1")
 
 '''
 1. Number representation
@@ -8,31 +8,36 @@ Write a function that converts integer numbers among the bin, dec, and hex repre
 '''
 
 def convert_integer(x):
-	print( bin(x), int(x), hex(x))
+	print( "Binary:",bin(x), ", Decimal:",int(x), "Hexadecimal:",hex(x))
 
 x= 23
 convert_integer(x)
 
-print("Exercise 2")
+
+print("\nExercise 2")
 '''
 2. 32-bit floating point number
 
 Write a function that converts a 32 bit binary string (for example, 110000101011000000000000) into a single precision floating point in decimal representation. Interpret the various bits as sign, fractional part of the mantissa and exponent, according to the IEEE 754 reccommendations.
 
 '''
-
-a =110000101011000000000000
-
+a ="11000000101100000000000000000000"
+print("Binary string",a)
+print("Length of binary string:",len(a))
 def convert_2_float(a):
-	
-	print(float(a))
+	# xfloat = (-1)^s * 1.f * 2^(e-bias)
+	xf = (-1.0)**int(a[0])
+	# compute 1.f = 1 + m(n- 1)/2 + m(n- 2)/4 + ...
+	f1 = 1.0
+	for i in range(9, len(a)-1):
+		f1 = f1 + int(a[i])/(2**(i-8))
+	exp = int(a[1 : 9],2)
+	return xf*f1*2**(exp-127)
 
-	s = 
-	x = pow(-1,s)*(1 +f)*pow(2,e-bias)
 		
-convert_2_float(a)
+print("The float precision value:",convert_2_float(a))
 
-print("Exercise 3")
+print("\nExercise 3")
 '''
 3. Underflow and overflow
 
@@ -41,24 +46,28 @@ Write a program to determine the approximate underflow and overflow limits (with
 Hint: define two variables initialized to 1, and halve/double them for a sufficient amount of times to exceed the under/over-flow limits.
 
 '''
-def 
-	under_limit,over_limit = 1
+#underflow
+x = float(1.0)
+x_prev = float(x)
+i = 0
+while x != 0:
+	x_prev = x
+	x = x * 2**(-i) #halving
+	i = i + 1
+print("Underflow:",x_prev)
 
-	while True:
-		under_value = under_limit /2
-		if under_value ==0.0:
-			break
-		else:
-			under_limit = under_value
+#overflow 
+x = float(1.0)
+x_prev = float(0)
+i = 1
+while x < float('inf'):
+	x_prev = x
+	x = x * 2**(i) #doubling
+	i = i + 1
 
-	while True:
-		over_value = over_limit *2
-		if over_value ==0.0:
-			break
-		else:
-			over_limit = over_value
-	print
-print("Exercise 4")
+print ("Overflow:",x_prev)
+
+print("\nExercise 4")
 
 '''
 4. Machine precision
@@ -70,7 +79,17 @@ Hint: define a new variable by adding an increasingly smaller value and check wh
 '''
 
 
-print("Exercise 5")
+def machine_precision():
+    epsilon = 1.0
+
+    while 1.0 + epsilon != 1.0:
+        epsilon /= 2.0
+
+    return epsilon
+
+print(f"The machine precision is approximately {machine_precision()}")
+
+print("\nExercise 5")
 
 '''
 5. Quadratic solution
@@ -90,8 +109,41 @@ and again find the solution for 𝑎=0.001, 𝑏=1000 and 𝑐=0.001
 (c) write a function that computes the roots of a quadratic equation accurately in all cases
 '''
 
+a = 0.001
+b = 1000
+c = 0.001
 
-print("Exercise 6")
+print("\n a)\n")
+from math import sqrt
+# Compute x1 and x2 with standard fnction
+x1 = (-b - sqrt(b**2 - 4* a*c))/(2*a)
+x2 = (-b + sqrt(b**2 - 4* a*c))/(2*a)
+print("x1:",x1)
+print("x2:",x2)
+
+
+print("\n b)\n")
+x1 = (-b - sqrt(b**2 - 4* a*c))*(-b + sqrt(b**2 - 4* a*c))/(2*a*(-b - sqrt(b**2 - 4* a*c)))
+x2 = (-b + sqrt(b**2 - 4* a*c))*(-b - sqrt(b**2 - 4* a*c))/(2*a*(-b + sqrt(b**2 - 4* a*c)))
+print("x1:",x1)
+print("x2:",x2)
+print("After multiplication, x2 shows  -999999.9999990001 instead of -999999.999999 ")
+
+
+
+print("\n c)\n")
+import numpy
+
+# After importing numpy, the longdouble type allow to make calculation with 128 bit
+a_ext = numpy.longdouble(0.001)
+b_ext = numpy.longdouble(1000)
+c_ext = numpy.longdouble(0.001)
+x1_ext = (-b_ext - sqrt(b_ext**2 - 4* a_ext*c_ext))/(2*a_ext)
+x2_ext = (-b_ext + sqrt(b_ext**2 - 4* a_ext*c_ext))/(2*a_ext)
+print(x1_ext)
+print(x2_ext)
+
+print("\nExercise 6")
 
 '''
 6. The derivative
@@ -111,9 +163,24 @@ with 𝛿=10−2
 (b) Repeat the calculation for 𝛿=10−4,10−6,10−8,10−10,10−12
 and 10−14. How does the accuracy scale with 𝛿?
 '''
+def f(x):
+    return (x*(x-1))
 
+# define function to compute derviate
+def der(x, d):
+	return (f(x+d) - f(x))/d
 
-print("Exercise 7")
+print("\n a)\n")
+x = 1
+d = pow(10,-2)
+print(der(x, d))
+
+print("\n b)\n")
+for i in range(6):
+	d = d*10**(-2)
+	print("When delta: ","{:.2e}".format(d), ", the result is:",der(x, d))
+
+print("\nExercise 7")
 
 '''
 7. Integral of a semicircle
@@ -139,3 +206,44 @@ th slice.
 (b) How much can 𝑁
 be increased if the computation needs to be run in less than a second? What is the gain in running it for 1 minute? Use timeit to measure the time.
 '''
+
+print("\n a)\n")
+N = 100
+I = 0
+for i in range(1, N+1, 1):
+	x = -1 + 2*i/(N) 
+	I = I + 2/N * sqrt (1 - x**2)
+print("I:",I)
+print("Result difference is:", numpy.pi/2-I)
+# the difference is 0.0016620712456461018
+
+print("\n b)\n")
+
+import timeit
+starting_time = timeit.default_timer()
+N = 10**6
+I = 0
+for i in range(1, N+1, 1):
+	x = -1 + 2*i/(N) 
+	I = I + 2/N * sqrt (1 - x**2)
+print("I:",I)
+I1 = I
+
+print("Time difference :", timeit.default_timer() - starting_time, " seconds")
+
+starting_time = timeit.default_timer()
+N = 10**8
+I = 0
+for i in range(1, N+1, 1):
+	x = -1 + 2*i/(N) 
+	I = I + 2/N * sqrt (1 - x**2)
+print("I:",I)
+#trying N=10^8 for the limit to run for 1 min
+print("Time difference :", timeit.default_timer() - starting_time, " seconds")
+
+##################
+
+
+
+
+
