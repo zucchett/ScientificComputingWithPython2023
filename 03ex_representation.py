@@ -103,8 +103,8 @@ def new_square_eq(a, b, c):
     delta = math.sqrt(b**2 - 4*a*c)
     roots = []
     if delta >= 0:
-        roots.append((-1*b + delta) * (-1*b - delta) / (2*a) * (-1*b - delta))
-        roots.append((-1*b - delta) * (-1*b + delta) /(2*a) * (-1*b + delta))
+        roots.append(((-b + delta) * (-b - delta)) / ((2*a) * (-b - delta)))
+        roots.append(((-b - delta) * (-b + delta)) /((2*a) * (-b + delta)))
 
     return roots
 
@@ -199,6 +199,7 @@ N_onesec = N_measure()
 print('The accuracy in % of Riemann integral with N = 100 is: ', (result/(math.pi*0.5))*100)
 print('N can be increased up to: ', N_onesec, ' to keep the running time less then 1 second')
 print('Result after elaborating for 60 seconds: ', time_measure(N_onesec))
+
 '''
 The difference between the two result is almost null, 
 so it does not worth it discretize so much the domain
