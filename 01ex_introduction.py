@@ -25,33 +25,35 @@ print("\n\n1b\n============")
 print(result_tuple)
 
 #Question 2
-import sys
+#import sys
 
-if len(sys.argv) != 3:
-    print("Please provide two values to swap.")
-else:
-    x, y = sys.argv[1], sys.argv[2]
-    print(f"Before swapping: x = {x}, y = {y}")
+#if len(sys.argv) != 3:
+#    print("Please provide two values to swap.")
+#else:
+print("\n2\n============")
+#x, y = sys.argv[1], sys.argv[2]
+x, y = 10, 35
+print(f"Before swapping: x = {x}, y = {y}")
     
-    # Swapping the values without a temporary variable
-    x, y = y, x
-    
-    print(f"After swapping: x = {x}, y = {y}")
+# Swapping the values without a temporary variable
+x, y = y, x
+print(f"After swapping: x = {x}, y = {y}")
 
 #Question 3
 import math
-
+print("\n3\n============")
 point1 = (3, 0)  
 point2 = (0, 4)  
-sum = 0
+total = 0
 
 for i, j in zip(point1, point2):
-    sum += (i-j)**2
-distance = math.sqrt(sum)
+    total += (i-j)**2
+distance = math.sqrt(total)
 
 print(f"The Euclidean distance between {point1} and {point2} is {distance:.2f}")
 
 #Question 4
+print("\n4\n============")
 s1 = "Write a program that prints the numbers from 1 to 100. \
 But for multiples of three print Hello instead of the number and for the multiples of five print World. \
 For numbers which are multiples of both three and five print HelloWorld."
@@ -72,6 +74,7 @@ for sentence in sentences:
     print("\n====================================\n")
 
 #Question 5
+print("\n5\n============")
 sequence = [36, 45, 58, 3, 74, 96, 64, 45, 31, 10, 24, 19, 33, 86, 99, 18, 63, 70, 85,
  85, 63, 47, 56, 42, 70, 84, 88, 55, 20, 54, 8, 56, 51, 79, 81, 57, 37, 91,
  1, 84, 84, 36, 66, 9, 89, 50, 42, 91, 50, 95, 90, 98, 39, 16, 82, 31, 92, 41,
@@ -92,29 +95,33 @@ for i in numbers:
 print(f"The unique numbers are: {unique_numbers}")
 
 #Question 6
-import sys
+#import sys
+print("\n6\n============")
+#if len(sys.argv) != 3:
+#    print("Please provide two variables to add.")
+#else:
+x = 23
+y = 56.43
 
-if len(sys.argv) != 3:
-    print("Please provide two variables to add.")
-else:
+try:
     try:
-        try:
-            var1 = float(sys.argv[1])
-        except:
-            var1 = sys.argv[1]
-        try:
-            var2 = float(sys.argv[2])
-        except:
-            var2 = sys.argv[2]
-                   
-        result = var1 + var2
-        print(f"Result: {result}")
-        
+        var1 = float(x)
     except:
-        print(f"Can't add {type(var1)} and {type(var2)}")
+        var1 = sys.argv[1]
+    try:
+        var2 = float(y)
+    except:
+        var2 = sys.argv[2]
+                  
+    result = var1 + var2
+    print(f"Result: {result}")
+       
+except:
+    print(f"Can't add {type(var1)} and {type(var2)}")
 
 #Question 7
 ##creating cubes using for loop
+print("\n7\n============")
 x = list(range(0,11))
 print("x:", x)
 cubes1 = []
@@ -127,10 +134,12 @@ cubes2 = [i**3 for i in range(0,11)]
 print("Cubes with list comprehensions: ", cubes2)
 
 #Question 8
+print("\n8\n============")
 a = [(i, j) for i in range(3) for j in range(4)]
 print(a)
 
 #Question 9
+print("\n9\n============")
 triplets = set([tuple(sorted((x,y,z))) for z in range(1, 100) for y in range(1, 100) for x in range(1,100) if x**2+y**2==z**2])
 triplets = tuple(triplets)
 print("The Pythagorean triplets are:")
@@ -139,6 +148,7 @@ for i, j in enumerate(triplets):
 
 #Question 10
 import math
+print("\n10\n============")
 
 vector = (3, 7, 5) #test vector
 squared_sum = sum(x ** 2 for x in vector)
@@ -151,7 +161,9 @@ print("Normalized Vector:", normalized_vector)
 print("The sum of elements of normalized vector is:", sum(x**2 for x in normalized_vector))
 
 #Question 11
+print("\n11\n============")
 a, b = 0, 1
+print("fibonacci sequence:")
 print(a, b, sep='\n')
 for i in range(18):
     a, b = b, a+b 
