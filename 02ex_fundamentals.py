@@ -30,19 +30,19 @@ print('Using list comprehension: ', ans2)
 print('\n\n____________ Filter list ____________\n')
 
 
-my_world = ['casa', 'moto', 'albero', 'antenna', 'astronauta', 'gru', 'costituzione', 'voto', 'esame', 'laurea', 'lavoro']
+my_word = ['casa', 'moto', 'albero', 'antenna', 'astronauta', 'gru', 'costituzione', 'voto', 'esame', 'laurea', 'lavoro']
 my_integer = 5
 
-print('The list of words is: ', my_world)
+print('The list of words is: ', my_word)
 print('The integer is: ', my_integer)
 
-def myfunction(the_world, the_integer):
+def myfunction(the_word, the_integer):
     try:
-        final_world = list(filter(lambda x: len(x) < the_integer, the_world));
-        return final_world
+        final_word = list(filter(lambda x: len(x) < the_integer, the_word));
+        return final_word
     except:
         print('Attention! Some of the arguments may be wrong!')
-result = myfunction(my_world, my_integer)
+result = myfunction(my_word, my_integer)
 print('The new list of words whose length is less than', my_integer, 'is: ', result)
 
 
@@ -239,15 +239,16 @@ class Polygon:
             return sorted(self.sides, reverse = True)
         
      
-the_polygon = Polygon([1, 2, 3, 4, 5])
+the_polygon = Polygon([1, 3, 2, 5, 4])
 #the_polygon = Polygon([1,1,-3])  this istance is useful to test the error message during inizialization
 
+print('This is the starting Polygon: 1, 3, 2, 5, 4')
 print('The perimeter of the polygon is ', the_polygon.perimeter())
 print('The ascending sorted sequence of the polygon is ', the_polygon.getOrderedSides(increasing = True))
 print('The descending sorted sequence of the polygon is ', the_polygon.getOrderedSides(increasing = False))
 print('The value of the third side (the count starts from zero) is ', the_polygon.getLength(3))
 the_polygon.setLength(0, 100)
-print('The value of the first side (the count starts from zero) has just been modified to 100 (if there is not any error message fromt the previous step')
+print('The value of the first side (the count starts from zero) has just been modified to 100 (if there is not any error message from the previous step)')
 print('The value of the first side (the count starts for zero) is ', the_polygon.getLength(0))
 
 
@@ -270,5 +271,6 @@ class Rectangle(Polygon):
         return self.sides[0]*self.sides[1]
     
 the_rectangle = Rectangle([2,8,2,8])
+print('This is the starting rectangle: 2, 8, 2, 8')
 print("The rectangle has sides equal to ", the_rectangle.getOrderedSides(increasing = True))
 print("The area of the rectangle is ", the_rectangle.area())
