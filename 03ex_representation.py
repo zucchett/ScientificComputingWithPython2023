@@ -282,4 +282,4 @@ print("The value of the integral obtained with N max is: ", integral_R(maxN_minu
 #The gain in running the function for a minute is that the result given by the function will be much closer to the actual result of the integral.
 
 #End of the exercises: I add an extra input in order to keep the code running for the last exercises.
-input('Press ENTER to close the second set of exercises')
+input('Press ENTER to close the third set of exercises')
