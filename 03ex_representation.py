@@ -306,6 +306,56 @@
     "\n",
     "(b) How much can $N$ be increased if the computation needs to be run in less than a second? What is the gain in running it for 1 minute? Use `timeit` to measure the time."
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1.5691342555492505\n",
+      "1.5707963267948966\n",
+      "1.5707963266264928\n",
+      "1.5707963267948966\n",
+      "The time is about 1 second :  2.5470131999999808\n",
+      "1.5707963267942726\n",
+      "1.5707963267948966\n",
+      "The time is about 1 minute : 141.90151840000004\n"
+     ]
+    }
+   ],
+   "source": [
+    "import math\n",
+    "import timeit\n",
+    "starttime = timeit.default_timer()\n",
+    "def func(N):\n",
+    "    lim_1 = -1  \n",
+    "    lim_2 = 1\n",
+    "    h = (lim_2 - lim_1) / N\n",
+    "    I = 0 \n",
+    "    for k in range(N):\n",
+    "        x = lim_1 + h * k\n",
+    "        y_k = math.sqrt(1-x**2)\n",
+    "        I += h* y_k\n",
+    "    print(I)\n",
+    "    print(math.pi/2)\n",
+    "\n",
+    "# a) The answers is similar but they are different from second float number.\n",
+    "func(100)\n",
+    "\n",
+    "# b) if N = 4600000 the code run in less than a second\n",
+    "starttime1 = timeit.default_timer()\n",
+    "func(4600000)\n",
+    "print(\"The time is about 1 second : \" , timeit.default_timer() - starttime1)\n",
+    "\n",
+    "# c) if N = 280000000 the code run in less than a minute and the answers is similar but they are different from 11th float number.\n",
+    "starttime2 = timeit.default_timer()\n",
+    "func(280000000)\n",
+    "print(\"The time is about 1 minute :\" , timeit.default_timer() - starttime2)"
+   ]
   }
  ],
  "metadata": {
