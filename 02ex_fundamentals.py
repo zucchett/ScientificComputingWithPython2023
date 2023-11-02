@@ -21,12 +21,13 @@ print(ans)
 print(alist) # alist has been changed
 
 
-#%%
+
 ## Exercise 2: List comprehension
 ans_new = [x * x for x in range(10) if x % 2 == 1]
 print(ans_new)
 
-#%%
+
+
 ## Exercise 3: Filter list
 
 def filter_list(liste, n):
@@ -39,7 +40,7 @@ print(list(filter_list(ll,10)))
 print(list(filter_list(ll,30)))
 
 
-#%%
+
 ## Exercise 4: Map dictionaries
 def length_keys(dictionary):
     key_lengths = list(map(len, dictionary.keys()))
@@ -50,7 +51,7 @@ lang = {"Python" : 3, "Java" : '', "Cplusplus" : 'test', "Php" : 0.7}
 print("Here is the list containing the lengths of the keys in the dictionary:", length_keys(lang))
 
 
-#%%
+
 ## Exercise 5: Lambda functions
 def sort_alphabetic(tuples):
     tuples.sort(key = lambda x: x[0])
@@ -61,7 +62,8 @@ language_scores = [('Python', 97), ('Cplusplus', 81), ('Php', 45), ('Java', 32)]
 print("This is the list of tuples sorted alphabetically according to the first element of the tuple")
 sort_alphabetic(language_scores)
 
-#%%
+
+
 ## Exercise 6: Nested functions
 def squares(x):
     x = x**2
@@ -78,7 +80,8 @@ def six_times(x):
 
 print("Here is the output of the function, created by the square and cube function:", six_times(4))
 
-#%%
+
+
 ## Exercise 7: Decorators
     
 def hello(func):
@@ -94,7 +97,7 @@ def square(x):
 
 print("This is the decorated function:", square(4))
 
-#%%
+
 ## Exercise 8: Fibonacci sequence (part 2)
 
 def fibo_seq(x):
@@ -111,7 +114,7 @@ def fibo_seq(x):
 
 fibo_seq(20)
 
-#%% 
+
 ## Exercise 9: Fibonacci sequence (part 3)
 
 ## This is the function from 01ex:
@@ -130,7 +133,7 @@ print("The time taken for the recursive function: ", timeit.timeit(lambda:fibo_s
 ## The non-recursive function is 3.86 - 2.4 = 1.46 units faster than the recursive function.
 
 
-#%%
+
 ## Exercise 10: Class definition
 
 class polygon:
@@ -165,7 +168,8 @@ a = polygon((5, 0, 1))
 print("This is the perimeter of instance a:", a.perimeter())
 print("This is the sides of instance a arranged in increasing order:", a.getOrderedSides())
 
-#%%
+
+
 ## Exercise 11: Class inheritance
 class rectangle(polygon):
     
