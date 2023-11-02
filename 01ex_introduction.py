@@ -15,7 +15,7 @@ for i in range(1,101):
     #more restrictive condition (find numbers which are multiples of both three and five)
     if(i%3==0 and i%5==0): 
         print("Hello world")
-        tupla = tupla + ("HelloWorld",)
+        tupla = tupla + ("PythonWorks",)
     #find numbers which are multiples of three
     elif(i%3==0): 
         print("Hello")
@@ -121,7 +121,7 @@ try:
     sum = x+y
     print(sum,"\n")
 except:
-    print("Invalid values","\n")
+    print("Invalid values, you have to re-insert the number in the command line!","\n")
 
 #Cubes
 print("*****************************************")
