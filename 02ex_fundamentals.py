@@ -108,7 +108,7 @@ def hello(func):
 
 @hello
 def square(x):
-    print(x**2)
+    print("Square of the number: ",x**2)
     return x**2
 
 a = 4 #test the implemented function by computing this numer square
@@ -124,7 +124,7 @@ print("*****************************************")
 
 
 def rec_fib(x):
-    if(x==0): return 0
+    if(x==0): return 1
     if(x==1): return 1
     return rec_fib(x-1)+rec_fib(x-2)
 
@@ -170,11 +170,12 @@ n = 20
 loop = 100
 
 result = timeit.timeit('loopFibonacci(20)', globals=globals(), number=loop)
-print("loopFibonacci: ",result/loop)
+print("time for loopFibonacci (in seconds): ",result/loop)
 result = timeit.timeit('recursiveFibonacci(20)', globals=globals(), number=loop)
-print("recursiveFibonacci: ",result/loop)
+print("time for recursiveFibonacci (in seconds): ",result/loop)
 print("\n")
-
+#the best implementation is the iterative one that consent to achieve the result with way less of time
+#compared with the recoursive one
 
 #Class definition
 print("*****************************************")
@@ -213,8 +214,8 @@ class polygon:
 #test of the class and methods
 poly = polygon([1,2,3])
 per = poly.perimeter()
-print(per)
-print(poly.getOrderedSides(False))
+print("Perimeter: ",per)
+print("Length of the sides: ",poly.getOrderedSides(False))
 
 print("\n")
 
