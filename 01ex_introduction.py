@@ -82,11 +82,12 @@ print()
 print("Test string s2:")
 counting_letters(s2)
 
+
+
 ###
 ## Exercise 5: Isolate the unique
 
 def isolate_unique(l):
-    #seen = set()
     l.sort()
     uniques = []
     dupes = []
@@ -115,6 +116,8 @@ ll = [36, 45, 58, 3, 74, 96, 64, 45, 31, 10, 24, 19, 33, 86, 99, 18, 63, 70, 85,
 
 isolate_unique(ll)
 
+
+
 ###
 ## Exercise 6: Casting
 
@@ -130,6 +133,9 @@ vare2 = input("Second variable: ")
 
 casting(vare1,vare2)
 
+
+
+
 ###
 ## Exercise 7: Cubes
 # a - Foor loop
@@ -138,10 +144,11 @@ for i in range(11):
     cubes1.append(i**3)
 print(cubes1)
 
-
 # b - List comprehension
 cubes2 = [x**3 for x in range(11)]
 print(cubes2)
+
+
 
 ###
 ## Exercise 8: List comprehension
@@ -149,11 +156,15 @@ print(cubes2)
 b = [(x, y) for x in range(3) for y in range(4)]
 print(b)
 
+
+
 ###
 ## Exercise 9: Nested list comprehension
 
 pythagorean = tuple((a, b, c) for a in range(1,100) for b in range(a,100) for c in range(1,100) if a**2 + b**2 == c**2)
 print(pythagorean)
+
+
 
 ###
 ## Exercise 10: Normalization of an N-dimensional vector
@@ -170,6 +181,8 @@ ll = (90,7,32)
 
 normvector(ll)
 
+
+
 ###
 ## Exercise 11: Fibonacci sequence
 def loop_fibo(n):
@@ -180,11 +193,5 @@ def loop_fibo(n):
     print("The first 20 elements of the Fibonacci sequence are:", fibonacci_start)
 
 loop_fibo(20)
-    
-        
-
-
-
-
 
 
