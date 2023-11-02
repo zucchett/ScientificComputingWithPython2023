@@ -255,7 +255,7 @@ def integral_R(N):
         value += h*((1-((-1+(i-1)*h))**2)**(1/2))
     return value
 result = integral_R(100)
-print(result)
+print("The result obtained with N=100 is: ", result)
 #It is smaller than the accurate value because N is too small (its value should be much higher).
 #DISCLAIMER: the value of number is set to 1 and therefore the computation is done only once. This means that the values we obtain 
 #are not very reliable as if we compute the code again we could get similar but still different. If we set a higher value of number 
@@ -271,13 +271,14 @@ while(measure_exec_time(max_N_sec)<1):
     else:
         max_N_sec += 100
 print("The maximum N achieved under a second is: ", max_N_sec)
+print("The value of the integral obtained with the maximum N obtained in a second is: ", integral_R(max_N_sec))
 max_N_min = 1
 while(measure_exec_time(max_N_min)<60):
     print(max_N_min)
     max_N_min += 1000000
 maxN_minute = max_N_min-1000000
 print("The maximum N achieved in a minute is: ", maxN_minute)
-print("The value of the integral obtained with N max is: ", integral_R(maxN_minute))
+print("The value of the integral obtained with the maximum N obtained in a second is: ", integral_R(maxN_minute))
 
 #The gain in running the function for a minute is that the result given by the function will be much closer to the actual result of the integral.
 
