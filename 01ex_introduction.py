@@ -1,4 +1,4 @@
-#AGGIONRAMENTO DI SABATO PER CAPIRE
+
 #******* 'The HelloWorld Replacement' *********
 print('\n ___________The HelloWorld Replacement___________ \n')
 
