@@ -59,6 +59,7 @@ def converter(inp, notation_out):
 #zeroes in front of the string passed if this has less than 32 characters but it does not deal with input different than a binary
 #string. As usual, if we were to take into account also for different inputs (not requested) we could have used an if statement
 #or a try/except construct.
+print("\n \n \n ")
 
 def floater(string):
     in_len = len(string)
@@ -96,6 +97,7 @@ print(b)
 #This code finds the maximum and minimum number achievable by my computer. The while loops are designed so that they show the current 
 #numbers they are working on, whereas the last print() function just shows the maximum and minimum numbers obtainable plus the respective 
 #number of iterations.
+print("\n \n \n ")
 
 import decimal
 #By executing the code I find that the under/over-flow limit.
@@ -120,23 +122,34 @@ sci_over = decimal.Decimal(over)
 print("Iterations for the overflow: ", counter_ov,". Maximum number achieved: ", format(sci_over, '2.5e'),".\nIterations for the underflow: ", counter_un, "Minimum number achieved: ", under, ".")
 
 #Exercise 4
-#TO BE COMMENTED
+#Exercise on machine precision. There are 2 methods presented, however the second one is more reliable and accurate so the first  
+#is presented as just comments.
+print("\n \n \n ")
 
-x = 0
-lit = 1
-counter = 0
-for i in range(2000):
-    y = x
-    lit = lit/2
-    x += lit
-    counter += 1
-    print(counter, x, y, lit)
-    if(y==x):
-        print("Maximum precision: ", lit)
-        break
+#x = 0
+#lit = 1
+#counter = 0
+#for i in range(2000):
+#    y = x
+#    lit = lit/2
+#    x += lit
+#    counter += 1
+#    print(counter, x, y, lit)
+#    if(y==x):
+#        print("Maximum precision: ", lit)
+#        break
+
+
+#Second method (more reliable) to obtain machine precision
+x = 1
+while(x+1 != 1):
+    x = x/2
+#x*2 corresponds to the number which is too small to have an effect in the sum with 1
+print("Maximum precision: ", x*2)
 
 #Exercise 5
 #Exercise on the quadratic formula.
+print("\n \n \n ")
 
 import math
 
@@ -181,7 +194,8 @@ roots3(a,b,c)
 #computed to find the exact value. The float expressed as a fraction makes it possible to determine the accurate number
 
 #Exercise 6
-#TO BE COMMENTED
+#Exercise on the derivative
+print("\n \n \n ")
 
 def function1(num_1):
     if(type(num_1)==int)or(type(num_1)==float):
@@ -230,9 +244,10 @@ print("Accuracy with delta=", delta5, " : ", acc5, "%")
 print("Accuracy with delta=", delta6, " : ", acc6, "%")
 
 #Exercise 7
-#
+#Exercise on the value of the integral.
+print("\n \n \n ")
 
-import timeit, time
+import timeit
 def integral_R(N):
     value = 0
     h = 2/N
@@ -241,18 +256,12 @@ def integral_R(N):
     return value
 result = integral_R(100)
 print(result)
-#It is smaller than the accurate value
-timer = timeit.default_timer()
-print(timer)
-res = integral_R(777950)
-timer_end = timeit.default_timer()
-tot_time = (timer_end-timer)
-if(tot_time>1):
-    print("N too large: time exceeded.")
-else:
-    print("Time passed = ", tot_time)
+#It is smaller than the accurate value because N is too small (its value should be much higher).
+#DISCLAIMER: the value of number is set to 1 and therefore the computation is done only once. This means that the values we obtain 
+#are not very reliable as if we compute the code again we could get similar but still different. If we set a higher value of number 
+#then we obtain a much more reliable result, however the number of N obtained is much littler.
 def measure_exec_time(N):
-    return timeit.timeit(lambda: integral_R(N), number=10)
+    return timeit.timeit(lambda: integral_R(N), number=1)
 max_N_sec = 1
 while(measure_exec_time(max_N_sec)<1):
     t = max_N_sec *2
@@ -260,18 +269,17 @@ while(measure_exec_time(max_N_sec)<1):
     if(measure_exec_time(t)<1):
         max_N_sec *= 2
     else:
-        max_N_sec += 1
-print(max_N_sec)
-max_N_min = 0
-start = timeit.default_timer()
-N =1
-while((timeit.default_timer()-start)<60):
-    if (measure_exec_time(N)<1):
-        max_N_min = N
-        N *= 2
-    else:
-        N += 1
+        max_N_sec += 100
+print("The maximum N achieved under a second is: ", max_N_sec)
+max_N_min = 1
+while(measure_exec_time(max_N_min)<60):
     print(max_N_min)
-print(max_N_min)
-gain = max_N_min/max_N_sec
-print(gain)
+    max_N_min += 1000000
+maxN_minute = max_N_min-1000000
+print("The maximum N achieved in a minute is: ", maxN_minute)
+print("The value of the integral obtained with N max is: ", integral_R(maxN_minute))
+
+#The gain in running the function for a minute is that the result given by the function will be much closer to the actual result of the integral.
+
+#End of the exercises: I add an extra input in order to keep the code running for the last exercises.
+input('Press ENTER to close the second set of exercises')

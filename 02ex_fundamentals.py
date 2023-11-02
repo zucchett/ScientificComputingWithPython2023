@@ -129,6 +129,12 @@ def rec_Fib(num):
     else:
         return rec_Fib(num-1)+rec_Fib(num-2)
     
+def measure_exec_time_rec(N):
+    return timeit.timeit(lambda: rec_Fib(N), number=1)
+def measure_exec_time_iter(N):
+    return timeit.timeit(lambda: iter_Fib(N), number=1)
+print("Time taken for computing the first 20 numbers with the iterative method: ", measure_exec_time_iter(20)*(10**3), " ms")
+print("Time taken for computing the first 20 numbers with the recursive method: ", measure_exec_time_rec(20)*(10**3), " ms")
 #The % method doesn't work when giving the file by command line.
 #x = %timeit iter_Fib(20)
 #y = %timeit rec_Fib(20)
