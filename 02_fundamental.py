@@ -150,3 +150,61 @@ print(f"for-based Fibonacci Execution Time: {for_loop_time:.6f} seconds")
 print(f"while-based Fibonacci Execution Time: {While_loop_time:.6f} seconds")
 
 ## The execution time of for and while loops is nearly the same but for recusive function it take more time, therefore for and while loops performs better
+
+
+
+#10\. **Class definition**
+
+class Polygon:
+    def __init__(self,sides):
+        self.sides = sides
+        
+        
+        
+    def get_sides(self):
+        return self.sides
+        
+    def set_sides(self, sides):
+        self.sides = sides
+        
+    def perimeter(self):
+        return sum(self.sides) 
+    
+    def get_ordered_sides(self, increasing=True):
+        ordered_sides = sorted(self.sides)
+        if not increasing:
+            ordered_sides.reverse()
+        return tuple(ordered_sides)
+    
+    
+triangle = Polygon((4, 3, 5))
+
+print(triangle.perimeter())
+print(triangle.get_ordered_sides())
+
+
+##inheritance
+
+
+class Rectangle(Polygon):
+    def __init__(self, length, width):
+        Polygon.__init__(self, 2)
+        self.length = length
+        self.width = width
+        
+        
+    
+    # Implementing the area method that returns the area of the rectangle
+    def area(self):
+        return self.length * self.width
+    # Implementing the perimeter method that returns the perimeter of the rectangle
+    def perimeter(self):
+        return self.length + self.width 
+    
+
+# Creating an instance of the rectangle class and passing the inputs to the constructor
+rectangle = Rectangle(5,3)
+
+# Testing the area method
+print(rectangle.area())
+print(rectangle.perimeter())
