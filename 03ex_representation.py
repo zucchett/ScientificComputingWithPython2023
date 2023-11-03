@@ -42,10 +42,26 @@ bin = int('110000101011000000000000', 2)
 def binaryToFloat(value):  
     return struct.unpack('f', struct.pack('I', value))[0]
 fl1 = binaryToFloat(bin)
-print(f'Decimal equivalent of 110000101011000000000000: {fl1}')
-print("\n")
 
-#AGGIUNGI FUNZIONE COMPLETA
+print(f'Decimal equivalent of 110000101011000000000000: {fl1}')
+
+def conversion(N): 
+    if (len(N)<32):
+        l = 32 - len(N)
+        temp = ""
+        for i in range (0,l):
+            temp = temp + "0"
+        N = temp + N
+    a = int(N[0])       
+    b = int(N[1:9],2)    
+    c = int("1"+N[9:], 2)
+
+    return (-1)**a * c /( 1<<( len(N)-9 - (b-127) ))
+bin = '110000101011000000000000' 
+print(conversion(bin)) 
+
+
+print("\n")
 
 print("*****************************************")
 print("Underflow and overflow")
