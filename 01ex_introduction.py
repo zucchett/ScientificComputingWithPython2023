@@ -1,4 +1,4 @@
-
+# 1. The HelloWorld replacement
 def HelloWorld():
 
     resultList = list()
@@ -26,7 +26,10 @@ def HelloWorld():
 
     print(resultTuple)
 
+# HelloWorld()
 
+
+# 2. The swap
 def TheSwap():
     x = input("x: ")
     y = input("y: ")
@@ -36,7 +39,10 @@ def TheSwap():
     print(f"Old values: x = {y}, y = {x}")
     print(f"Swapped values: x = {x}, y = {y}")
 
+# TheSwap()
 
+
+# 3. Computing the distance
 def ComputeDistance():
     import math
 
@@ -47,7 +53,10 @@ def ComputeDistance():
 
     print(f"Distance: {distance}")
 
+# ComputeDistance()
 
+
+# 4. Counting letters
 def CountingLetters(op):
 
     txt = str()
@@ -76,7 +85,10 @@ def CountingLetters(op):
     for letter, count in result.items():
         print(f"{letter}: {count}")
 
+# CountingLetters(1)
 
+
+# 5. Isolating the unique
 def IsolateTheUnique():
 
     l = [36, 45, 58, 3, 74, 96, 64, 45, 31, 10, 24, 19, 33, 86, 99, 18, 63, 70, 85,
@@ -88,7 +100,10 @@ def IsolateTheUnique():
 
     print(result)
 
+# IsolateTheUnique()
 
+
+# 6. Casting
 def Cast():
 
     a = input("Input [int, float, string]: ")
@@ -104,21 +119,30 @@ def Cast():
         print(
             f"You cannot perform addition with non-number value. error is: {error}")
 
+# Cast()
 
+
+# 7. Cubes
 def Cube(limit):
 
     result = list(pow(i, 3) for i in range(1, limit + 1))
 
     print(result)
 
+# Cube(10)
 
+
+# 8. List comprehension
 def ListComprehension():
 
     a = list((i, j) for i in range(3) for j in range(4))
 
     print(a)
 
+# ListComprehension()
 
+
+# 9. Nested list comprehension
 def NestedListComprehension(limit):
 
     triples = tuple((a, b, c)
@@ -131,7 +155,10 @@ def NestedListComprehension(limit):
 
     print(triples)
 
+# NestedListComprehension(50)
 
+
+# 10. Normalization of a N-dimensional vector
 def Normalization(vector):
     import math
 
@@ -142,7 +169,10 @@ def Normalization(vector):
 
     return normalized
 
+# Normalization((3, 4, 5))
 
+
+# 11. The Fibonacci sequence
 def Fibonacci(limit):
 
     fib = [0, 1]
@@ -152,14 +182,4 @@ def Fibonacci(limit):
 
     print(fib)
 
-# HelloWorld()
-# TheSwap()
-# ComputeDistance()
-# CountingLetters(1)
-# IsolateTheUnique()
-# Cast()
-# Cube(10)
-# ListComprehension()
-# NestedListComprehension(50)
-# Normalization((3, 4, 5))
 # Fibonacci(20)

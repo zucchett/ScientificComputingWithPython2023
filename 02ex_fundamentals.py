@@ -1,5 +1,4 @@
 # 1. Global variables
-
 def f(x, myList=None):
 
     import copy
@@ -13,20 +12,19 @@ def f(x, myList=None):
     return tempList
 
 # myList = [1, 2, 3]
-
 # newList = f(5, myList)
-
 # print(newList)
 # print(myList)
 
-# 1. Global variables ---------------------------
-
-
 # 2. List comprehension
+
+
 def Ans():
     ans = [x * x for x in range(10) if x % 2 == 1]
     print(ans)
     return ans
+
+# Ans()
 
 
 # 3. Filter list
@@ -37,6 +35,8 @@ def Filter(words, n):
     print(newList)
 
     return newList
+
+# Filter(["123", "1234567889", "12", "12345", "1234567", "6"], 3)
 
 
 # 4.Map dictionary
@@ -50,9 +50,10 @@ def MapDictionary():
 
     return keysLenght
 
+# MapDictionary()
+
+
 # 5. Lambda functions
-
-
 def LambdaSort():
 
     language_scores = [('Python', 97), ('Cplusplus', 81),
@@ -69,9 +70,10 @@ def LambdaSort():
     for language, score in language_scores:
         print(f'{language}: {score}')
 
+# LambdaSort()
+
+
 # 6. Nested function
-
-
 def Square(x):
     return x ** 2
 
@@ -89,7 +91,6 @@ def PowSix(x):
 
 
 # 7. Decorators
-
 # Decorator definition
 def hello(func):
     def wrapper(x):
@@ -102,8 +103,7 @@ def hello(func):
 def square(x):
     return x * x
 
-# result = square(5)
-# print(result)
+# print(square(5))
 
 
 # 8. Fibonacci
@@ -136,6 +136,8 @@ def MeasureEfficiency():
 
     print(f"Recursive execution time: {recursiveTime/loop} seconds")
     print(f"Loop-based execution time: {loopTime/loop} seconds")
+
+# MeasureEfficiency()
 
 
 # 10. Class defintion
@@ -192,17 +194,8 @@ class Rectangle(Polygon):
         # print(temp)
 
 
-
-# Ans()
-# Filter(["123", "1234567889", "12", "12345", "1234567", "6"], 3)
-# MapDictionary()
-# LambdaSort()
-# PowSix(2)
-# MeasureEfficiency()
-
 # polygonTest = Polygon((3, 4, 5))
 # print(polygonTest.Perimeter())
 # print(polygonTest.getOrderedSides(True))
-
 # rectTest = Rectangle((8, 4, 8, 4))
 # print(rectTest.Area())
