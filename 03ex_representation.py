@@ -1,4 +1,4 @@
-#These are the solutions of the tasks presented in the first set of exercises, described in the file 02ex_fundamentals.ipynb
+#These are the solutions of the tasks presented in the third set of exercises, described in the file 03ex_representation.ipynb
 
 #Exercise 1
 #Exercise on number conversion. The input is seen as a string and from then it is modeled as requested for the output.
@@ -191,7 +191,7 @@ def roots3(a, b, c):
 
 roots3(a,b,c)
 #In this case, we make use of the function as_integer_ratio(), which returns the float number as a fraction, which is then 
-#computed to find the exact value. The float expressed as a fraction makes it possible to determine the accurate number
+#computed to find the exact value. The float expressed as a fraction makes it possible to determine the accurate number.
 
 #Exercise 6
 #Exercise on the derivative
@@ -257,9 +257,9 @@ def integral_R(N):
 result = integral_R(100)
 print("The result obtained with N=100 is: ", result)
 #It is smaller than the accurate value because N is too small (its value should be much higher).
-#DISCLAIMER: the value of number is set to 1 and therefore the computation is done only once. This means that the values we obtain 
-#are not very reliable as if we compute the code again we could get similar but still different. If we set a higher value of number 
-#then we obtain a much more reliable result, however the number of N obtained is much littler.
+#DISCLAIMER: the value of 'number' is set to 1 and therefore the computation is done only once. This means that the values we obtain 
+#are not very reliable as if we compute the code again we could get similar but still different values. If we set a higher value for 'number' 
+#then we obtain a much more reliable result, however the value of N obtained is much littler.
 def measure_exec_time(N):
     return timeit.timeit(lambda: integral_R(N), number=1)
 max_N_sec = 1
@@ -275,12 +275,17 @@ print("The value of the integral obtained with the maximum N obtained in a secon
 max_N_min = 1
 while(measure_exec_time(max_N_min)<60):
     print(max_N_min)
-    max_N_min += 1000000
-maxN_minute = max_N_min-1000000
+    max_N_min *= 2
+maxN_minute = max_N_min/2
 print("The maximum N achieved in a minute is: ", maxN_minute)
 print("The value of the integral obtained with the maximum N obtained in a second is: ", integral_R(maxN_minute))
-
-#The gain in running the function for a minute is that the result given by the function will be much closer to the actual result of the integral.
+#I also add as a comment that the value I found for the maximum N achievable for which the code runs in under a minute was N=134217728 (as I mentioned before 
+#setting 'number' equal to 1 means not as much reliability. As a matter of fact, there have also been trials where this N resulted in a time higher than a 
+#minute, so a better overall choice would be its half, so N=67108864), where I kept each increment to the double of N (so N could be larger than the number 
+#given as a result but littler than its double), and the value of the integral obtained with such N was I=1.5707963267938208, which corresponds to an error 
+#of e=3.820721516945014e-12.
+#The gain in running the function for a minute is that the result given by the function will be much closer to the actual result of the integral, thus leading 
+#to a much smaller error when computing the difference between the result of the code and the actual value of the integral.
 
 #End of the exercises: I add an extra input in order to keep the code running for the last exercises.
 input('Press ENTER to close the third set of exercises')
