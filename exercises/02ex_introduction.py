@@ -31,7 +31,6 @@ def filter_words_by_length(word_list, n):
     return filtered_words
 
 
-# Example usage with the provided words_list:
 words_list = ["python", "university", "cappuccino", "tea", "pizza"]
 n = 6
 result = filter_words_by_length(words_list, n)
@@ -46,7 +45,6 @@ def map_lengths_of_keys(dictionary):
     return key_lengths
 
 
-# Example usage with the provided dictionary:
 lang = {"Python": 3, "Java": '', "Cplusplus": 'test', "Php": 0.7}
 result = map_lengths_of_keys(lang)
 print(result)
@@ -56,10 +54,8 @@ print('5. LAMBDA FUNCTIONS')
 
 language_scores = [('Python', 97), ('Cplusplus', 81), ('Php', 45), ('Java', 32)]
 
-# Sort the list based on the alphabetical order of the first element of each tuple
 language_scores.sort(key=lambda x: x[0])
 
-# Print the sorted list
 for language, score in language_scores:
     print(language, score)
 

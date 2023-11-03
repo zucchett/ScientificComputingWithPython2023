@@ -128,7 +128,6 @@ c = 0.001
 
 solutions_reexpressed = quadratic_solver_reexpressed(a, b, c)
 print("Solutions (Re-expressed formula):", solutions_reexpressed)
-# Compute the solutions using the original formula for comparison
 solutions_original = quadratic_solver(a, b, c)
 print("Solutions (Original formula):", solutions_original)
 
@@ -174,10 +173,8 @@ delta = 1e-2
 
 numerical_derivative = (f(x + delta) - f(x)) / delta
 
-# Analytical derivative of f(x) at x = 1
 analytical_derivative = 2 * x - 1
 
-# Print both results
 print("Numerical Derivative:", numerical_derivative)
 print("Analytical Derivative:", analytical_derivative)
 
@@ -196,16 +193,12 @@ def analytical_derivative(x):
     return 2 * x - 1
 
 
-# Point where we want to calculate the derivative
 x = 1.0
 
-# List of delta values to test
 delta_values = [1e-4, 1e-6, 1e-8, 1e-10, 1e-12, 1e-14]
 
-# Analytical derivative at x = 1
 analytical_result = analytical_derivative(x)
 
-# Calculate and compare numerical derivatives for different delta values
 for delta in delta_values:
     numerical_result = numerical_derivative(x, delta)
     accuracy = abs(analytical_result - numerical_result)
@@ -228,9 +221,7 @@ for k in range(N):
     y_k = semicircle(x_k)
     integral += h * y_k
 
-# True value of the integral
 true_value = math.pi / 2
 
-# Compare the results
 print("Approximate Value:", integral)
 print("True Value:", true_value)
