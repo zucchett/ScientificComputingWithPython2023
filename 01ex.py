@@ -114,7 +114,7 @@ try:
     n1 = float(n1)
     n2 = float(n2)
 
-    print('sum between', n1, 'and', n2, 'is: ', n1 + n1)
+    print('sum between', n1, 'and', n2, 'is: ', n1 + n2)
 except:
     print('It is not possible to compute ', n1, ' + ', n2)
     
