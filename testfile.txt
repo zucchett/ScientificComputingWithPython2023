@@ -1,0 +1,5 @@
+prova 
+^O
+^X
+exit
+
