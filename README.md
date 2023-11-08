@@ -49,13 +49,13 @@ The following instructions need to be followed any time a new local repository i
 
    `git fetch upstream`
 
-  * The default branch is `main`. You should now create your development branch where you can edit and run the code. Note that you have a branch corresponding to your name in the upstream repository (`upstream/<NameSurname>`): that is the branch you should point the pull request to. In order to set up a proper development cycle, you must create a branch (in the example below called `<BranchName>`) that *tracks* `upstream/<NameSurname>`:
+  * The default branch is `main`. You should now create your development branch where you can edit and run the code. Note that you have a branch corresponding to your name in the upstream repository (`upstream/<name_surname>`): that is the branch you should point the pull request to. In order to set up a proper development cycle, you must create a branch (in the example below called `<BranchName>`) that *tracks* `upstream/<name_surname>`:
 
    `git branch -vv`
 
-   `git checkout -b <BranchName> upstream/<NameSurname>`
+   `git checkout -b <BranchName> upstream/<name_surname>`
 
-   Note: in case you decide to develop your code in a branch that does **not** track `upstream/<NameSurname>`, you'll eventually need to merge your changes into the branch tracking `upstream/<NameSurname>` which is the one to which your pull request will point to.
+   Note: in case you decide to develop your code in a branch that does **not** track `upstream/<name_surname>`, you'll eventually need to merge your changes into the branch tracking `upstream/<name_surname>` which is the one to which your pull request will point to.
 
 ### Standard development cycle
 
@@ -71,9 +71,9 @@ The following instructions need to be followed any time a new local repository i
    
    `git checkout <BranchName>`
 
-   `git fetch upstream <NameSurname>`
+   `git fetch upstream <name_surname>`
 
-   `git merge upstream/<NameSurname>`
+   `git merge upstream/<name_surname>`
 
    Be careful that the git syntax is inconsistent between fetch and merge. In the former you should use the whitespace to separate the repository and the branch name, in the latter you should use the slash character.
 
