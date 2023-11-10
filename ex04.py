@@ -51,7 +51,23 @@ print("After applying the mask, the matrix becomes:\n", matrix)
 
 
 ## Exercise 4
+import numpy as np
 
+# Creating an array of 100 numbers between 0 and 2pi (inclusive)
+arr = np.linspace(0, 2*np.pi, 100)
+print("Here's your array of numbers:\n", arr)
+
+# Extracting every 10th element using slice notation
+extracted1 = arr[::10]
+print("Here are every 10th elements:\n", extracted1)
+
+# Reversing the array using slice notation
+reversed_arr = arr[::-1]
+print("Here's the array in reverse order:\n", reversed_arr)
+
+# Extracting elements where the absolute difference between sin and cos is < 0.1
+selected_elements = arr[np.abs(np.sin(arr) - np.cos(arr)) < 0.1]
+print("Here are the elements where |sin(x) - cos(x)| < 0.1:\n", selected_elements)
 
 
 ## Exercise 5
