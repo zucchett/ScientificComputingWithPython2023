@@ -1,5 +1,6 @@
 import math
 import numpy as np
+import matplotlib.pyplot as plt
 
 # ################## exercise 1 ##################
 # print("\n--- --- EXERCISE 1 --- ---")
@@ -79,7 +80,6 @@ import numpy as np
 # print("print the values which difference bw cos and sin is less than 0.1:")
 # print(smallDiff, "\n")
 
-# import matplotlib.pyplot as plt
 # plt.plot(v, np.cos(v), label="cos")
 # plt.plot(v, np.sin(v), label="sin")
 # plt.legend(loc="upper right")
@@ -115,18 +115,56 @@ import numpy as np
 # positions = np.array([0, 198, 303, 736, 871, 1175, 1475, 1544, 1913, 2448])
 # print(positions[:, np.newaxis])
 # distances = np.abs(positions - positions[:, np.newaxis])
-# test = np.concatenate((cities, distances))
-# test = np.concatenate((citiess.T, test), axis=1)
-# print("distances between cities:\n",test)
+# tableWithNames = np.concatenate((cities, distances))
+# tableWithNames = np.concatenate((citiess.T, tableWithNames), axis=1)
+# print("distances between cities:\n",tableWithNames)
 # print("distances in km:\n",distances*1.609344)
 
 
 # input("\npress ENTER to proceed to the next exercise...")
 
-################## exercise 7 ##################
-print("\n--- --- EXERCISE 7 --- ---")
-print("--- prime siege ---\n")
+# ################## exercise 7 ##################
+# print("\n--- --- EXERCISE 7 --- ---")
+# print("--- prime sieve ---\n")
 
+
+# def primeSieve(size=100):
+#     mask = np.full((1,size), True)
+#     mask[0,0] = False
+#     for i in range(2, int((size+1)/2)):
+#         if(mask[0,i]):
+#             for j in range(2*i, size, i):
+#                 mask[0,j] = False
+#     return np.arange(0,size)[mask[0,:]]
+
+# size = 100
+# print("output for N=", size)
+# print(primeSieve(size))
+
+# if __name__ == '__main__':
+#     import timeit
+#     time_exec = [0]
+#     print("\ngradually increasing the range of primes to test...")
+#     print("this can be different based on the CPU and running tasks\n")
+#     size = 100000
+#     index = 0
+#     while time_exec[index] < 1:
+#         launchStr = "primeSieve("+str(size)+")"
+#         time_exec.append(timeit.timeit(launchStr, setup="from __main__ import primeSieve", number = 1))
+#         print("N=", size, ": %.6fs" % time_exec[index])
+#         index += 1
+#         size += 100000
+#     plt.plot(np.arange(0,index+1)*100000, time_exec)
+#     plt.title("running time vs N")
+#     plt.xlabel('N')
+#     plt.ylabel('runtime [s]')
+#     plt.show()
+
+# input("\npress ENTER to proceed to the next exercise...")
+
+################## exercise 8 ##################
+print("\n--- --- EXERCISE 8 --- ---")
+print("--- random walk diffusion ---\n")
 
 
 
