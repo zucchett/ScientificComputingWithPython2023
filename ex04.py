@@ -1,3 +1,5 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
 ## Exercise 1
 import numpy as np
 
@@ -71,12 +73,37 @@ print("Here are the elements where |sin(x) - cos(x)| < 0.1:\n", selected_element
 
 
 ## Exercise 5
+import numpy as np 
 
+# Creating the 10x10 multiplication table matrix 
+matrix = np.arange(1, 11) * np.arange(1, 11)[:, np.newaxis] 
+
+# Printing the matrix 
+print(matrix) 
+
+# Finding the trace of the matrix 
+trace = np.trace(matrix)
+print("The trace of the matrix is:", trace) 
+
+# Extracting the anti-diagonal matrix
+anti_diagonal = np.diagonal(np.fliplr(matrix))
+print("The anti-diagonal matrix is:", anti_diagonal)
 
 
 ## Exercise 6
+import numpy as np
 
+distances_miles = np.array([0, 198, 303, 736, 871, 1175, 1475, 1544, 1913, 2448])
+
+grid_distances = np.abs(distances_miles - distances_miles[:, np.newaxis])
+grid_distances_km = np.rint(grid_distances * 1.60934)
+
+print("The grid distances matrix is:\n", grid_distances)
+print("The grid distances matrix in km is:\n", grid_distances_km)
 
 
 ## Exercise 7
+
+
+## Exercise 8
 
