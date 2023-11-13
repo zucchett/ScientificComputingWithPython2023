@@ -103,7 +103,43 @@ print("The grid distances matrix in km is:\n", grid_distances_km)
 
 
 ## Exercise 7
+import numpy as np
+import timeit
 
+# Function to compute prime numbers using the sieve of Eratosthenes
+def sieve_of_eratosthenes(N):
+    mask = np.ones(N, dtype=bool)  # Construct a boolean array of shape (N,)
+    mask[:2] = False  # Set the first two elements as False since they are not prime
+
+    for num in range(2, int(np.sqrt(N)) + 1):  # Iterate from 2 to the square root of N
+        if mask[num]:  # If the current number is prime
+            mask[num**2::num] = False  # Set the multiples of the current number as False
+
+    primes = np.nonzero(mask)[0]  # Apply the mask to obtain an array of ordered prime numbers
+    return primes
+
+N = 99
+time_taken = timeit.timeit(lambda: sieve_of_eratosthenes(N), number=1000)  # Measure the time taken for N=99
+print(f"Time taken for N={N}: {time_taken} seconds")
+# Time taken for N=99: 0.006287600001087412 seconds
+# Time taken for N=999: 0.013110419000440743 seconds
+# Time taken for N=9999: 0.053076579000844504 seconds
 
 ## Exercise 8
+import numpy as np
 
+# Define the number of walkers and steps
+walkers = 1000
+steps = 200
+
+# Create a 2D array of size walkers x steps with values -1 or 1
+random_walks = np.random.randint(low=-1, high=2, size=(walkers, steps))
+
+# Calculate the walking distances for each walker
+distances = np.sum(random_walks, axis=1)
+
+# Square the distances using element-wise multiplication
+squared_distances = distances**2
+
+# Compute the mean of the squared distances at each step
+mean_squared_distances = np.mean(squared_distances, axis=0)
