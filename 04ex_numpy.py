@@ -1,4 +1,3 @@
-import math
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -57,8 +56,6 @@ print(mask, '\n')
 m[mask] = 0
 print("obtained matrix with entries <0.3 set to zero:")
 print(m)
-
-
 
 input("\npress ENTER to proceed to the next exercise...")
 
@@ -203,8 +200,8 @@ input("\npress ENTER to proceed to the next exercise...")
 print("\n--- --- EXERCISE 8 --- ---")
 print("--- random walk diffusion ---\n")
 
-numWalkers = 3
-numSteps = 5
+numWalkers = 1000
+numSteps = 200
 
 walker = np.random.randint(0,2,(numWalkers,numSteps))*2-1
 print(walker)
@@ -227,10 +224,17 @@ print(distances2)
 print()
 
 print("computing the mean of the squared distances at each step:")
-stepMean = (walker**2).mean(axis=0)
+stepMean = distances2.mean(axis=0)
 print(stepMean)
 
+walkerMean = np.mean(walker,axis=0)
+tmp = 0
+distTime =[]
+for n in walkerMean:
+    tmp+=n
+    distTime.append(tmp)
+plt.plot(np.arange(numSteps),distTime)
+plt.title("average distance as function of steps")
+plt.show()
 
-
-input("\npress ENTER to proceed to the next exercise...")
-
+input("\npress ENTER to exit...")
