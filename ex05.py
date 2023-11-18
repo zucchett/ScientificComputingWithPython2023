@@ -29,14 +29,31 @@ data['ABSOLUTE_TIME'] = pd.to_datetime(data['ABSOLUTE_TIME'], unit='ns').dt.strf
 
 ## Exercise 4
 
+# Total duration is the maximum absolute time in the set
+total_duration = data['ABSOLUTE_TIME'].max()
 
 ## Exercise 5
 
+# Group the DataFrame by the "TDC_CHANNEL" column and count the occurrences
+grouped = data.groupby('TDC_CHANNEL').size()
+
+# Get the top three most frequent TDC channels
+top_three_channels = grouped.nlargest(3)
+
+print(top_three_channels)
 
 
 ## Exercise 6
 
+# Get the number of unique entries in ORBIT CNT
+non_empty_orbits = data['ORBIT_CNT'].nunique()
 
 
 ## Exercise 7
+
+# Filter the DataFrame based on the condition TDC_CHANNEL == 139
+filtered_data = data[data['TDC_CHANNEL'] == 139]
+
+# Get the unique orbits from the "TEAM" column in the filtered DataFrame
+unique_orbits = filtered_data['ORBIT_CNT'].nunique()
 
