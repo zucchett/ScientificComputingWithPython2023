@@ -57,3 +57,12 @@ filtered_data = data[data['TDC_CHANNEL'] == 139]
 # Get the unique orbits from the "TEAM" column in the filtered DataFrame
 unique_orbits = filtered_data['ORBIT_CNT'].nunique()
 
+
+## Exercise 8
+
+# Creating the two series
+fpga0 = data[data['FPGA'] == 0]['TDC_CHANNEL'].value_counts().sort_index()
+fpga1 = data[data['FPGA'] == 1]['TDC_CHANNEL'].value_counts().sort_index()
+print("FPGA 0:\n", fpga0)
+print("FPGA 1:\n", fpga1)
+
