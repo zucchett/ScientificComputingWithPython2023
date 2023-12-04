@@ -172,3 +172,48 @@ for i in range(0, 6):
 
 
 #7. Integral of a semicircle
+from math import sqrt
+from math import pi
+import time
+
+
+#a
+def f(x):
+    return sqrt(1 - x ** 2)
+
+def integral(N):
+    h = 2 / N
+    sum = 0
+    i =- 1
+    while(i <= 1):
+        sum += h * f(i)
+        i += h
+    return sum
+
+print('Computed integral (N=100):',integral(100))
+print('TrueValue - MyValue:',  "{:.2e}".format(abs(pi/2-integral(100))))
+#look for N s.t. time<1s
+t = 0
+n = 10000
+while (t < 1.0):
+    result = t
+    start_time = time.process_time()
+    integral(n)
+    t = time.process_time() - start_time
+    n += 10000
+
+print('N (t<1s)', "{:.2e}".format(n-10000))
+print('Computed integral (N=',"{:.2e}".format(n-10000),'):',integral(n-10000))
+print('True Value - Calculated Value (N=',"{:.2e}".format(n-10000),':', "{:.2e}".format(abs(pi/2-integral(n-10000))))
+
+#look for N s.t. time<1min
+t = 0
+n = 100000
+while (t < 60.0):
+    result = t
+    start_time = time.process_time()
+    integral(n)
+    t = time.process_time() - start_time
+    n += n
+print('Computed integral (t=1min)', integral(n/2))
+print('True Value - Calculated Value (t=1min)|:', "{:.2e}".format(abs(pi/2-integral(n/2))))
