@@ -1,4 +1,4 @@
-#These are the solutions of the tasks presented in the second set of exercises, described in the file 02ex_fundamentals.ipynb
+#These are the solutions of the tasks presented in the first set of exercises, described in the file 02ex_fundamentals.ipynb
 
 #Exercise 1
 #The following code creates a copy of a given list so that the original list is not modified. We make sure of this statement by printing both of them.

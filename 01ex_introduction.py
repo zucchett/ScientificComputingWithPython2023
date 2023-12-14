@@ -204,7 +204,7 @@ for i in range(0, N):
 print("Sum: ", sm_tot)
 
 
-#Exercise 11
+#Exercise 11 TO BE COMMENTED
 #First 20 numbers of the Fibonacci sequence obtained through an iterative way.
 
 print("\n \n \n ")

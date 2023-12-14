@@ -1,4 +1,4 @@
-#These are the solutions of the tasks presented in the third set of exercises, described in the file 03ex_representation.ipynb
+#These are the solutions of the tasks presented in the first set of exercises, described in the file 02ex_fundamentals.ipynb
 
 #Exercise 1
 #Exercise on number conversion. The input is seen as a string and from then it is modeled as requested for the output.
@@ -59,7 +59,6 @@ def converter(inp, notation_out):
 #zeroes in front of the string passed if this has less than 32 characters but it does not deal with input different than a binary
 #string. As usual, if we were to take into account also for different inputs (not requested) we could have used an if statement
 #or a try/except construct.
-print("\n \n \n ")
 
 def floater(string):
     in_len = len(string)
@@ -97,7 +96,6 @@ print(b)
 #This code finds the maximum and minimum number achievable by my computer. The while loops are designed so that they show the current 
 #numbers they are working on, whereas the last print() function just shows the maximum and minimum numbers obtainable plus the respective 
 #number of iterations.
-print("\n \n \n ")
 
 import decimal
 #By executing the code I find that the under/over-flow limit.
@@ -122,23 +120,20 @@ sci_over = decimal.Decimal(over)
 print("Iterations for the overflow: ", counter_ov,". Maximum number achieved: ", format(sci_over, '2.5e'),".\nIterations for the underflow: ", counter_un, "Minimum number achieved: ", under, ".")
 
 #Exercise 4
-#Exercise on machine precision. There are 2 methods presented, however the second one is more reliable and accurate so the first  
-#is presented as just comments.
-print("\n \n \n ")
+#TO BE COMMENTED
 
-#x = 0
-#lit = 1
-#counter = 0
-#for i in range(2000):
-#    y = x
-#    lit = lit/2
-#    x += lit
-#    counter += 1
-#    print(counter, x, y, lit)
-#    if(y==x):
-#        print("Maximum precision: ", lit)
-#        break
-
+x = 0
+lit = 1
+counter = 0
+for i in range(2000):
+    y = x
+    lit = lit/2
+    x += lit
+    counter += 1
+    print(counter, x, y, lit)
+    if(y==x):
+        print("Maximum precision: ", lit)
+        break
 
 #Second method (more reliable) to obtain machine precision
 x = 1
@@ -149,7 +144,6 @@ print("Maximum precision: ", x*2)
 
 #Exercise 5
 #Exercise on the quadratic formula.
-print("\n \n \n ")
 
 import math
 
@@ -171,8 +165,8 @@ def roots2(a, b, c):
     num_b = (-b)**2-(((b**2)-4*a*c)**(1/2))**2
     den_1 = 2*a*(-b-((b**2)-4*a*c)**(1/2))
     den_2 = 2*a*(-b+((b**2)-4*a*c)**(1/2))
-    print("First solution, slightly different formula: ", num_a/den_1)
-    print("Second solution, slightly different formula: ", num_b/den_2)
+    print("First solution, smaller inputs: ", num_a/den_1)
+    print("Second solution, smaller inputs: ", num_b/den_2)
 
 roots2(a,b,c)
 #Answer to the second question: as we can see from the results, the ones obtained with the second method are different(just one
@@ -191,11 +185,10 @@ def roots3(a, b, c):
 
 roots3(a,b,c)
 #In this case, we make use of the function as_integer_ratio(), which returns the float number as a fraction, which is then 
-#computed to find the exact value. The float expressed as a fraction makes it possible to determine the accurate number.
+#computed to find the exact value. The float expressed as a fraction makes it possible to determine the accurate number
 
 #Exercise 6
-#Exercise on the derivative
-print("\n \n \n ")
+#TO BE COMMENTED
 
 def function1(num_1):
     if(type(num_1)==int)or(type(num_1)==float):
@@ -224,12 +217,12 @@ num1, num2, num3, num4, num5, num6 = function1(x+delta1) - function1(x), functio
 der1, der2, der3, der4, der5, der6 = num1/delta1, num2/delta2, num3/delta3, num4/delta4, num5/delta5, num6/delta6
 #Answer to the second task: as we decrease the value of delta the result gets closer and closer to the right value. However if we take a too 
 #little delta than the numbers are not accurately computed anymore and the result starts increasing.
-print("With delta=", delta1, " : ", der1)
-print("With delta=", delta2, " : ", der2)
-print("With delta=", delta3, " : ", der3)
-print("With delta=", delta4, " : ", der4)
-print("With delta=", delta5, " : ", der5)
-print("With delta=", delta6, " : ", der6)
+print("With delta=", delta1, " the value of the derivative is: ", der1)
+print("With delta=", delta2, " the value of the derivative is: ", der2)
+print("With delta=", delta3, " the value of the derivative is: ", der3)
+print("With delta=", delta4, " the value of the derivative is: ", der4)
+print("With delta=", delta5, " the value of the derivative is: ", der5)
+print("With delta=", delta6, " the value of the derivative is: ", der6)
 def accuracy(num_1, num_2):
     return abs(num_1-num_2)*100
 acc1, acc2, acc3, acc4, acc5, acc6 = accuracy(der1,x), accuracy(der2,x), accuracy(der3,x), accuracy(der4,x), accuracy(der5,x), accuracy(der6,x)
@@ -244,8 +237,8 @@ print("Accuracy with delta=", delta5, " : ", acc5, "%")
 print("Accuracy with delta=", delta6, " : ", acc6, "%")
 
 #Exercise 7
-#Exercise on the value of the integral.
-print("\n \n \n ")
+#Exercise on the value the integral of a semicircle. With N=100 we get a value of the integral wich is slightly less than the
+#actual value.
 
 import timeit
 def integral_R(N):
@@ -255,11 +248,8 @@ def integral_R(N):
         value += h*((1-((-1+(i-1)*h))**2)**(1/2))
     return value
 result = integral_R(100)
-print("The result obtained with N=100 is: ", result)
-#It is smaller than the accurate value because N is too small (its value should be much higher).
-#DISCLAIMER: the value of 'number' is set to 1 and therefore the computation is done only once. This means that the values we obtain 
-#are not very reliable as if we compute the code again we could get similar but still different values. If we set a higher value for 'number' 
-#then we obtain a much more reliable result, however the value of N obtained is much littler.
+print(result)
+#It is smaller than the accurate value
 def measure_exec_time(N):
     return timeit.timeit(lambda: integral_R(N), number=1)
 max_N_sec = 1
@@ -270,22 +260,17 @@ while(measure_exec_time(max_N_sec)<1):
         max_N_sec *= 2
     else:
         max_N_sec += 100
-print("The maximum N achieved under a second is: ", max_N_sec)
-print("The value of the integral obtained with the maximum N obtained in a second is: ", integral_R(max_N_sec))
-max_N_min = 1
-while(measure_exec_time(max_N_min)<60):
+print(max_N_sec)
+max_N_min = 0
+start = timeit.default_timer()
+N =1
+while((timeit.default_timer()-start)<60):
+    if (measure_exec_time(N)<1):
+        max_N_min = N
+        N *= 2
+    else:
+        N += 1
     print(max_N_min)
-    max_N_min *= 2
-maxN_minute = max_N_min/2
-print("The maximum N achieved in a minute is: ", maxN_minute)
-print("The value of the integral obtained with the maximum N obtained in a second is: ", integral_R(maxN_minute))
-#I also add as a comment that the value I found for the maximum N achievable for which the code runs in under a minute was N=134217728 (as I mentioned before 
-#setting 'number' equal to 1 means not as much reliability. As a matter of fact, there have also been trials where this N resulted in a time higher than a 
-#minute, so a better overall choice would be its half, so N=67108864), where I kept each increment to the double of N (so N could be larger than the number 
-#given as a result but littler than its double), and the value of the integral obtained with such N was I=1.5707963267938208, which corresponds to an error 
-#of e=3.820721516945014e-12.
-#The gain in running the function for a minute is that the result given by the function will be much closer to the actual result of the integral, thus leading 
-#to a much smaller error when computing the difference between the result of the code and the actual value of the integral.
-
-#End of the exercises: I add an extra input in order to keep the code running for the last exercises.
-input('Press ENTER to close the third set of exercises')
+print(max_N_min)
+gain = max_N_min/max_N_sec
+print(gain)
