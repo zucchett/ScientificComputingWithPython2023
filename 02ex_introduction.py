@@ -102,7 +102,7 @@ print(fibonacci_list(20))
 
 
 #ex9:
-import timeit
+
 print("9 ------ The Fibonacci sequence (part 3)")
 
 def fibo_ex1(n):
@@ -110,12 +110,13 @@ def fibo_ex1(n):
 
     for i in range(n-2):
         fibonacci_list.append(fibonacci_list[i]+fibonacci_list[i+1])
-
 recursive_time = timeit.timeit('fibonacci_rec(20)', globals=globals(), number=10000)
-list_time = timeit.timeit('fibonacci_list(20)', globals=globals(), number=10000)
+
+# Measure the execution time of the loop-based Fibonacci function
+loop_time = timeit.timeit('loopFibonacci(20)', globals=globals(), number=10000)
 
 print(f"Recursive Fibonacci Time: {recursive_time:.6f} seconds")
-print(f"Fibonacci List Time: {list_time:.6f} seconds") #takes a longer time because it recalculate every time things that already have been calculated
+print(f"Loop-based Fibonacci Time: {loop_time:.6f} seconds")
 #ex10:
 print("10 ------ Class definition")
 

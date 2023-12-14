@@ -1,7 +1,7 @@
 #LAB 3
 #ex1:
 print("1 ------ Number representation")
-import math
+
 def convert(a,type):
     if type == "bin" :
         return bin(a)
@@ -104,7 +104,7 @@ def quadratic_solutions_accurate(a, b, c):
 print(quadratic_solutions_2(0.001,1000,0.001))
 print(quadratic_solutions_2(0.001,1000,0.001))
 print(quadratic_solutions_accurate(0.001,1000,0.001))
-print(f"I don't see any difference")
+#I don't see any difference
 
 #ex6:
 print("6 ------ The derivative")
@@ -126,7 +126,7 @@ print(f"The limit cannot be calculated precisely with informatics models, we nee
 
 delta_values = [1e-4, 1e-6, 1e-8, 1e-10, 1e-12, 1e-14]
 for delta in delta_values:
-    numerical_derivative = derivative(delta)
+    numerical_derivative = calculate_derivative(delta)
     print(f"(b) Numerical Derivative (delta = {delta}): {numerical_derivative}")
 print(f"The accuracy is higher when we are near delta = 1e-08 but increase when we increase or decrease delta")
 
@@ -146,7 +146,7 @@ def compute_integral(N):
 true_value = math.pi / 2
 result_a = compute_integral(100)
 
-print("(a) Result with N = 100", result_a)
+print("(a) Result with N =", N, ":", result_a)
 print("    Absolute Error:", abs(result_a - true_value))
 
 def time_for_N(N):
@@ -167,4 +167,4 @@ print("    Maximum N for 1 minute:", max_N_1_minute)
 res_1_minute = compute_integral(max_N_1_minute)
 print(res_1_minute)
 print("difference:" ,res_1_minute - res_1_second)
-print(f"The gain is very little for the ressources needed")
+#The gain is very little for the ressources needed
