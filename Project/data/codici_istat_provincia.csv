@@ -7,7 +7,7 @@ COD_REG,COD_PRO,PROVINCIA,PROV_SIGLA
 1,6,Alessandria,AL
 1,96,Biella,BI
 1,103,Verbano-Cusio-Ossola,VB
-2,7,Valle d'Aosta/Vallée d'Aoste,AO
+2,7,Valle d'Aosta,AO
 3,12,Varese,VA
 3,13,Como,CO
 3,14,Sondrio,SO
@@ -44,7 +44,7 @@ COD_REG,COD_PRO,PROVINCIA,PROV_SIGLA
 8,37,Bologna,BO
 8,38,Ferrara,FE
 8,39,Ravenna,RA
-8,40,Forlì-Cesena,FC
+8,40,Forlï¿½-Cesena,FC
 8,99,Rimini,RN
 9,45,Massa-Carrara,MS
 9,46,Lucca,LU

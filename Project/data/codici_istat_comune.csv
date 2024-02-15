@@ -1,5 +1,5 @@
 COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
-1,1001,Agliè,0
+1,1001,Agliï¿½,0
 1,1002,Airasca,0
 1,1003,Ala di Stura,0
 1,1004,Albiano d'Ivrea,0
@@ -84,7 +84,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 1,1083,Ciconio,0
 1,1084,Cintano,0
 1,1085,Cinzano,0
-1,1086,Ciriè,0
+1,1086,Ciriï¿½,0
 1,1087,Claviere,0
 1,1088,Coassolo Torinese,0
 1,1089,Coazze,0
@@ -96,7 +96,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 1,1095,Cossano Canavese,0
 1,1096,Cuceglio,0
 1,1097,Cumiana,0
-1,1098,Cuorgnè,0
+1,1098,Cuorgnï¿½,0
 1,1099,Druento,0
 1,1100,Exilles,0
 1,1101,Favria,0
@@ -135,18 +135,18 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 1,1134,Locana,0
 1,1135,Lombardore,0
 1,1136,Lombriasco,0
-1,1137,Loranzè,0
+1,1137,Loranzï¿½,0
 1,1138,Lugnacco,0
 1,1139,Luserna San Giovanni,0
 1,1140,Lusernetta,0
-1,1141,Lusigliè,0
+1,1141,Lusigliï¿½,0
 1,1142,Macello,0
 1,1143,Maglione,0
 1,1144,Marentino,0
 1,1145,Massello,0
 1,1146,Mathi,0
 1,1147,Mattie,0
-1,1148,Mazzè,0
+1,1148,Mazzï¿½,0
 1,1149,Meana di Susa,0
 1,1150,Mercenasco,0
 1,1151,Meugliano,0
@@ -224,7 +224,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 1,1223,Romano Canavese,0
 1,1224,Ronco Canavese,0
 1,1225,Rondissone,0
-1,1226,Rorà,0
+1,1226,Rorï¿½,0
 1,1227,Roure,0
 1,1228,Rosta,0
 1,1229,Rubiana,0
@@ -293,8 +293,8 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 1,1292,Venaria Reale,0
 1,1293,Verolengo,0
 1,1294,Verrua Savoia,0
-1,1295,Vestignè,0
-1,1296,Vialfrè,0
+1,1295,Vestignï¿½,0
+1,1296,Vialfrï¿½,0
 1,1297,Vico Canavese,0
 1,1298,Vidracco,0
 1,1299,Vigone,0
@@ -311,7 +311,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 1,1310,Virle Piemonte,0
 1,1311,Vische,0
 1,1312,Vistrorio,0
-1,1313,Viù,0
+1,1313,Viï¿½,0
 1,1314,Volpiano,0
 1,1315,Volvera,0
 1,1316,Mappano,0
@@ -322,7 +322,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 2,2007,Asigliano Vercellese,0
 2,2008,Balmuccia,0
 2,2009,Balocco,0
-2,2011,Bianzè,0
+2,2011,Bianzï¿½,0
 2,2014,Boccioleto,0
 2,2015,Borgo d'Ale,0
 2,2016,Borgosesia,0
@@ -382,7 +382,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 2,2127,Sali Vercellese,0
 2,2128,Saluggia,0
 2,2131,San Germano Vercellese,0
-2,2133,Santhià,0
+2,2133,Santhiï¿½,0
 2,2134,Scopa,0
 2,2135,Scopello,0
 2,2137,Serravalle Sesia,0
@@ -499,7 +499,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 4,4011,Barbaresco,0
 4,4012,Barge,0
 4,4013,Barolo,0
-4,4014,Bastia Mondovì,0
+4,4014,Bastia Mondovï¿½,0
 4,4015,Battifollo,0
 4,4016,Beinette,0
 4,4017,Bellino,0
@@ -527,8 +527,8 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 4,4039,Caprauna,0
 4,4040,Caraglio,0
 4,4041,Caramagna Piemonte,0
-4,4042,Cardè,0
-4,4043,Carrù,0
+4,4042,Cardï¿½,0
+4,4043,Carrï¿½,0
 4,4044,Cartignano,0
 4,4045,Casalgrasso,0
 4,4046,Castagnito,0
@@ -554,7 +554,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 4,4066,Ceva,0
 4,4067,Cherasco,0
 4,4068,Chiusa di Pesio,0
-4,4069,Cigliè,0
+4,4069,Cigliï¿½,0
 4,4070,Cissone,0
 4,4071,Clavesana,0
 4,4072,Corneliano d'Alba,0
@@ -615,11 +615,11 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 4,4127,Monasterolo Casotto,0
 4,4128,Monasterolo di Savigliano,0
 4,4129,Monchiero,0
-4,4130,Mondovì,0
+4,4130,Mondovï¿½,0
 4,4131,Monesiglio,0
 4,4132,Monforte d'Alba,0
-4,4133,Montà,0
-4,4134,Montaldo di Mondovì,0
+4,4133,Montï¿½,0
+4,4134,Montaldo di Mondovï¿½,0
 4,4135,Montaldo Roero,0
 4,4136,Montanera,0
 4,4137,Montelupo Albese,0
@@ -673,9 +673,9 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 4,4185,Robilante,0
 4,4186,Roburent,0
 4,4187,Roccabruna,0
-4,4188,Rocca Cigliè,0
+4,4188,Rocca Cigliï¿½,0
 4,4189,Rocca de' Baldi,0
-4,4190,Roccaforte Mondovì,0
+4,4190,Roccaforte Mondovï¿½,0
 4,4191,Roccasparvera,0
 4,4192,Roccavione,0
 4,4193,Rocchetta Belbo,0
@@ -693,9 +693,9 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 4,4205,Sampeyre,0
 4,4206,San Benedetto Belbo,0
 4,4207,San Damiano Macra,0
-4,4208,Sanfrè,0
+4,4208,Sanfrï¿½,0
 4,4209,Sanfront,0
-4,4210,San Michele Mondovì,0
+4,4210,San Michele Mondovï¿½,0
 4,4211,Sant'Albano Stura,0
 4,4212,Santa Vittoria d'Alba,0
 4,4213,Santo Stefano Belbo,0
@@ -712,12 +712,12 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 4,4224,Stroppo,0
 4,4225,Tarantasca,0
 4,4226,Torre Bormida,0
-4,4227,Torre Mondovì,0
+4,4227,Torre Mondovï¿½,0
 4,4228,Torre San Giorgio,0
 4,4229,Torresina,0
 4,4230,Treiso,0
 4,4231,Trezzo Tinella,0
-4,4232,Trinità,0
+4,4232,Trinitï¿½,0
 4,4233,Valdieri,0
 4,4234,Valgrana,0
 4,4235,Valloriate,0
@@ -730,7 +730,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 4,4242,Vicoforte,0
 4,4243,Vignolo,0
 4,4244,Villafalletto,0
-4,4245,Villanova Mondovì,0
+4,4245,Villanova Mondovï¿½,0
 4,4246,Villanova Solaro,0
 4,4247,Villar San Costanzo,0
 4,4248,Vinadio,0
@@ -819,7 +819,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 5,5083,Penango,0
 5,5084,Piea,0
 5,5085,Pino d'Asti,0
-5,5086,Piovà Massaia,0
+5,5086,Piovï¿½ Massaia,0
 5,5087,Portacomaro,0
 5,5088,Quaranti,0
 5,5089,Refrancore,0
@@ -1056,7 +1056,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 96,96013,Caprile,0
 96,96014,Casapinta,0
 96,96015,Castelletto Cervo,0
-96,96016,Cavaglià,0
+96,96016,Cavagliï¿½,0
 96,96017,Cerreto Castello,0
 96,96018,Cerrione,0
 96,96019,Coggiola,0
@@ -1197,7 +1197,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 103,103077,Vogogna,0
 103,103078,Borgomezzavalle,0
 7,7001,Allein,0
-7,7002,Antey-Saint-André,0
+7,7002,Antey-Saint-Andrï¿½,0
 7,7003,Aosta,1
 7,7004,Arnad,0
 7,7005,Arvier,0
@@ -1215,25 +1215,25 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 7,7017,Champdepraz,0
 7,7018,Champorcher,0
 7,7019,Charvensod,0
-7,7020,Châtillon,0
+7,7020,Chï¿½tillon,0
 7,7021,Cogne,0
 7,7022,Courmayeur,0
 7,7023,Donnas,0
 7,7024,Doues,0
-7,7025,Emarèse,0
+7,7025,Emarï¿½se,0
 7,7026,Etroubles,0
-7,7027,Fénis,0
+7,7027,Fï¿½nis,0
 7,7028,Fontainemore,0
 7,7029,Gaby,0
 7,7030,Gignod,0
 7,7031,Gressan,0
-7,7032,Gressoney-La-Trinité,0
+7,7032,Gressoney-La-Trinitï¿½,0
 7,7033,Gressoney-Saint-Jean,0
-7,7034,Hône,0
+7,7034,Hï¿½ne,0
 7,7035,Introd,0
 7,7036,Issime,0
 7,7037,Issogne,0
-7,7038,Jovençan,0
+7,7038,Jovenï¿½an,0
 7,7039,La Magdeleine,0
 7,7040,La Salle,0
 7,7041,La Thuile,0
@@ -1248,10 +1248,10 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 7,7050,Pontboset,0
 7,7051,Pontey,0
 7,7052,Pont-Saint-Martin,0
-7,7053,Pré-Saint-Didier,0
+7,7053,Prï¿½-Saint-Didier,0
 7,7054,Quart,0
-7,7055,Rhêmes-Notre-Dame,0
-7,7056,Rhêmes-Saint-Georges,0
+7,7055,Rhï¿½mes-Notre-Dame,0
+7,7056,Rhï¿½mes-Saint-Georges,0
 7,7057,Roisan,0
 7,7058,Saint-Christophe,0
 7,7059,Saint-Denis,0
@@ -1259,7 +1259,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 7,7061,Saint-Nicolas,0
 7,7062,Saint-Oyen,0
 7,7063,Saint-Pierre,0
-7,7064,Saint-Rhémy-en-Bosses,0
+7,7064,Saint-Rhï¿½my-en-Bosses,0
 7,7065,Saint-Vincent,0
 7,7066,Sarre,0
 7,7067,Torgnon,0
@@ -1268,7 +1268,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 7,7070,Valsavarenche,0
 7,7071,Valtournenche,0
 7,7072,Verrayes,0
-7,7073,Verrès,0
+7,7073,Verrï¿½s,0
 7,7074,Villeneuve,0
 12,12001,Agra,0
 12,12002,Albizzate,0
@@ -1405,7 +1405,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 12,12136,Venegono Inferiore,0
 12,12137,Venegono Superiore,0
 12,12138,Vergiate,0
-12,12139,Viggiù,0
+12,12139,Viggiï¿½,0
 12,12140,Vizzola Ticino,0
 12,12141,Sangiano,0
 12,12142,Maccagno con Pino e Veddasca,0
@@ -1436,7 +1436,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 13,13037,Caglio,0
 13,13038,Cagno,0
 13,13040,Campione d'Italia,0
-13,13041,Cantù,0
+13,13041,Cantï¿½,0
 13,13042,Canzo,0
 13,13043,Capiago Intimiano,0
 13,13044,Carate Urio,0
@@ -1469,7 +1469,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 13,13097,Eupilio,0
 13,13098,Faggeto Lario,0
 13,13099,Faloppio,0
-13,13100,Fenegrò,0
+13,13100,Fenegrï¿½,0
 13,13101,Figino Serenza,0
 13,13102,Fino Mornasco,0
 13,13106,Garzeno,0
@@ -1773,7 +1773,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 16,16002,Adrara San Rocco,0
 16,16003,Albano Sant'Alessandro,0
 16,16004,Albino,0
-16,16005,Almè,0
+16,16005,Almï¿½,0
 16,16006,Almenno San Bartolomeo,0
 16,16007,Almenno San Salvatore,0
 16,16008,Alzano Lombardo,0
@@ -1997,7 +1997,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 16,16236,Vigano San Martino,0
 16,16237,Vigolo,0
 16,16238,Villa d'Adda,0
-16,16239,Villa d'Almè,0
+16,16239,Villa d'Almï¿½,0
 16,16240,Villa di Serio,0
 16,16241,Villa d'Ogna,0
 16,16242,Villongo,0
@@ -2174,13 +2174,13 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 17,17161,Rezzato,0
 17,17162,Roccafranca,0
 17,17163,Rodengo Saiano,0
-17,17164,Roè Volciano,0
+17,17164,Roï¿½ Volciano,0
 17,17165,Roncadelle,0
 17,17166,Rovato,0
 17,17167,Rudiano,0
 17,17168,Sabbio Chiese,0
 17,17169,Sale Marasino,0
-17,17170,Salò,0
+17,17170,Salï¿½,0
 17,17171,San Felice del Benaco,0
 17,17172,San Gervasio Bresciano,0
 17,17173,San Zeno Naviglio,0
@@ -2194,7 +2194,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 17,17181,Sonico,0
 17,17182,Sulzano,0
 17,17183,Tavernole sul Mella,0
-17,17184,Temù,0
+17,17184,Temï¿½,0
 17,17185,Tignale,0
 17,17186,Torbole Casaglia,0
 17,17187,Toscolano-Maderno,0
@@ -2225,7 +2225,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 18,18006,Badia Pavese,0
 18,18007,Bagnaria,0
 18,18008,Barbianello,0
-18,18009,Bascapè,0
+18,18009,Bascapï¿½,0
 18,18011,Bastida Pancarana,0
 18,18012,Battuda,0
 18,18013,Belgioioso,0
@@ -2281,7 +2281,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 18,18065,Frascarolo,0
 18,18066,Galliavola,0
 18,18067,Gambarana,0
-18,18068,Gambolò,0
+18,18068,Gambolï¿½,0
 18,18069,Garlasco,0
 18,18071,Gerenzago,0
 18,18072,Giussago,0
@@ -2312,7 +2312,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 18,18097,Montescano,0
 18,18098,Montesegale,0
 18,18099,Monticelli Pavese,0
-18,18100,Montù Beccaria,0
+18,18100,Montï¿½ Beccaria,0
 18,18101,Mornico Losana,0
 18,18102,Mortara,0
 18,18103,Nicorvo,0
@@ -2374,7 +2374,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 18,18159,Torre d'Isola,0
 18,18160,Torrevecchia Pia,0
 18,18161,Torricella Verzate,0
-18,18162,Travacò Siccomario,0
+18,18162,Travacï¿½ Siccomario,0
 18,18163,Trivolzio,0
 18,18164,Tromello,0
 18,18165,Trovo,0
@@ -2401,7 +2401,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 18,18186,Zeme,0
 18,18187,Zenevredo,0
 18,18188,Zerbo,0
-18,18189,Zerbolò,0
+18,18189,Zerbolï¿½,0
 18,18190,Zinasco,0
 18,18191,Cornale e Bastida,0
 18,18192,Corteolona e Genzone,0
@@ -2591,7 +2591,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 97,97003,Annone di Brianza,0
 97,97004,Ballabio,0
 97,97005,Barzago,0
-97,97006,Barzanò,0
+97,97006,Barzanï¿½,0
 97,97007,Barzio,0
 97,97008,Bellano,0
 97,97009,Bosisio Parini,0
@@ -2656,7 +2656,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 97,97070,Primaluna,0
 97,97071,Robbiate,0
 97,97072,Rogeno,0
-97,97074,Santa Maria Hoè,0
+97,97074,Santa Maria Hoï¿½,0
 97,97075,Sirone,0
 97,97076,Sirtori,0
 97,97077,Sueglio,0
@@ -2667,7 +2667,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 97,97084,Varenna,0
 97,97085,Vendrogno,0
 97,97086,Vercurago,0
-97,97090,Viganò,0
+97,97090,Viganï¿½,0
 97,97091,Verderio,0
 97,97092,La Valletta Brianza,0
 97,97093,Valvarrone,0
@@ -2764,7 +2764,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 108,108031,Mezzago,0
 108,108032,Misinto,0
 108,108033,Monza,1
-108,108034,Muggiò,0
+108,108034,Muggiï¿½,0
 108,108035,Nova Milanese,0
 108,108036,Ornago,0
 108,108037,Renate,0
@@ -2816,7 +2816,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 21,21028,Dobbiaco,0
 21,21029,Egna,0
 21,21030,Falzes,0
-21,21031,Fiè allo Sciliar,0
+21,21031,Fiï¿½ allo Sciliar,0
 21,21032,Fortezza,0
 21,21033,Funes,0
 21,21034,Gais,0
@@ -2830,7 +2830,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 21,21042,Lasa,0
 21,21043,Lauregno,0
 21,21044,Luson,0
-21,21045,Magrè sulla strada del vino,0
+21,21045,Magrï¿½ sulla strada del vino,0
 21,21046,Malles Venosta,0
 21,21047,Marebbe,0
 21,21048,Marlengo,0
@@ -2908,7 +2908,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 22,22005,Andalo,0
 22,22006,Arco,0
 22,22007,Avio,0
-22,22009,Baselga di Pinè,0
+22,22009,Baselga di Pinï¿½,0
 22,22011,Bedollo,0
 22,22013,Besenello,0
 22,22015,Bieno,0
@@ -2920,7 +2920,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 22,22026,Bresimo,0
 22,22027,Brez,0
 22,22029,Caderzone Terme,0
-22,22030,Cagnò,0
+22,22030,Cagnï¿½,0
 22,22032,Calceranica al Lago,0
 22,22033,Caldes,0
 22,22034,Caldonazzo,0
@@ -2958,7 +2958,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 22,22079,Dro,0
 22,22080,Faedo,0
 22,22081,Fai della Paganella,0
-22,22083,Fiavè,0
+22,22083,Fiavï¿½,0
 22,22085,Fierozzo,0
 22,22087,Folgaria,0
 22,22088,Fondo,0
@@ -2976,7 +2976,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 22,22106,Livo,0
 22,22108,Lona-Lases,0
 22,22109,Luserna,0
-22,22110,Malé,0
+22,22110,Malï¿½,0
 22,22111,Malosco,0
 22,22112,Massimeno,0
 22,22113,Mazzin,0
@@ -2994,8 +2994,8 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 22,22129,Novaledo,0
 22,22130,Ospedaletto,0
 22,22131,Ossana,0
-22,22133,Palù del Fersina,0
-22,22134,Panchià,0
+22,22133,Palï¿½ del Fersina,0
+22,22134,Panchiï¿½,0
 22,22135,Ronzo-Chienis,0
 22,22136,Peio,0
 22,22137,Pellizzano,0
@@ -3006,16 +3006,16 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 22,22144,Pomarolo,0
 22,22147,Predazzo,0
 22,22150,Rabbi,0
-22,22152,Revò,0
+22,22152,Revï¿½,0
 22,22153,Riva del Garda,0
 22,22154,Romallo,0
 22,22155,Romeno,0
 22,22156,Roncegno Terme,0
 22,22157,Ronchi Valsugana,0
 22,22159,Ronzone,0
-22,22160,Roverè della Luna,0
+22,22160,Roverï¿½ della Luna,0
 22,22161,Rovereto,0
-22,22162,Ruffrè-Mendola,0
+22,22162,Ruffrï¿½-Mendola,0
 22,22163,Rumo,0
 22,22164,Sagron Mis,0
 22,22165,Samone,0
@@ -3069,7 +3069,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 22,22239,Borgo Lares,0
 22,22240,Castel Ivano,0
 22,22241,Cembra Lisignago,0
-22,22242,Contà,0
+22,22242,Contï¿½,0
 22,22243,Madruzzo,0
 22,22244,Porte di Rendena,0
 22,22245,Primiero San Martino di Castrozza,0
@@ -3077,7 +3077,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 22,22247,Tre Ville,0
 22,22248,Vallelaghi,0
 22,22249,Ville d'Anaunia,0
-22,22250,Sèn Jan di Fassa,0
+22,22250,Sï¿½n Jan di Fassa,0
 23,23001,Affi,0
 23,23002,Albaredo d'Adige,0
 23,23003,Angiari,0
@@ -3108,8 +3108,8 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 23,23028,Colognola ai Colli,0
 23,23029,Concamarise,0
 23,23030,Costermano sul Garda,0
-23,23031,Dolcè,0
-23,23032,Erbè,0
+23,23031,Dolcï¿½,0
+23,23032,Erbï¿½,0
 23,23033,Erbezzo,0
 23,23034,Ferrara di Monte Baldo,0
 23,23035,Fumane,0
@@ -3133,18 +3133,18 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 23,23053,Nogara,0
 23,23054,Nogarole Rocca,0
 23,23055,Oppeano,0
-23,23056,Palù,0
+23,23056,Palï¿½,0
 23,23057,Pastrengo,0
 23,23058,Pescantina,0
 23,23059,Peschiera del Garda,0
 23,23060,Povegliano Veronese,0
 23,23061,Pressana,0
 23,23062,Rivoli Veronese,0
-23,23063,Roncà,0
+23,23063,Roncï¿½,0
 23,23064,Ronco all'Adige,0
 23,23065,Roverchiara,0
-23,23066,Roveredo di Guà,0
-23,23067,Roverè Veronese,0
+23,23066,Roveredo di Guï¿½,0
+23,23067,Roverï¿½ Veronese,0
 23,23068,Salizzole,0
 23,23069,San Bonifacio,0
 23,23070,San Giovanni Ilarione,0
@@ -3161,7 +3161,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 23,23081,Soave,0
 23,23082,Sommacampagna,0
 23,23083,Sona,0
-23,23084,Sorgà,0
+23,23084,Sorgï¿½,0
 23,23085,Terrazzo,0
 23,23086,Torri del Benaco,0
 23,23087,Tregnago,0
@@ -3198,7 +3198,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 24,24021,Camisano Vicentino,0
 24,24022,Campiglia dei Berici,0
 24,24023,Campolongo sul Brenta,0
-24,24024,Carrè,0
+24,24024,Carrï¿½,0
 24,24025,Cartigliano,0
 24,24026,Cassola,0
 24,24027,Castegnero,0
@@ -3259,7 +3259,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 24,24084,Recoaro Terme,0
 24,24085,Roana,0
 24,24086,Romano d'Ezzelino,0
-24,24087,Rosà,0
+24,24087,Rosï¿½,0
 24,24088,Rossano Veneto,0
 24,24089,Rotzo,0
 24,24090,Salcedo,0
@@ -3289,7 +3289,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 24,24116,Vicenza,1
 24,24117,Villaga,0
 24,24118,Villaverla,0
-24,24119,Zanè,0
+24,24119,Zanï¿½,0
 24,24120,Zermeghedo,0
 24,24121,Zovencedo,0
 24,24122,Zugliano,0
@@ -3298,7 +3298,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 25,25001,Agordo,0
 25,25002,Alano di Piave,0
 25,25003,Alleghe,0
-25,25004,Arsiè,0
+25,25004,Arsiï¿½,0
 25,25005,Auronzo di Cadore,0
 25,25006,Belluno,1
 25,25007,Borca di Cadore,0
@@ -3333,7 +3333,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 25,25043,Rivamonte Agordino,0
 25,25044,Rocca Pietore,0
 25,25045,San Gregorio nelle Alpi,0
-25,25046,San Nicolò di Comelico,0
+25,25046,San Nicolï¿½ di Comelico,0
 25,25047,San Pietro di Cadore,0
 25,25048,Santa Giustina,0
 25,25049,San Tomaso Agordino,0
@@ -3353,7 +3353,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 25,25065,Vigo di Cadore,0
 25,25066,Vodo Cadore,0
 25,25067,Voltago Agordino,0
-25,25069,Zoppè di Cadore,0
+25,25069,Zoppï¿½ di Cadore,0
 25,25070,Quero Vas,0
 25,25071,Longarone,0
 25,25072,Alpago,0
@@ -3376,7 +3376,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 26,26016,Chiarano,0
 26,26017,Cimadolmo,0
 26,26018,Cison di Valmarino,0
-26,26019,Codognè,0
+26,26019,Codognï¿½,0
 26,26020,Colle Umberto,0
 26,26021,Conegliano,0
 26,26022,Cordignano,0
@@ -3394,7 +3394,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 26,26034,Gorgo al Monticano,0
 26,26035,Istrana,0
 26,26036,Loria,0
-26,26037,Mansuè,0
+26,26037,Mansuï¿½,0
 26,26038,Mareno di Piave,0
 26,26039,Maser,0
 26,26040,Maserada sul Piave,0
@@ -3417,7 +3417,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 26,26057,Pieve di Soligo,0
 26,26058,Ponte di Piave,0
 26,26059,Ponzano Veneto,0
-26,26060,Portobuffolè,0
+26,26060,Portobuffolï¿½,0
 26,26061,Possagno,0
 26,26062,Povegliano,0
 26,26063,Preganziol,0
@@ -3469,7 +3469,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 27,27014,Fiesso d'Artico,0
 27,27015,Fossalta di Piave,0
 27,27016,Fossalta di Portogruaro,0
-27,27017,Fossò,0
+27,27017,Fossï¿½,0
 27,27018,Gruaro,0
 27,27019,Jesolo,0
 27,27020,Marcon,0
@@ -3485,11 +3485,11 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 27,27030,Pramaggiore,0
 27,27031,Quarto d'Altino,0
 27,27032,Salzano,0
-27,27033,San Donà di Piave,0
+27,27033,San Donï¿½ di Piave,0
 27,27034,San Michele al Tagliamento,0
 27,27035,Santa Maria di Sala,0
 27,27036,San Stino di Livenza,0
-27,27037,Scorzè,0
+27,27037,Scorzï¿½,0
 27,27038,Spinea,0
 27,27039,Stra,0
 27,27040,Teglio Veneto,0
@@ -3501,7 +3501,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 28,28002,Agna,0
 28,28003,Albignasego,0
 28,28004,Anguillara Veneta,0
-28,28005,Arquà Petrarca,0
+28,28005,Arquï¿½ Petrarca,0
 28,28006,Arre,0
 28,28007,Arzergrande,0
 28,28008,Bagnoli di Sopra,0
@@ -3542,7 +3542,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 28,28045,Limena,0
 28,28046,Loreggia,0
 28,28047,Lozzo Atestino,0
-28,28048,Maserà di Padova,0
+28,28048,Maserï¿½ di Padova,0
 28,28049,Masi,0
 28,28050,Massanzago,0
 28,28052,Megliadino San Vitale,0
@@ -3562,7 +3562,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 28,28066,Polverara,0
 28,28067,Ponso,0
 28,28068,Pontelongo,0
-28,28069,Ponte San Nicolò,0
+28,28069,Ponte San Nicolï¿½,0
 28,28070,Pozzonovo,0
 28,28071,Rovolon,0
 28,28072,Rubano,0
@@ -3601,7 +3601,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 28,28107,Borgo Veneto,0
 29,29001,Adria,0
 29,29002,Ariano nel Polesine,0
-29,29003,Arquà Polesine,0
+29,29003,Arquï¿½ Polesine,0
 29,29004,Badia Polesine,0
 29,29005,Bagnolo di Po,0
 29,29006,Bergantino,0
@@ -3785,7 +3785,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 30,30191,Treppo Ligosullo,0
 31,31001,Capriva del Friuli,0
 31,31002,Cormons,0
-31,31003,Doberdò del Lago,0
+31,31003,Doberdï¿½ del Lago,0
 31,31004,Dolegna del Collio,0
 31,31005,Farra d'Isonzo,0
 31,31006,Fogliano Redipuglia,0
@@ -3908,7 +3908,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 8,8044,Pompeiana,0
 8,8045,Pontedassio,0
 8,8046,Pornassio,0
-8,8047,Prelà,0
+8,8047,Prelï¿½,0
 8,8048,Ranzo,0
 8,8049,Rezzo,0
 8,8050,Riva Ligure,0
@@ -4056,7 +4056,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 10,10055,Sant'Olcese,0
 10,10056,Santo Stefano d'Aveto,0
 10,10057,Savignone,0
-10,10058,Serra Riccò,0
+10,10058,Serra Riccï¿½,0
 10,10059,Sestri Levante,0
 10,10060,Sori,0
 10,10061,Tiglieto,0
@@ -4088,7 +4088,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 11,11020,Luni,0
 11,11021,Pignone,0
 11,11022,Portovenere,0
-11,11023,Riccò del Golfo di Spezia,0
+11,11023,Riccï¿½ del Golfo di Spezia,0
 11,11024,Riomaggiore,0
 11,11025,Rocchetta di Vara,0
 11,11026,Santo Stefano di Magra,0
@@ -4382,7 +4382,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 40,40008,Cesenatico,0
 40,40009,Civitella di Romagna,0
 40,40011,Dovadola,0
-40,40012,Forlì,1
+40,40012,Forlï¿½,1
 40,40013,Forlimpopoli,0
 40,40014,Galeata,0
 40,40015,Gambettola,0
@@ -4605,7 +4605,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 51,51006,Capolona,0
 51,51007,Caprese Michelangelo,0
 51,51008,Castel Focognano,0
-51,51010,Castel San Niccolò,0
+51,51010,Castel San Niccolï¿½,0
 51,51011,Castiglion Fibocchi,0
 51,51012,Castiglion Fiorentino,0
 51,51013,Cavriglia,0
@@ -4630,7 +4630,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 51,51037,Subbiano,0
 51,51038,Talla,0
 51,51039,Terranuova Bracciolini,0
-51,51040,Castelfranco Piandiscò,0
+51,51040,Castelfranco Piandiscï¿½,0
 51,51041,Pratovecchio Stia,0
 51,51042,Laterina Pergine Valdarno,0
 52,52001,Abbadia San Salvatore,0
@@ -4714,8 +4714,8 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 54,54009,Castiglione del Lago,0
 54,54010,Cerreto di Spoleto,0
 54,54011,Citerna,0
-54,54012,Città della Pieve,0
-54,54013,Città di Castello,0
+54,54012,Cittï¿½ della Pieve,0
+54,54013,Cittï¿½ di Castello,0
 54,54014,Collazzone,0
 54,54015,Corciano,0
 54,54016,Costacciaro,0
@@ -5568,7 +5568,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 68,68009,Castiglione a Casauria,0
 68,68010,Catignano,0
 68,68011,Cepagatti,0
-68,68012,Città Sant'Angelo,0
+68,68012,Cittï¿½ Sant'Angelo,0
 68,68013,Civitaquana,0
 68,68014,Civitella Casanova,0
 68,68015,Collecorvino,0
@@ -5810,7 +5810,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 94,94017,Colli a Volturno,0
 94,94018,Conca Casale,0
 94,94019,Filignano,0
-94,94020,Forlì del Sannio,0
+94,94020,Forlï¿½ del Sannio,0
 94,94021,Fornelli,0
 94,94022,Frosolone,0
 94,94023,Isernia,1
@@ -6114,7 +6114,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 63,63087,Villaricca,0
 63,63088,Visciano,0
 63,63089,Volla,0
-63,63090,Santa Maria la Carità,0
+63,63090,Santa Maria la Caritï¿½,0
 63,63091,Trecase,0
 63,63092,Massa di Somma,0
 64,64001,Aiello del Sabato,0
@@ -6595,7 +6595,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 75,75049,Montesano Salentino,0
 75,75050,Morciano di Leuca,0
 75,75051,Muro Leccese,0
-75,75052,Nardò,0
+75,75052,Nardï¿½,0
 75,75053,Neviano,0
 75,75054,Nociglia,0
 75,75055,Novoli,0
@@ -6603,7 +6603,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 75,75057,Otranto,0
 75,75058,Palmariggi,0
 75,75059,Parabita,0
-75,75060,Patù,0
+75,75060,Patï¿½,0
 75,75061,Poggiardo,0
 75,75062,Presicce,0
 75,75063,Racale,0
@@ -6617,7 +6617,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 75,75071,San Pietro in Lama,0
 75,75072,Santa Cesarea Terme,0
 75,75073,Scorrano,0
-75,75074,Seclì,0
+75,75074,Seclï¿½,0
 75,75075,Sogliano Cavour,0
 75,75076,Soleto,0
 75,75077,Specchia,0
@@ -6850,7 +6850,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 78,78068,Longobucco,0
 78,78069,Lungro,0
 78,78070,Luzzi,0
-78,78071,Maierà,0
+78,78071,Maierï¿½,0
 78,78072,Malito,0
 78,78073,Malvito,0
 78,78074,Mandatoriccio,0
@@ -6982,7 +6982,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 79,79089,Palermiti,0
 79,79092,Pentone,0
 79,79094,Petrizzi,0
-79,79095,Petronà,0
+79,79095,Petronï¿½,0
 79,79096,Pianopoli,0
 79,79099,Platania,0
 79,79108,San Floro,0
@@ -7005,7 +7005,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 79,79138,Soveria Mannelli,0
 79,79139,Soveria Simeri,0
 79,79142,Squillace,0
-79,79143,Stalettì,0
+79,79143,Stalettï¿½,0
 79,79146,Taverna,0
 79,79147,Tiriolo,0
 79,79148,Torre di Ruggiero,0
@@ -7037,7 +7037,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 80,80023,Careri,0
 80,80024,Casignana,0
 80,80025,Caulonia,0
-80,80026,Ciminà,0
+80,80026,Ciminï¿½,0
 80,80027,Cinquefrondi,0
 80,80028,Cittanova,0
 80,80029,Condofuri,0
@@ -7059,7 +7059,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 80,80045,Marina di Gioiosa Ionica,0
 80,80046,Maropati,0
 80,80047,Martone,0
-80,80048,Melicuccà,0
+80,80048,Melicuccï¿½,0
 80,80049,Melicucco,0
 80,80050,Melito di Porto Salvo,0
 80,80051,Molochio,0
@@ -7071,7 +7071,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 80,80057,Palmi,0
 80,80058,Pazzano,0
 80,80059,Placanica,0
-80,80060,Platì,0
+80,80060,Platï¿½,0
 80,80061,Polistena,0
 80,80062,Portigliola,0
 80,80063,Reggio di Calabria,1
@@ -7086,7 +7086,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 80,80072,San Giovanni di Gerace,0
 80,80073,San Lorenzo,0
 80,80074,San Luca,0
-80,80075,San Pietro di Caridà,0
+80,80075,San Pietro di Caridï¿½,0
 80,80076,San Procopio,0
 80,80077,San Roberto,0
 80,80078,Santa Cristina d'Aspromonte,0
@@ -7115,8 +7115,8 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 101,101004,Casabona,0
 101,101005,Castelsilano,0
 101,101006,Cerenzia,0
-101,101007,Cirò,0
-101,101008,Cirò Marina,0
+101,101007,Cirï¿½,0
+101,101008,Cirï¿½ Marina,0
 101,101009,Cotronei,0
 101,101010,Crotone,1
 101,101011,Crucoli,0
@@ -7142,7 +7142,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 102,102004,Brognaturo,0
 102,102005,Capistrano,0
 102,102006,Cessaniti,0
-102,102007,Dasà,0
+102,102007,Dasï¿½,0
 102,102008,Dinami,0
 102,102009,Drapia,0
 102,102010,Fabrizia,0
@@ -7235,8 +7235,8 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 82,82023,Casteldaccia,0
 82,82024,Castellana Sicula,0
 82,82025,Castronovo di Sicilia,0
-82,82026,Cefalà Diana,0
-82,82027,Cefalù,0
+82,82026,Cefalï¿½ Diana,0
+82,82027,Cefalï¿½,0
 82,82028,Cerda,0
 82,82029,Chiusa Sclafani,0
 82,82030,Ciminna,0
@@ -7293,11 +7293,11 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 82,82081,Scillato,0
 82,82082,Blufi,0
 83,83001,Alcara li Fusi,0
-83,83002,Alì,0
-83,83003,Alì Terme,0
+83,83002,Alï¿½,0
+83,83003,Alï¿½ Terme,0
 83,83004,Antillo,0
 83,83005,Barcellona Pozzo di Gotto,0
-83,83006,Basicò,0
+83,83006,Basicï¿½,0
 83,83007,Brolo,0
 83,83008,Capizzi,0
 83,83009,Capo d'Orlando,0
@@ -7308,16 +7308,16 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 83,83014,Castell'Umberto,0
 83,83015,Castelmola,0
 83,83016,Castroreale,0
-83,83017,Cesarò,0
-83,83018,Condrò,0
+83,83017,Cesarï¿½,0
+83,83018,Condrï¿½,0
 83,83019,Falcone,0
 83,83020,Ficarra,0
 83,83021,Fiumedinisi,0
 83,83022,Floresta,0
 83,83023,Fondachelli-Fantina,0
-83,83024,Forza d'Agrò,0
+83,83024,Forza d'Agrï¿½,0
 83,83025,Francavilla di Sicilia,0
-83,83026,Frazzanò,0
+83,83026,Frazzanï¿½,0
 83,83027,Furci Siculo,0
 83,83028,Furnari,0
 83,83029,Gaggi,0
@@ -7326,7 +7326,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 83,83032,Giardini-Naxos,0
 83,83033,Gioiosa Marea,0
 83,83034,Graniti,0
-83,83035,Gualtieri Sicaminò,0
+83,83035,Gualtieri Sicaminï¿½,0
 83,83036,Itala,0
 83,83037,Leni,0
 83,83038,Letojanni,0
@@ -7337,8 +7337,8 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 83,83043,Malfa,0
 83,83044,Malvagna,0
 83,83045,Mandanici,0
-83,83046,Mazzarrà Sant'Andrea,0
-83,83047,Merì,0
+83,83046,Mazzarrï¿½ Sant'Andrea,0
+83,83047,Merï¿½,0
 83,83048,Messina,1
 83,83049,Milazzo,0
 83,83050,Militello Rosmarino,0
@@ -7366,7 +7366,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 83,83072,Roccalumera,0
 83,83073,Roccavaldina,0
 83,83074,Roccella Valdemone,0
-83,83075,Rodì Milici,0
+83,83075,Rodï¿½ Milici,0
 83,83076,Rometta,0
 83,83077,San Filippo del Mela,0
 83,83078,San Fratello,0
@@ -7410,7 +7410,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 84,84008,Camastra,0
 84,84009,Cammarata,0
 84,84010,Campobello di Licata,0
-84,84011,Canicattì,0
+84,84011,Canicattï¿½,0
 84,84012,Casteltermini,0
 84,84013,Castrofilippo,0
 84,84014,Cattolica Eraclea,0
@@ -7517,7 +7517,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 87,87030,Motta Sant'Anastasia,0
 87,87031,Nicolosi,0
 87,87032,Palagonia,0
-87,87033,Paternò,0
+87,87033,Paternï¿½,0
 87,87034,Pedara,0
 87,87035,Piedimonte Etneo,0
 87,87036,Raddusa,0
@@ -7577,7 +7577,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 89,89020,Portopalo di Capo Passero,0
 89,89021,Priolo Gargallo,0
 90,90001,Aggius,0
-90,90002,Alà dei Sardi,0
+90,90002,Alï¿½ dei Sardi,0
 90,90003,Alghero,0
 90,90004,Anela,0
 90,90005,Ardara,0
@@ -7592,7 +7592,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 90,90014,Bortigiadas,0
 90,90015,Borutta,0
 90,90016,Bottidda,0
-90,90017,Buddusò,0
+90,90017,Buddusï¿½,0
 90,90018,Bultei,0
 90,90019,Bulzi,0
 90,90020,Burgos,0
@@ -7619,7 +7619,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 90,90041,Monti,0
 90,90042,Mores,0
 90,90043,Muros,0
-90,90044,Nughedu San Nicolò,0
+90,90044,Nughedu San Nicolï¿½,0
 90,90045,Nule,0
 90,90046,Nulvi,0
 90,90047,Olbia,0
@@ -7649,7 +7649,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 90,90071,Thiesi,0
 90,90072,Tissi,0
 90,90073,Torralba,0
-90,90074,Trinità d'Agultu e Vignola,0
+90,90074,Trinitï¿½ d'Agultu e Vignola,0
 90,90075,Tula,0
 90,90076,Uri,0
 90,90077,Usini,0
@@ -7674,7 +7674,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 91,91004,Austis,0
 91,91005,Bari Sardo,0
 91,91006,Baunei,0
-91,91007,Belvì,0
+91,91007,Belvï¿½,0
 91,91008,Birori,0
 91,91009,Bitti,0
 91,91010,Bolotana,0
@@ -7687,7 +7687,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 91,91024,Fonni,0
 91,91025,Gadoni,0
 91,91026,Gairo,0
-91,91027,Galtellì,0
+91,91027,Galtellï¿½,0
 91,91028,Gavoi,0
 91,91031,Girasole,0
 91,91032,Ilbono,0
@@ -7697,7 +7697,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 91,91038,Lei,0
 91,91039,Loceri,0
 91,91040,Loculi,0
-91,91041,Lodè,0
+91,91041,Lodï¿½,0
 91,91042,Lotzorai,0
 91,91043,Lula,0
 91,91044,Macomer,0
@@ -7708,7 +7708,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 91,91055,Oliena,0
 91,91056,Ollolai,0
 91,91057,Olzai,0
-91,91058,Onanì,0
+91,91058,Onanï¿½,0
 91,91059,Onifai,0
 91,91060,Oniferi,0
 91,91061,Orani,0
@@ -7733,8 +7733,8 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 91,91090,Teti,0
 91,91091,Tiana,0
 91,91093,Tonara,0
-91,91094,Torpè,0
-91,91095,Tortolì,0
+91,91094,Torpï¿½,0
+91,91095,Tortolï¿½,0
 91,91097,Triei,0
 91,91098,Ulassai,0
 91,91099,Urzulei,0
@@ -7772,7 +7772,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 95,95011,Baratili San Pietro,0
 95,95012,Baressa,0
 95,95013,Bauladu,0
-95,95014,Bidonì,0
+95,95014,Bidonï¿½,0
 95,95015,Bonarcado,0
 95,95016,Boroneddu,0
 95,95017,Busachi,0
@@ -7781,7 +7781,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 95,95020,Fordongianus,0
 95,95021,Ghilarza,0
 95,95022,Gonnoscodina,0
-95,95023,Gonnosnò,0
+95,95023,Gonnosnï¿½,0
 95,95024,Gonnostramatza,0
 95,95025,Marrubiu,0
 95,95026,Masullas,0
@@ -7804,7 +7804,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 95,95043,Riola Sardo,0
 95,95044,Ruinas,0
 95,95045,Samugheo,0
-95,95046,San Nicolò d'Arcidano,0
+95,95046,San Nicolï¿½ d'Arcidano,0
 95,95047,Santa Giusta,0
 95,95048,Villa Sant'Antonio,0
 95,95049,Santu Lussurgiu,0
@@ -7826,7 +7826,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 95,95065,Terralba,0
 95,95066,Tramatza,0
 95,95067,Tresnuraghes,0
-95,95068,Ulà Tirso,0
+95,95068,Ulï¿½ Tirso,0
 95,95069,Uras,0
 95,95070,Usellus,0
 95,95071,Villanova Truschedu,0
@@ -7836,7 +7836,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 95,95075,Zerfaliu,0
 95,95076,Siapiccia,0
 95,95077,Curcuris,0
-95,95078,Soddì,0
+95,95078,Soddï¿½,0
 95,95079,Bosa,0
 95,95080,Flussio,0
 95,95082,Laconi,0
@@ -7909,7 +7909,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 111,111061,San Basilio,0
 111,111062,San Gavino Monreale,0
 111,111063,San Giovanni Suergiu,0
-111,111064,San Nicolò Gerrei,0
+111,111064,San Nicolï¿½ Gerrei,0
 111,111065,San Sperate,0
 111,111066,San Vito,0
 111,111067,Sanluri,0
@@ -7920,7 +7920,7 @@ COD_PRO,PRO_COM,COMUNE,COMUNE_CAPOLUOGO
 111,111072,Sardara,0
 111,111073,Segariu,0
 111,111074,Selegas,0
-111,111075,Senorbì,0
+111,111075,Senorbï¿½,0
 111,111076,Serdiana,0
 111,111077,Serramanna,0
 111,111078,Serrenti,0
